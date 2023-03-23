@@ -2,7 +2,7 @@
 ** SSD Architecture
 :PROPERTIES:
 :END:
-*** ![](../assets/SSD_Architecture.drawio_1678693542781_0.png){:height 472, :width 737}
+*** ![image](../assets/SSD_Architecture.drawio_1678693542781_0.png)
 *** Channel - Chip - Die - Plane (Access Unit) - Block (Erase Unit) - Page (Read/Write Unit)
 *** LUN : Logical Unit Number
 ** Flash Chip Commands

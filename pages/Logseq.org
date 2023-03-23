@@ -1,2 +1,3 @@
-* Resize the Image
-** Use ~![image](https://i.imgur.com/1sBGB4d.gif){:height 179, :width 128}~ Instead of ~[[link]]~
+* Embed Media
+** ~![](link.jpg)~
+*
