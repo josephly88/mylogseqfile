@@ -1,0 +1,3 @@
+* Static IP Address
+** Assign a computer a fixed IP and never change unless done so manually
+*** Need to compatible with netmask, gateway, and DNS

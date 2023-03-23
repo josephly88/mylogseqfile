@@ -1,0 +1,34 @@
+* Doing:
+** Evaluation
+*** Micro Figure
+*** Micro
+*** Micro Breakdown Figure
+*** Micro Breakdown
+*** Mixed Figure
+*** Mixed
+*** YCSB Figure
+*** YCSB
+*
+* Paper Writing:
+** Editing
+*** Figures
+**** 圖字跟paper字差不多就可以 (Dense 一點)
+*** Don't know where to put
+**** Design 3 原用node-block mapping 因為node ID
+**** split or merging is not the overhead
+**** How does delete workload generated?
+** Paper writing
+** Citation
+** Not to do
+*** Introduction
+**** SSD dirty page eviction is the major cost of SSD I/O
+**** Data buffer is fault-tolerance
+*** Abstract
+*
+* Dataset Running:
+** Micro Page eviction counting
+*** Count Buffer Hit
+*** Count Buffer Not Hit (+ Hit = Access Time)
+*** Dirty Page Evict = Read From Nand
+** Find a memory map space for Counts
+*

@@ -1,0 +1,54 @@
+* 16:52
+** 1830: Running
+** 1900: Purchasing
+*** Wire sort out
+*** Bottle
+** 1930: Dinner
+* 18:52
+** Simple Sentence #Grammar
+*** Verb 分為 及物(transitive)/不及物(intransitive), 完全(complete)/不完全(Incomplete)
+*** 因而主要能構成5大句型
+**** S + V
+:PROPERTIES:
+:collapsed: true
+:END:
+***** 不及物動詞 intransitive verb
+***** e.g., The dog barked
+:PROPERTIES:
+:collapsed: true
+:END:
+****** The dog barked /at the mailman/
+******* At the mailman 介系詞片語 --> 副詞
+**** S + V + O
+:PROPERTIES:
+:collapsed: true
+:END:
+***** 及物動詞 transitive verb
+***** e.g., The dog bit the mailman
+**** S + V + O + O
+:PROPERTIES:
+:collapsed: true
+:END:
+***** 授予動詞 dative
+***** e.g., I teach my son English
+:PROPERTIES:
+:collapsed: true
+:END:
+****** --> S+V+O : I teach English to my son
+**** S + V + C
+:PROPERTIES:
+:collapsed: true
+:END:
+***** 不完全動詞 Incomplete verb
+:PROPERTIES:
+:collapsed: true
+:END:
+****** 例如: is, was, looks, sounds, seems, makes, becomes, ...
+****** 簡單判別方法: 替換動詞為be, 意思應與原本差不多
+***** e.g., The dog was a bulldog
+**** S + V + O + C
+***** 當S+V+O還缺什麼時, S+V+O+C 能完整句子意思
+***** e.g., I find the purse pretty
+***** 簡單判別: 把O 及 C 抽出來加上be動詞 -> *S + V + C, where *S = Original O, 意思仍是差不多
+****** The purse is pretty
+***

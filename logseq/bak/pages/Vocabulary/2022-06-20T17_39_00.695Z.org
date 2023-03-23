@@ -1,0 +1,42 @@
+* canonical (adj.) #Vocabulary #English #card
+:PROPERTIES:
+:card-last-score: 5
+:card-repeats: 2
+:card-next-schedule: 2022-06-14T09:46:45.945Z
+:card-last-interval: 4
+:card-ease-factor: 2.6
+:card-last-reviewed: 2022-06-10T09:46:45.946Z
+:collapsed: true
+:END:
+** considered to be good and important, and worth studying
+** 典範
+** Example:
+:PROPERTIES:
+:collapsed: true
+:END:
+*** the canonical writers of American literature
+* Hyphenation (When to use?) #Vocabulary #English
+:PROPERTIES:
+:collapsed: true
+:END:
+** For example: My sixty-year-old mother-in-law did a ten-foot dive into the swimming pool and was greatly admired.
+** Question: When or when not to use hyphen?
+** Rule 1: The phrase with the number is before the noun
+*** e.g., Two-door car
+*** e.g., Eighteen-year-old students
+*** e.g., He did really badly in the race and came twenty-second
+out of twenty-two runners.
+**** The first number is an ordinal "twenty-second", the second one is a number between 21 and 99 so it's "twenty-two"
+*** Only for numbers before the noun
+**** The students are eighteen years old. (NO hyphen)
+** Rule 2: Number from twenty-one to ninety-nine
+*** e.g., Two hundred and ninety-nine
+** Rule 3: Add participles to nouns, adverbs, and adjectives to make two-word adjectives
+*** e.g., Well-respected politician ('adverb + past participle' adjective before the noun)
+*** Again, only for adjective comes before the noun
+**** The politicians were well respected. (NO hyphen)
+**** A special case would be
+***** He is really easy-going ('adjective + present participle' adjective, need a hyphen)
+** Rule 4: Never use hyphen in compound adjectives that have an adverb with ends in -l-y
+*** A carefully written letter (NO hyphen)
+** Compound nouns are mostly with no hyphen in it

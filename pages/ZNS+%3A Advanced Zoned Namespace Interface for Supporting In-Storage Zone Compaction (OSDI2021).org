@@ -1,0 +1,84 @@
+* #+title: ZNS+: Advanced Zoned Namespace Interface for Supporting In-Storage Zone Compaction (OSDI2021)
+* https://www.usenix.org/conference/osdi21/presentation/han
+*
+* Main Focus: OpenSSD Implementation
+*
+* Main Idea
+** ZNS support in-storage segment compaction in F2FS (LFS)
+*
+* Knowledge
+** SSD-internal GC is not required  [[ZNS]]
+*** Reduce write amplification
+** Over-provisioned space for GC is not required  [[ZNS]]
+** Impact to IO Stack  [[ZNS]]
+*** Two major components
+**** File System
+***** In-place updating file system (e.g. EXT4) --> Append logging file system
+**** IO Schedular
+** NVMe standard  [[ZNS]]
+*** ZNS commands
+*** Zone types
+** No zone mapping constraints in the ZNS specification [[ZNS]]
+*** Physical locations of a zone and the chunks in the zone are unknown to the host
+*
+* Claim
+** Questionable
+*** The zone size of a ZNS device will be determined to be large enough to utilize the SSD-internal flash chip parallelism
+**** Higher bandwidth of ZNS SSD will provide a larger zone size
+***** The file system must use a larger segment size accordingly
+*
+* ZNS+ SSD-internal zone mapping policy
+** Claimed "general and efficient"
+*** Minimize the size of required mapping information
+*** Maximize the flash chip-level parallelism
+** Zone size is a multiple flash erase block size
+** ![image](../assets/image_1672822270039_0.png){:height 425, :width 434}
+** Terminology
+*** Chunk
+**** Page size
+**** Storing multiple logical blocks
+***** Since SSD page size  is usually larger than logical block size
+*** Stripe
+**** A set of logically consecutive chunks across the parallel chips
+*** Flash Block Group (FBG)
+**** Grouping multiple blocks to form a zone
+**** In-FBG parallelism
+***** Interleave the chunks on the parallel flash chip within a zone
+****** Benefit for read performance
+***** Zone interleaving degree (D_{zone})
+****** Number of chips within a zone (or FBG)
+****** Example is D_{zone} = 4
+*** Flash Chip Group (FCG)
+**** Question: Is it standardized?
+**** Grouping multiple chips
+**** To cut more zones
+***** Since in this policy the Zone-to-FBG mapping select the row in a single FCG
+****** More FCG could create more zones (More columns)
+**** The number of FCG N_{FCG} = D_{max} / D_{zone}
+***** D_{max} : the maximum number of parallel flash chips
+****** Example is D_{max} = 8
+***** If D_{zone} < D_{max}, N_{FCG} > 1
+** SSD only maintain the Zone-to-FBG mapping
+*** Zone is dynamically allocated whenever the zone is opened
+*** Require small size mapping compared to conventional SSD
+**** Conventional SSD require 0.1% of storage capacity
+***** e.g. 1GB DRAM for 1TB SSD
+*
+* OpenSSD Implementation
+** Limitation for ZNS+
+*** No copyback operation
+*** No partial page read operation
+** +1092 LoC in firmware
+** Zone size: Not mentioned
+*** If it follows the FEMU configuration, then 32MB
+*** 16 flash blocks in 16 flash chips
+**** 128 * 16KB page per block
+** Question
+*** OpenSSD support NVMe 1.2, but ZNS require 2.0
+*** Do they dynamically allocate BGS to zone?
+*** How do they implement it?
+**** The mapping table
+**** Address translation
+**** Command translation
+**** Interfacing with the flash controller
+**** Removing GC

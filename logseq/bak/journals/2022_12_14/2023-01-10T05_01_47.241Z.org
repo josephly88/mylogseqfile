@@ -1,0 +1,10 @@
+* [[Stable Diffusion]]
+** https://www.bilibili.com/read/cv19211897?from=articleDetail
+** CFG
+** Denoising Strength
+** Poor man's outpainting
+** https://new.qq.com/rain/a/20221012A01SAO00
+** https://home.gamer.com.tw/artwork.php?sn=5617022
+** https://www.reddit.com/r/WaifuDiffusion/comments/xudcdp/prompts_guide_by_cdcruz/
+*
+*

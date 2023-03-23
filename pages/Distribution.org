@@ -1,0 +1,6 @@
+* Zipfian distribution
+** Zipfian distribution follows the Zipf's Law
+** The probability of an event occurring is inversely proportional to its rank in a list of possible events
+** Observation: Frequent words and rare words
+*** The most commonly used word in the list occurs much more frequently than the second most commonly used word, and so on
+*** Highly skew

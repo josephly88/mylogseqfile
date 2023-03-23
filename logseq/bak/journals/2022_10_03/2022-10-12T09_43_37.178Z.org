@@ -1,0 +1,38 @@
+* Todo:
+** Searching
+*** Atomicity of PMR (See spec has any consistency guarantee methods)
+** Editing
+*** Background & Motivation
+**** 由spec support 開始切入, 而不是2B-SSD切入
+***** 需要dual interface, 而NVMe就有
+**** Elaboration of Atomicity here, maybe definition
+**** Data buffer is fault-tolerance (support)
+**** Mention that OCSSD paper
+***** open-channel is not applicable in conventional SSD
+** Figure illustrating
+*** Design 3
+*** Design architecture (Revise)
+** Paper writing
+*** Design 1
+**** Algorithm
+*** Design 2
+**** Design Concept (To-do)
+**** Description (To-do)
+**** Algorithm
+**** Atomicity
+*** Design 3
+**** Design Concept (To-do)
+**** Description (To-do)
+**** Algorithm
+**** Atomicity
+** Outlining:
+*** Evalution
+**** Database 做法
+***** Micro
+****** 分開測
+***** Macro
+****** 一起測
+**** 參考一下王超
+** Citation
+** Design
+*** Maybe put more metadata into PMR as well

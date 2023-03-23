@@ -1,0 +1,31 @@
+* [[倉頡打字挑戰]]
+** https://typing.tw/
+** 規則: 不能使用*及Suggest字. 不懂的字記下來
+**
+** 最終目標: 100 WPM以上 (words per minute)
+**
+** 技巧:
+*** 正確鍵盤手指分配: 偶然慢打, 習慣鍵盤分配
+:PROPERTIES:
+:collapsed: true
+:END:
+**** [[../assets/d9089e739b1c49e2903aa25b63568525_1663010905591_0.png]]{:height 209, :width 506}{:height 286, :width 589}{:height 247, :width 453}
+*** 學習不懂的字: 先拆碼-->後練習手感
+:PROPERTIES:
+:collapsed: true
+:END:
+****
+*** 標點符號: 手感為重
+**** 「: Z難金木
+**** 」: Z難金水
+**** 、: Z木7
+**** ．: Z難日水
+*** 回彈後, 手指不應離鍵盤太遠
+**
+** 短期目標訓練:
+*** 30 WPM 以上 3次, 無不懂字限制, 5分鐘
+**** [[Sep 10th, 2022]] 38.2 WPM BEST
+**** [[Sep 12th, 2022]] 39.6 WPM BEST
+**** [[Sep 13th, 2022]] 50.4 WPM BEST
+**** [[Sep 13th, 2022]] 39.8 WPM BEST
+**

@@ -1,0 +1,65 @@
+* *Conventional SSD*
+** SSD Architecture
+:PROPERTIES:
+:END:
+*** ![image](../assets/SSD_Architecture.drawio_1678693542781_0.png)
+*** Channel - Chip - Die - Plane (Access Unit) - Block (Erase Unit) - Page (Read/Write Unit)
+*** LUN : Logical Unit Number
+** Flash Chip Commands
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Standard
+**** Read
+**** Write
+**** Erase
+**** Status
+**** ID
+**** Reset
+**** Enable/Disable
+*** Optional
+**** Copyback
+***** Copy flash page within chips without off-chip data transfer
+**** Partial read or write
+***** Access less than a page size
+** Over-Provisioning
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Always keeping a portion of free blocks
+**** Immediately supply free blocks
+***** Reason: Erase operation takes longer than Write due to the granularity
+****** Erase - Block, but Write - Page
+**** Beneficial for GC, wear-leveling, and bad block management
+*** OP occupies the storage space (According to Samsung)
+**** e.g., 128GB SSD : 120GB (user capacity) + 8GB (OP)
+**** User could increase the amount of OP
+** Write Disturb
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Data block write affects the nearby blocks
+** NVMe Namespace
+:PROPERTIES:
+:collapsed: true
+:END:
+*** An SSD device could separate into multiple logical storage unit to host
+*** Isolation while multiple application access to the same physical device
+* *Performance Metric*
+:PROPERTIES:
+:collapsed: true
+:END:
+** Bandwidth
+*** The maximum amount of data that can be transferred in a given amount of time
+*** The size of a pipe
+** Throughput
+*** The actual amount of data that can be transferred or processed in a specific amount of time
+*** Volume of the water through the pipe
+** IOPS
+** Latency
+*
+* *Zoned Namespaces*
+** [[ZNS]]
+*
+* *Evaluation Platform*
+** [[OpenSSD]]

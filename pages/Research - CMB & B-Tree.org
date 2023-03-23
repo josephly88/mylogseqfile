@@ -1,0 +1,58 @@
+* *Paper Organization*
+** *Todo*
+*** 構思
+**** Breakdown B-Tree的Amplification
+**** How to measure the amplification?
+** *Commentary*
+*** Motivation跟Design連繫不夠
+**** Small write
+**** 沒有Overall的Picture
+*** Contribution沒有很定位
+**** Approach 1: Generalize CMB accelerate indexing structure
+**** Approach 2: Dive in B-Tree structure
+** *Must Be Addressed*
+*** 要去Study下P-CMB在不同size在不同時
+**** Benchmark會如何反應
+*** 有趣的出發點
+**** CoW B-Tree 直接成為主角
+***** CoW B-Tree 又帶來更大的I/O Amplification (Propagation)
+***** Consistency must be guarenteed
+**** *Motivation*:
+***** Problem of B-Tree in Block interface storage
+****** 為了讓後面的design有了理由 (編故事 - 故事的邏輯)
+****** B-Tree is designed for block-interface storage device
+******* Minimize the number of I/O access [[https://www.bluerwhite.org/btree/][(https://www.bluerwhite.org/btree/)]]
+******** By matching the node size to block size
+********* With a much higher branching factor
+********** Tree height is shorten
+******* 但存在Block interface開銷的矛盾: I/O Amplification
+****** Data Size Amplification Magnitude Analysis
+******* Define and Assume
+******** Tree Order / Degree: $M$
+********* In practice at least 128
+******** Node read : Node write $\approx 1:1$
+********* Assume SSD has buffer
+********* 總稱為I/O
+******** Tree Height: $H$
+******* Due to the Block interface
+******** KV read -> Node read: ~Node size read / KV size read~ $\approx M$
+******** KV write -> Node write: ~Node size write / KV size write~ $\approx M$
+******* Due to the Tree Traversal Property
+******** Node read -> Tree read: ~Tree height~ $= H$ (Worst Case)
+******** Node write -> Tree read + Node write: ~(Tree height * Node read + Node write) / Node write~ $\approx H + 1$
+********* Due to Copy-on-Write
+********** Node write -> Tree read + Tree write: ~Tree height * (Node read + Node write) / Node write~ $\approx H * (1 + 1) = 2H$
+******* Conclusion
+******** KV read -> Node read -> Tree read
+********* ~Node size read * Tree height / KV size read~ $\approx M * H$
+******** KV write -> Node write + Tree read -> Tree write + Tree read (CoW Propagation)
+********* ~(Node size read + Node size write) * Tree height / KV size write~ $\approx 2M * H$
+****** Since block is the granularity of block-interface access
+******* KV pair size access always turn into block size
+******** Traditional Block-interface cannot minimize the $M$
+******* Block-interface amplify the modification of indirection (CoW)
+***** Reason to introduce byte addressable PM in SSD
+** *May Be Addressed*
+*** 試一下其他Distribution, e.g., Uniform
+*** 再設計一下Append, e.g., Dynamic
+**

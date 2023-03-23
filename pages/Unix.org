@@ -1,0 +1,77 @@
+* *Shortcut*
+** ~Ctrl-R~: Command history searching
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Usage
+**** Type the keywords you want to match
+**** Keep pressing ~Ctrl-R~ for searching
+**** Press ~Enter~ to execute
+*** Reverse-i-search mode
+** Jump to line position
+*** ~Ctrl-A~: Jump to beginning of the line
+*** ~Ctrl-E~: Jump to the end of the line
+*** ~Ctrl-Left~ or ~Ctrl-Right~: Jump to last or next word
+* *Basic Commands*
+** ~man~
+** ~tldr~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~tldr -u~ for the first time
+**** create the directory if needed
+** ~find~: [[find]]
+** ~grep~: [[grep]]
+** ~history~
+**
+** *Questions*
+*** How to echo to a privilege file?
+:PROPERTIES:
+:collapsed: true
+:END:
+**** ~tee~
+**** read from standard input and write to standard output and files
+**** Example:
+***** ~root_file~ needs higher privilege, but echo doesn't
+***** #+BEGIN_SRC bash
+echo Hello\ World > root_file
+# Permission denied
+echo Hello\ World | sudo tee root_file
+# Hello World
+sudo cat root_file
+# Hello World
+#+END_SRC
+*** How to execute a non-executable file?
+:PROPERTIES:
+:collapsed: true
+:END:
+**** ~source~
+**** Read and execute the content of a files without setting the executable bit
+**** Import functions and variables into Bash
+#+BEGIN_SRC bash
+function mcd() {
+	mkdir -p "$1"
+    cd "$1"
+}
+#+END_SRC
+***** The spacing is important!!
+***** Then you can run mcd() in shell
+*** How to create multiple directory with hierarchy?
+:PROPERTIES:
+:collapsed: true
+:END:
+**** ~mkdir -p A/B/C/D~
+***** ~-p~ means parent
+***** It would create directory D in C in B in A
+*** How to create symbolic link?
+:PROPERTIES:
+:collapsed: true
+:END:
+**** ~ln -s~
+*
+* [[Unix Tools]]
+* [[Shell Script]]
+* [[Shell]]
+*
+* *Linux Distribution*
+** [[Ubuntu]]

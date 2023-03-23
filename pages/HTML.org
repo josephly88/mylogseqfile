@@ -1,0 +1,131 @@
+* Document: [[https://developer.mozilla.org/en-US/docs/Web/HTML][MDN Web Docs - HTML]]
+* Category: https://www.howtocodeschool.com/2020/01/list-of-html-tags-by-category.html#Basic-HTML-Tags
+*
+* *Basic Syntax*
+** Structure: ~<element attribute="value"> element content </element>~
+** Comment: ~<!-- XXX -->~
+** Sample HTML Structure
+*** #+BEGIN_SRC html
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  
+  <body>
+    <!-- CONTENTS -->
+  </body>
+</html>
+#+END_SRC
+*
+* *Concepts*
+** Class and ID Attributes
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~class=""~ or ~id=""~
+** Block level vs. Inline level
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Block level always start on a new line
+*** Inline level does not start on a new line
+** Span vs. Div
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Both are grouping elements together
+*** Div is block-level
+*** Span is inline-level
+** WAI-ARIA Role
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Provides semantic meaning to content for non-semantic elements (e.g., div, span)
+*** https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
+*
+* *Tags*
+** *Meta Tags*
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~<meta name="viewport" content="width=device-width, initial-scale=1.0">~
+:PROPERTIES:
+:collapsed: true
+:END:
+**** ~viewport~ can let you control the width and ratio
+***** If no ~viewport~, then the mobile would display in a wide view which is not friendly
+**** ~width=device-width~: page matches the device width
+**** ~initial-scale=1.0~: Initial ratio is 100%, no enlarge or shrink
+** *Images Tags*
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Basic: https://www.w3schools.com/tags/tag_img.asp
+*** Advanced: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
+** *Forms Tags*
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Basic: https://www.w3schools.com/html/html_forms.asp
+*** Advanced: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+*** ~<form action="submit_url"></form>~
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Does not contain input text space
+**** Attributes
+***** ~Action~ : Sent the form to which url
+***** ~Method~: Specify how to send form to the url in ~action~
+****** ~get~
+****** ~post~
+****** ((63c50ccb-9d6a-41ea-928e-33b956c3c2f4))
+*** ~<label></label>~
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Associate the text for the ~input~, so clicking the text in ~label~ also check the ~radio~
+***** Nest the ~input~ and the text
+***** OR Nest the text only, and add an attribute ~for~ with the same ~id~ as the ~input~
+*** ~<input>~
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Basic: https://www.w3schools.com/tags/tag_input.asp
+**** Advanced: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+** *Link Tags*
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~<a>~: https://www.w3schools.com/html/html_links.asp
+*** ~<link>~: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link
+*** ~<a href="url"></a>~
+:PROPERTIES:
+:collapsed: true
+:END:
+**** (Anchor or Hyperlink) {Inline}
+**** Attributes
+***** ~target~
+****** ~_blink~ (Open the link in a new tab)
+*** ~<link ref="stylesheet" href="styles.css">~
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Link to the css sheet
+** *List Tags*
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Basic: https://www.w3schools.com/html/html_lists.asp
+** *Style and Semantic Tags*
+*** Basic: https://www.w3schools.com/html/html5_semantic_elements.asp
+*** What does Semantic means in HTML?
+:PROPERTIES:
+:collapsed: true
+:END:
+**** A tag stated its meaning to both the developer and the browser
+***** Not just a presentation tag

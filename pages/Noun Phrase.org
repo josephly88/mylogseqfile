@@ -1,0 +1,120 @@
+* 三個部份組成: ^^＜限定詞 Determiners ＋ 形容詞 Adjective ＋ 名詞 Nouns ＞^^
+** ^^若符合條件，每個部份有可能從缺^^
+*** 形容詞是可有可無
+** 例子：
+:PROPERTIES:
+:collapsed: true
+:END:
+*** a good teacher
+*** some troublesome students
+*** their very pretty school
+** 某用到名詞之處，都必須包裝成「名詞片語」
+*
+* *名詞 Nouns*
+** [[Countable or Uncountable]]
+** [[複合名詞 Compounds]] : 形容詞放入名詞當作形容詞使用
+*
+* [[副詞 Adverb]]
+* [[形容詞 Adjective]]
+*
+* *省略名詞片語*
+** 只要大家都知道你省掉的是什麼, 便可選擇省略
+** 例子
+*** *(The rich)* are not always happier than *(the poor)*
+**** 省略的名詞為people -> 複數
+*** *(The new)* is not always better than *(the old)*
+*** *(The unknown)* is often feared
+**** 省略名詞為thing -> 單數
+*
+* *限定詞 Determiners*
+** 性質分類 (語言學上分類, 參考用)
+*** Definite vs. Indefinite (限制 vs. 非限制)
+**** Definite: the, those, John's
+**** Indefinite: a, some, fifty
+*** Partitive vs. Universal (部分 vs. 全稱)
+**** Some vs. All
+** *位置分類 (與寫作比較密切)*
+*** ^^(前位限定詞 + 中位限定詞 + 後位限定詞) + 形容詞 + 名詞^^
+*** 規則:
+**** 前位, 中位, 後位可以同時出現
+**** 但同樣位置有排他性, 只能採用一個
+***** e.g., 兩個中位 these some boys 不正確
+*** 例子
+:PROPERTIES:
+:collapsed: true
+:END:
+**** All these many brave soldiers
+**** Half your twenty expensive houses
+**** Both the first heroic explorers
+*** *前位限定詞*
+**** 全部, 部分: all, both, half
+**** 倍數, 分數: one-third, one-fifth, double, twice, three times
+**** 另外such也是
+**** 例子
+:PROPERTIES:
+:collapsed: true
+:END:
+***** *All* the girls
+***** *Double* the sum
+***** *Such* a suprise
+*** *後位限定詞*
+**** 數字, 排名: three, 200, first, second, 300th, last
+**** 多, 少: many, much, little, few
+**** 另外other也是
+**** 例子
+:PROPERTIES:
+:collapsed: true
+:END:
+***** my *three* children
+***** the *last* month
+***** those *many* difficulties
+***** some *other* time
+*** *中位限定詞* (最常見)
+**** 冠詞: a, an, the
+***** the 衍生: this, that, these, those
+***** a, an 衍生能接one的字: some, any, either, neither, no, every, each
+**** 所有格: my, your, John's
+**** 例子
+***** a book, an egg, the money, this question, some time, any trouble, no problem, my home, your car
+* *Embedded Noun Phrase (A Noun Phrase inside another Noun Phrase)*
+** *替換限定詞*
+*** *A dog's* ears (ears 但用 a?)
+**** A dog 是個Noun Phrase, 加上's 構成限定詞
+**** 所以a dog - 單數, 但ears - 雙數
+*** 例子
+:PROPERTIES:
+:collapsed: true
+:END:
+**** the school's history
+**** a person's honor
+**** my father's company
+** *替換名詞*
+*** 必須包括數字
+*** an unbelievable *200 billion dollars* (dollars 但用 an?)
+**** 200 billion dollars 是Noun Phrase (限定詞 + 名詞)
+**** 加上形容詞 unbelievable, 那前面就產生新的限定詞位置, 構成更大的名詞片語
+**** 另一種理解: 省略了total of
+***** an unbelievable (total of) 200 billion dollars
+****** 因為是a total
+*** 例子
+:PROPERTIES:
+:collapsed: true
+:END:
+**** The meeting dragged on for a tiresome (total of) 15 days
+**** An amazing (total of) 500 miles
+**** A mere (total of) 20 soldiers
+**** The construction will take another (total of) 30 days  (another 是限定詞)
+** *不能替換形容詞 (形容詞只能替換名詞單字)*
+*** 由於前後封閉, 位置太小, 只容納下單字
+*** A *flower* shop
+*** 如要放入Noun Phrase, 必先改造成單字 (- Hyphen)
+**** My uncle lives in a *three-story* mansion
+***** 來自Noun Phrase "three stories" 三層樓
+***** 需加上Hyphen
+***** 把-s拿掉, 因為形容詞沒有複數形
+* *名詞與限定詞的一致性*
+** 多 - Many (Countable) vs. Much (Uncountable)
+*** 比較級 - More沒有分
+** 少 - Few (Countable) vs. Little (Uncountable)
+*** 比較級 - Fewer (Countable) 和 Less (Uncountable)
+** A large number (Countable) vs. A large amount (Uncountable)

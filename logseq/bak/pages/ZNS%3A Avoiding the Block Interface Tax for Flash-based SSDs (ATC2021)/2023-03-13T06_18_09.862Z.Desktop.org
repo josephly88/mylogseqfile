@@ -1,0 +1,92 @@
+#+TITLE: ZNS: Avoiding the Block Interface Tax for Flash-based SSDs (ATC2021)
+
+* #+title: ZNS: Avoiding the Block Interface Tax for Flash-based SSDs
+* https://www.usenix.org/conference/atc21/presentation/bjorling
+*
+* Knowledge
+** Block interface - One dimensional arrays
+*** Closely track the HDD
+*** Due to the mismatch between write and erase
+**** FTL hides this mismatch from host (In-place update)
+***** Logical-to-physical page mapping
+****** DRAM capacity is expensive (High cost per GB of usable capacity)
+***** Over-provisioning
+****** 28% over-provisioned space is expensive (High cost per GB of usable capacity)
+***** GC
+****** Write-amplification
+****** Performance unpredictability
+****** High tail latency
+** Zone
+*** Grouping logical blocks
+*** Random read
+*** Sequential write
+*** Erase before rewrite
+*** Shifting the responsibility of GC to host
+*** Originally introduced for Shingled Magnetic Recording (SMR) HDD
+*** State
+**** Empty
+**** Open
+***** Limited number of open state due to device resource limitation
+**** Closed
+***** Can transitioned to open before serving writes
+***** Freeing on-device recourses such as write buffer
+**** Full
+*** Active zone limit
+**** Limit on the zone either in OPEN and CLOSED state
+**** Expect to have 8-32 active zone
+***** Due to
+****** Programing disturbs
+****** XOR engine
+****** Memory resource (SRAM or DRAM)
+****** Power capacitor to persist parity data following a power failure
+***** Could increase by
+****** Extra power capacityor
+****** DRAM for data movement
+****** Reduce parity requirement
+****** Write-back cache (e.g., SLC)
+**** SMR HDD does not have this
+***** could allow all zones to stay in CLOSED
+*** Write pointer
+**** The next writable LBA within a zone
+**** Valid in empty and open state
+**** Fail if
+***** Do not begin at the write pointer
+***** Write the zone in the FULL state
+*** Writeable zone capacity attribute
+**** ![image](../assets/image_1672888206797_0.png){:height 161, :width 422}
+**** Allow zone to have a writeable capacity smaller than the zone size
+*** Impact to Existing Setup
+**** SSD Hardware
+***** Mapping Table
+****** Block-interface: Large, fully-associative mapping
+****** Zone: Coarse-grained mapping
+******* Erase block level
+******* Hybrid fashion
+**** Host Software
+***** Sequential write applications are prime candidates
+** Stream SSD
+*** marks the write commands with a stream hint
+**** Data lifetime
+*** If the host mixes the data lifetime, it behave similarly to block-interface SSD
+*** Still require over-provisioning and DRAM
+** Open-Channel SSD
+*** Host is responsible for data placement, including wear-leveling
+*** Host must manage differences across SSD implementations to guarantee durability, making the interface hard to adopt and requiring continual software upkeep
+**
+**
+*
+* Question
+** Difference between Zone Size and Zone Capacity
+** How to utilize ZNS to achieve low write amp / high throughput?
+** What device limitations limit the number of open zone?
+** How do ZNS SSD manage the write buffer for open zone?
+** Where is the ...?
+*** zone write pointer?
+*** writeable zone capacity?
+*** Active zone limit?
+** Is the full state automatically transitioned? Or host manage?
+** How do ZNS do mapping?
+** How does per-stripe parity work?
+**
+*
+* Thought

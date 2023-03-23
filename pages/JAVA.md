@@ -1,0 +1,36 @@
+- Is JAVA a compile language or interpret language?
+  collapsed:: true
+	- ![image](http://www2.hawaii.edu/~takebaya/ics111/process_of_programming/2000000100000109000000BDEB75FEAC.png){:height 236, :width 308}
+	- The source code first compile to bytecode
+	- Then the bytecode is interpreted by the interpreter
+- Differences between JDK, JRE, and JVM
+  collapsed:: true
+	- ![image](https://media.geeksforgeeks.org/wp-content/uploads/20210218150010/JDK.png){:height 274, :width 532}
+	- Java Development Kit (JDK)
+		- A Kit that provides the environment to develop and execute
+		- Include
+			- Java Runtime Environment (JRE)
+			- Interpreter/loader (Java)
+			- Compiler (javac)
+			- Documentation generator (Javadoc)
+			- Other tools
+	- Java Runtime Environment (JRE or Java RTE)
+		- An installation package that provides an environment to only run (no develop)
+		- Consists of
+			- Java Virtual Machine (JVM)
+			- Core classes
+			- Supporting files
+	- Java Virtual Machine (JVM)
+		- It is also known as an interpreter
+		- Specification
+		- Implementation
+		- Runtime Instance
+- Reflection
+  collapsed:: true
+	- API to examine or modify the behavior of methods, classes, and interfaces at runtime
+	- Example:
+		- Get the method or variable or class
+			- Get the Name
+			- Invoke the method
+			- Change the accessibility
+			- Modify the data

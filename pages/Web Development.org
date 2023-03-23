@@ -1,0 +1,14 @@
+* Language
+** [[HTML]]
+** [[CSS]]
+** [[Javascript]]
+*
+*
+* [[UI Design]]
+*
+* Web Accessibility Initiative (WAI)
+** By W3C
+** Guidelines that make web content more accessible to people with disability
+** Attribute
+*** ~role~: Specify the purpose of an element
+**** Can be more specific than the HTML semantic

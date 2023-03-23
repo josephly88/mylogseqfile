@@ -1,0 +1,303 @@
+* *Syntax*
+** Variable
+*** Variables
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Assign a variable and Call a variable
+#+BEGIN_SRC bash
+foo=bar
+echo "$foo"
+# prints bar
+echo '$foo'
+# prints $foo
+#+END_SRC
+*** Special Variables
+:PROPERTIES:
+:collapsed: true
+:END:
+**** ~$0~ to ~$9~ Arguments
+:PROPERTIES:
+:collapsed: true
+:END:
+***** ~$0~ : Name of the script, ~$1~ : First argument
+**** ~$@~ - All the arguments (Usually for looping)
+:PROPERTIES:
+:collapsed: true
+:END:
+***** ~for file in "$@"; do~ : Loop all arguments as variable file
+**** ~$#~ - Number of arguments
+**** ~$?~ - Return (Exit) code of the previous command
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Exit code ~0~ : Success
+***** Exit code ~1~ : General errors, Miscellaneous errors, and other impermissible operations
+***** Exit code ~2~ : Misuse of shell builtins
+****** e.g., ~empty_function() {}~ is missing a space between name and  ()
+**** ~$$~ - PID (Process identification number) for the current script
+**** ~!!~ - Entire last command (Common usage: ~sudo !!~)
+**** ~$_~ - Last argument from the last command
+:PROPERTIES:
+:collapsed: true
+:END:
+***** If you are in an interactive shell, you can get the value by
+****** ~Esc~ followed by ~.~ or ~Alt+.~
+** Control Flow
+*** Operators
+**** https://www.tutorialspoint.com/unix/unix-basic-operators.htm
+**** Integer comparison ~-eq~, ~ne~, ~-gt~, ~-lt~, ~-ge~, ~-le~
+**** String comparison ~>~, ~<~, ~=~, ~!=~
+**** ~&&~ and ~||~ and ~;~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Exit Code: ~True = 0~, ~False = 1~
+***** Conditionally execute commands
+***** ~&&~ and ~||~ are short-circuiting operators
+***** ~;~ will always run the next command
+***** Example
+#+BEGIN_SRC bash
+false || echo "Oops, fail"
+# Oops, fail
+true && echo "Things went well"
+# Things went well
+false ; echo "This will always run"
+# This will always run
+#+END_SRC
+*** If-else
+:PROPERTIES:
+:collapsed: true
+:END:
+**** #+BEGIN_SRC shell
+if [ conditions ]; then
+	...
+elif [ conditions ]; then
+	...
+else
+	...
+fi
+#+END_SRC
+*** While Loop
+:PROPERTIES:
+:collapsed: true
+:END:
+**** #+BEGIN_SRC shell
+while [ conditions ]
+do 
+	...
+done
+#+END_SRC
+*** For Loop
+:PROPERTIES:
+:collapsed: true
+:END:
+**** #+BEGIN_SRC shell
+for var in 0 ... 10
+do
+	ecoh $var
+done
+#+END_SRC
+**** 10 is not executed
+**** #+BEGIN_SRC shell
+for FILE in `$HOME/.bash*`
+do
+	echo $FILE
+done
+#+END_SRC
+*** Function
+:PROPERTIES:
+:collapsed: true
+:END:
+**** #+BEGIN_SRC shell
+function function_name() {
+	echo "Funcition"
+}
+
+function_name
+#+END_SRC
+** Arithmetic
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~val=`expr $val + 1`~
+** shebang
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~#!~
+*** Tell the program loader where to load
+*** Shell: ~#!/bin/sh~
+*** Python: ~#!/usr/local/bin/python~
+*** Using ~env~ (Good Practice)
+**** Portability
+**** Example: ~#!/usr/bin/env python~
+** ~''~ vs. ~""~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Single Quotes treat every character as a literal
+**** No single quote can be between single quotes, even with backslash (Escape Character)
+*** Double Quotes treat the following characters differently
+**** $ ` \ ! * @
+**** Backslashes is the escape character
+**** Double Quotes can be within another double quote by using backslash
+*** Example
+**** #+BEGIN_SRC bash
+echo '$PATH'
+# Output: $PATH
+echo "$PATH"
+# Output: /usr/local/bin:/usr/local/sbin:...
+#+END_SRC
+** ~[]~ vs. ~[[]]~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~[]~ calls a ~test~ command and return it's exit code
+*** ~[[]]~ is an advance version introduced in bash
+**** More functionality and more flexible
+**** Support ~=~, ~&&~, ~||~, Pattern matching, and Regex matching
+** Command Substitution and Process Substitution
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Command Substitution
+**** Get the output of the command and substitute it in place
+**** ~$ ( CMB )~
+**** Example:
+#+BEGIN_SRC bash
+for file in $(ls)
+#+END_SRC
+*** Process Substitution
+**** Place the output of the command in a temporary file and substitute with the file
+**** ~< ( CMD )~
+**** Example:
+#+BEGIN_SRC bash
+diff <(ls foo) <(ls bar)
+# show the differences between files in dirs foo and bar
+# Casue diff can only compare files
+#+END_SRC
+** Shell Globbing ~*, ?, {}~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Wildcards ~*~ and ~?~
+**** ~?~ only substitute one character
+**** ~*~ will substitute as many characters
+*** ~{ }~
+**** e.g., ~image.{png, jpg}~ becomes ~image.png image.jpg~
+*** Example
+#+BEGIN_SRC bash
+convert image.{png,jpg}
+# will expand to 
+convert image.png image.jpg
+
+cp /path/{foo,bar,baz}.sh /newpath
+# will expand to 
+cp /path/foo.sh /path/bar.sh /path/baz.sh /newpath
+
+mv *{.py,.sh} folder
+# Move all *.py and *.sh files
+
+mkdir foo bar
+
+# This creates foo/a to foo/h, bar/a to bar/h
+touch {foo,bar}/{a..h}
+touch foo/x bar/y
+diff <(ls foo) <(ls bar)
+# Outputs
+# < x
+# ---
+# > y
+#+END_SRC
+** Set environment variable
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~export VAR="Hello World"~
+*
+* *Questions*
+** How to echo to a privilege file?
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~tee~
+*** read from standard input and write to standard output and files
+*** Example:
+**** ~root_file~ needs higher privilege, but echo doesn't
+**** #+BEGIN_SRC bash
+echo Hello\ World > root_file
+# Permission denied
+echo Hello\ World | sudo tee root_file
+# Hello World
+sudo cat root_file
+# Hello World
+#+END_SRC
+** Example of utilizing return code in bash
+:PROPERTIES:
+:collapsed: true
+:END:
+*** #+BEGIN_SRC bash
+#!/bin/bash
+# Date will be substituted
+echo "Starting program at $(date)"
+
+echo "Running program $0 with $# arguments with pid $$"
+
+for file in $@; do
+	grep foobar $file > /dev/null 2> /dev/null
+    # When the pattern is not found, grep has exit status 1
+    # We redirect STDOUT and STDERR to a null register
+    #  since we do not care about them
+    # Spacing is important
+    # Use [[ ]] in favor of [ ] (Less mistakes) 
+    if [[ $? -ne 0 ]]; then
+    	echo "File $file does not have any foobar, adding one"
+        echo "# foobar" >> $file
+    fi
+done
+#+END_SRC
+** How to execute a non-executable file?
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~source~
+*** Read and execute the content of a files without setting the executable bit
+*** Import functions and variables into Bash
+#+BEGIN_SRC bash
+function mcd() {
+	mkdir -p "$1"
+    cd "$1"
+}
+#+END_SRC
+**** The spacing is important!!
+**** Then you can run mcd() in shell
+** How to check if the file or directory exist or not?
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Example:
+#+BEGIN_SRC bash
+[ -d "/path/to/dir" ] && echo "Directory /path/to/dir exists." 
+## OR ##
+[ ! -d "/path/to/dir" ] && echo "Directory /path/to/dir DOES NOT exists."
+ 
+## OR combine both of them in a single go: Just like if-else ##
+[ -d "/path/to/dir" ] && echo "Directory /path/to/dir exists." || echo "Error: Directory /path/to/dir does not exists."
+#+END_SRC
+*** Argument
+**** ~ ~: FILE exists
+**** ~-d~ : FILE exists and is a directory
+**** ~-r~, ~-w~, ~-e~ : FILE exists and {read, write, executable} permission is granted
+**** ~-s~: FILE exists and has a size greater than zero
+**** ~-L~ : FILE exists and is a symbolic link (same as -h)
+** How to execute a command using STDIN as arguments?
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~xargs~
+**** Example: ~l~
+** How to create multiple directory with hierarchy
+*** ~mkdir -p A/B/C/D~
+**** ~-p~ means parent
+**** It would create directory D in C in B in A

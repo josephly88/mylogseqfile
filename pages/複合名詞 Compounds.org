@@ -1,0 +1,19 @@
+* ^^當形容詞部份直接放入名詞作形容詞使用^^
+**
+* 三種寫法
+** The *(dishwasher)* is not working well.
+** Who is the best *(pole-vaulter)* on your team?
+** He's got some coins in his *(trouser pocket)*.
+** 注意
+*** *形容詞沒有複數形*, 因此例子三, trouser 沒有 -s
+**** 例外
+***** Have you got a *(clothes hanger)* for my jacket?
+****** 此處如把 clothes 改為 cloth, 意思為「掛布的架子」. 意思為不同時必須採用複數
+***** He drives a *(sports car)* / You should write to the *(admissions office)* to inquire
+****** sports 或 admissions 本身就帶 -s, 並非表示複數
+*** *複數加在最後名詞上面*
+**** 例外
+***** I have two *(brothers-in-law)*
+****** in law 修飾 brother, 主要名詞為 brother, 因此複數形加在 brother 上
+***** The soldiers do 100 *(push-ups)* every day
+****** 動詞 push + 副詞 up, 沒有主要的名詞, 因複數加在字尾

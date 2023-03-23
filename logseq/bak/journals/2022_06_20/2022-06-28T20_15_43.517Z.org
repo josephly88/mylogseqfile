@@ -1,0 +1,8 @@
+* 19:15
+** Todo
+*** Sort out the new idea
+**** Find out all supporting data
+**** Illustrate the idea in figure
+**** Analysis the performance
+*** Sort out why that paper is not relevant
+**** What is the conclusion of our latency adding?

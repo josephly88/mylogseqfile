@@ -1,0 +1,10 @@
+* *Methodology*
+** ![image](../assets/Measure-To-Build_1672650910848_0.png){:height 305, :width 586}
+*
+* *Paper Writing*
+** [[https://docs.google.com/document/d/17FLRTYM1p8K99VR3FjkPdWf9chn35-gT/edit?rtpof=true][論文公式]]
+*
+* [[Research - Meeting Minutes]]
+*
+* *Topic*
+** [[Research - CMB & B-Tree]]

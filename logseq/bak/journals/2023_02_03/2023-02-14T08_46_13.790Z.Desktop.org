@@ -1,0 +1,6 @@
+* Today TO-DO
+** Writing Class
+** Prepare Lab
+*** lab04
+*
+* Advanced Digital Systems: Study topics such as memory and peripheral interfaces, clock generation and management, power management, and digital signal processing

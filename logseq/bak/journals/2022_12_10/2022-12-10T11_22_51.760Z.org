@@ -1,0 +1,18 @@
+* [[App Development]]
+** [[React Native]]
+*** App Development Framework written in [[Javascript]]
+***
+*** Development Environment
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Expo Go and Expo CLI
+***** Expo Go run the project on your phone (Able to develop iOS app on Window)
+***** Expo CLI serve your project
+***
+*** Tutorials
+**** https://reactnative.dev/docs/getting-started
+**** https://docs.expo.dev/get-started/installation/
+**** https://reactnative.dev/docs/tutorial
+****
+*

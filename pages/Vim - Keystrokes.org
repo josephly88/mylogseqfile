@@ -1,0 +1,61 @@
+* Normal Mode
+** Movement
+*** Words: ~w~(next word), ~b~(beginning of word), ~e~(end of word)
+*** Lines: ~0~(beginning of line), ~^~(first non-blank character), ~$~(end of line)
+*** Scroll: ~H~(top of screen), ~M~(middle of screen), ~L~(bottom of screen)
+*** Page: ~Ctrl-f~ (Page Forward), ~Ctrl-b~ (Page Back)
+*** File: ~gg~(beginning of file), ~G~(end of file)
+**** ~Ctrl-g~ show the current location
+*** Find: ~f{char}~(move to the word with ~char~), ~t{char}~(move to the last word with ~char~)
+*** Matching: ~%~
+**** Press ~%~ on ~(~ the cursor will jump to ~)~
+*** Search: ~/{regex}~, ~n~/~N~for navigating matches
+**** ~:set ic~ : Ignore case, ~:set noic~: Case sensitive
+**** ~:set hls~ : Highlight search, ~:set nohls~: Disable highlight
+**** ~:set is~ : Search while typing the pattern, ~:set nois~: Disable incsearch
+** Edits
+*** ~o~/~O~: insert line below / above
+*** ~d{motion}~: delete to
+**** ~dw~: delete word
+**** ~d$~: delete to the end of line
+**** ~d0~: delete to beginning of line
+**** ~:[start],[end]d~: delete lines from [start] to [end]
+***** Wildcards
+****** ~.~ : Current Line
+****** ~$~ : The end of file
+****** ~%~ : Match all lines in file, e.g. ~:%d~
+**** ~Esc~: To cancel
+*** ~c{motion}~: change
+**** Delete the word and start insert mode
+**** ~cw~: change word
+**** ~C~: delete until the line end and insert
+*** ~x~: cut character
+*** ~s~: substitute character
+**** ~S~: Substitute line (Delete the line and insert mode)
+*** ~u~: undo, ~<Ctrl-r>~ redo
+**** ~U~: undo all changes on a line
+*** =~=: flip the case of a character
+** Modifiers
+*** ~i~ means inner or inside, ~a~ means around
+*** ~ci(~ change the contents inside the current ~()~
+*** ~ci[]~ change the content inside the current ~[]~
+*** ~da'~ delete a single-quoted string including the ~''~
+** Multiple windows
+*** ~:sp~ or ~:vsp~: split windows+
+*** ~ctrl + h/j/k/l~ to switch windows
+*
+* Command-line mode
+** ~:w~ Write (/Save)
+*** Select lines and ~:w file_name~ to save certain lines to another file
+** ~:r~ Read
+*** Read a file and write it on the cursor
+*** Can also read an external command such as ~:r !ls~
+** ~:s~ Substitution (Search and Replace)
+*** Current line only: ~:s/foo/bar/g~
+*** All lines: ~:%s/foo/bar/g~
+**** ~g~: Every occurrence in a single line
+***** ~gc:~ Prompt everytime
+**** ~%~: Every line
+*** Range of lines: ~:5,12s/foo/bar/g~
+** ~:!~ Run external command
+*** e.g., ~:! ls~

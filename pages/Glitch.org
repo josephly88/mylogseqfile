@@ -1,0 +1,8 @@
+* Circuit with Glitch
+** ![image](../assets/image_1675415771397_0.png)
+** When input changes from A'B'C (1) to A'BC (1)
+*** ![image](../assets/image_1675415724375_0.png)
+*** Glitch occur when a single variable transition crosses the circles in K-map
+** Glitch-proof Circuit
+*** ![image](../assets/image_1675415869351_0.png)
+*** Does not apply to multiple variables transitions

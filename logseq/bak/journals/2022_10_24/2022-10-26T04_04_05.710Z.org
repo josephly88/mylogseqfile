@@ -1,0 +1,19 @@
+* To-do:
+** 約Proofing時間
+** Design 2 & 3 Motivation
+** Design 2 Writing
+* Running
+** CMB
+*** micro
+*** mixed
+*** ycsb
+** LeafCache
+*** micro
+*** mixed
+*** ycsb
+** Append
+*** ycsb
+** Both
+*** micro
+*** mixed
+*** ycsb

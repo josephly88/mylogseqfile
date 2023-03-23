@@ -1,0 +1,33 @@
+* Hardware Description Language
+*
+* VHDL
+** Array
+*** #+BEGIN_SRC VHDL
+type STD_LOGIC_VECTOR is array (3 downto 0) of STD_LOGIC;
+-- the range must be natural range (>= 0)
+#+END_SRC
+*
+* Abstraction Level
+** RTL (Register-Transfer Level)
+*** The flow of data between
+**** Registers
+**** Operations
+** Behavioral level
+*** Without implementation of logic gates and interconnections
+** Gate level
+*** Logic gates and interconnections
+*
+* EDA
+** Xilinx
+*** [[Vivado]]
+*** File Format
+**** hdf file (Hardware Definition File)
+***** The source code for the hardware design
+***** Describes the hardware architecture of an FPGA design, including the IP (Intellectual Property) cores, interconnections, and other hardware components. It is used as an input file for the FPGA design tool, such as Vivado, to synthesize, implement, and generate the bitstream file.
+**** bit file (Bitstream File)
+***** Compiled binary representation of that design that can be loaded onto the FPGA
+***** The configuration data for the FPGA
+***** Is specified in the hdf file
+**** tcl file (Tool Command Language File)
+***** Automate various tasks in tools like Xilinx Vivado, Cadence, and Synopsys
+****** Configure and run a synthesis, place-and-route, or simulation process, or to define and execute custom flows and processes.

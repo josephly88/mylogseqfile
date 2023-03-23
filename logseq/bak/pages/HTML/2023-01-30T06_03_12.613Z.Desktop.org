@@ -1,0 +1,335 @@
+* Document: [[https://developer.mozilla.org/en-US/docs/Web/HTML][MDN Web Docs - HTML]]
+*
+* Sample HTML Structure
+:PROPERTIES:
+:collapsed: true
+:END:
+** #+BEGIN_SRC html
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  
+  <body>
+	<main>
+      <h1>Header 1</h1>
+      
+      <section>
+        <h2>Header 2</h2>
+        <!-- Section 1-->
+      </section>
+      
+      <section>
+        <h2>Header 2</h2>
+        <!-- Section 2-->
+      </section>      
+    </main>
+    <hr>
+    <footer>
+      <!-- Footer-->
+    </footer>
+  </body>
+</html>
+#+END_SRC
+*
+* *Basic Syntax*
+** Structure: ~<element attribute="value"> element content </element>~
+** Comment: ~<!-- XXX -->~
+*
+* *Concepts*
+** Block level vs. Inline level
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Block level always start on a new line
+*** Inline level does not start on a new line
+*
+* *Tag*
+** Category: https://www.howtocodeschool.com/2020/01/list-of-html-tags-by-category.html#Basic-HTML-Tags
+*** *Basic HTML Tags*
+**** ~<!DOCTYPE html>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** All page should begin with
+***** Declaration (Ensure browser tries to meet industry-wide specifications)
+**** ~<html></html>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Whole page must be nest inside
+***** Attributes
+****** ~lang~ : Language
+**** ~<title></title>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Website title)
+***** In the ~header~ section
+**** ~<h1></h1>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Heading) {Block}
+***** h1 - h6
+**** ~<p></p>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Paragraph) {Block}
+**** ~<hr>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Divider (Horizontal line by default)
+****** Actually is a box with zero height
+***** The ~border-width~ is ~1px~ by default
+****
+*** *Formatting HTML Tags*
+**** ~<em></em>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Emphasis)
+***** italics by default
+**** ~<strong></strong>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Strong)
+***** bold by default
+****
+*** *Forms and Input Tags*
+:PROPERTIES:
+:id: 63be7b7c-720b-4475-98c3-48a0afef1afa
+:END:
+**** ~<form action="submit_url"></form>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Form) {Block}
+***** Does not contain input text space
+***** Attributes
+****** ~Action~ : Sent the form to which url
+****** ~Method~: Specify how to send form to the url in ~action~
+******* ~get~
+******* ~post~
+******* ((63c50ccb-9d6a-41ea-928e-33b956c3c2f4))
+**** ~<fieldset></fieldset>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Fieldset) {Block}
+***** Group related input and labels together in a form
+**** ~<label></label>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Label) {Inline}
+***** Associate the text for the ~input~, so clicking the text in ~label~ also check the ~radio~
+***** 2 Ways to associate
+****** Nest the ~input~ and the text
+****** Nest the text only, and add an attribute ~for~ with the same ~id~ as the ~input~
+**** ~<legend></legend>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Legend) {Block}
+***** Caption in the ~fieldset~ (Within ~fieldset~)
+**** ~<input>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Input) {Inline}
+***** Inputting space (Usually within ~form~)
+***** Could be text space, radio, or others
+***** Attributes
+****** ~type~ : How the data displayed
+******* ~text~
+******* ~radio~
+:PROPERTIES:
+:collapsed: true
+:END:
+******** Could only select one options under the same ~name~
+******** Radio buttons shared the same ~name~ could only choose one
+******* ~checkbox~
+:PROPERTIES:
+:collapsed: true
+:END:
+******** Could select multiple options
+******* ~email~
+:PROPERTIES:
+:collapsed: true
+:END:
+******** Require ~@~ and ~.~
+******* ~password~
+:PROPERTIES:
+:collapsed: true
+:END:
+******** ~minlength~
+******** ~pattern~: Accept Regex
+******* ~submit~
+:PROPERTIES:
+:collapsed: true
+:END:
+******** Automatically set to the nearest parent ~form~ element
+******** ~value~: Change the text
+******* ~file~
+******* ~number~
+******** ~min~ and ~max~
+****** ~name~ : represent the data being submitted
+****** ~value~ : submit in ~name~/~value~ pair
+****** ~placeholder~ : hint the user what to write
+****** ~required~ : required information (No attribute value is needed)
+****** ~checked~ : selected by default (No attribute value is needed)
+**** ~<button></button>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Button) {Inline}
+***** Attributes:
+****** ~submit~  : Submit the form based on the ~action~ (Default)
+**** ~<select></select>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** ~<option></option>~
+****** ~value~
+**** ~<textarea></textarea>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** ~rows~ and ~cols~: initial size
+***** ~placeholder~
+*** *Frame Tags*
+***
+*** *Images Tags*
+**** ~<img src="image_url">~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Image) {Inline}
+***** Attributes
+****** ~src~ (Image's URL)
+****** ~alt~ (Alternative content): ~<img src="image_url" alt="description">~
+******* For screen reader or fails to load
+**** ~<figure></figure>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Figure) {Block}
+***** Self contained content (Can add caption using ~figcaption~)
+**** ~<figcaption></figcaption>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Figure Caption) {Block}
+***** Within ~figure~ tag
+****
+*** *Audio/Video Tags*
+***
+*** *Link Tags*
+**** ~<a href="url"></a>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Anchor or Hyperlink) {Inline}
+***** Attributes
+****** ~target~
+******* ~_blink~ (Open the link in a new tab)
+**** ~<link ref="stylesheet" href="style.css">~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Link to the css sheet
+****
+*** *List Tags*
+**** ~<ol></ol>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Ordered List) {Block}
+**** ~<ul></ul>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Unordered List) {Block}
+**** ~<li></li>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (List item) {Block} for ~ul~ and ~ol~
+****
+*** *Table Tags*
+***
+*** *Style and Semantic Tags*
+**** ~<style></style>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** For CSS code
+**** ~<div></div>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** {Block}
+***** For design layout purpose
+***** An empty ~div~ has no height (Unless you adjust at CSS)
+***** To push another ~div~ rightward by adding a ~div~ before
+****** Requiring to set the ~display~ as ~inline-block~
+****** Since block will push another block to the next line
+**** ~<head></head>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Head section) {block}
+**** ~<main></main>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Main section) {Block}
+***** For Search Engine Optimization (SEO)
+**** ~<section></section>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Section) {Block}
+**** ~<footer></footer>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** (Footer) {Block}
+**** ~<article></article>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Should be make sense on it's own
+***** Possible to distribute it independently from the rest of the site
+****
+*** *Meta Tags*
+**** ~<meta>~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Within ~header~
+***** Example
+****** ~<meta charset="utf-8" />~
+****** ~<meta name="viewport" content="width=device-width, initial-scale=1.0">~
+******* ~viewport~ can let you control the width and ratio
+******** If no ~viewport~, then the mobile would display in a wide view which is not friendly
+******* ~width=device-width~: page matches the device width
+******* ~initial-scale=1.0~: Initial ratio is 100%, no enlarge or shrink
+****
+*** *Programming Tags*
+***
+*
+* *Attributes*
+** ~id~: Unique Identifier
+** ~class~: Identifier (for CSS)
+*** Accept multiple classes for one element
+**** Example: ~class="A B"~ The element would be in class A and class B as well

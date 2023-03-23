@@ -1,0 +1,6 @@
+* ![image](../assets/setup_and_hold_time_1677594534709_0.png){:height 364, :width 476}
+** Setup Time (T_su): Time needed to stable before a clock edge in a flip flop
+** Hold Time (T_h): Time needed to stable after a clock edge in a flip flop
+** min T_clk = T_su + T_h + T_p
+*** min T_clk: Minimun period of clock
+*** T_p: Propagation Delay

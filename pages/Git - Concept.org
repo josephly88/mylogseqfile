@@ -1,0 +1,34 @@
+* *The Three States*
+** ~modified~
+*** Change the file but no committed
+** ~staged~
+*** Marked a modified file to go into your next commit snapshot
+** ~committed~
+*** Safely stored in local database
+** *The Three Sections*
+*** Working Tree
+**** Single checkout of one version
+**** Files are pulled out of the compressed database in the Git directory
+*** Staging Area
+**** A file storing the information about your next commit
+**** Technical term: Index
+*** Git Directory
+**** Stores metadata and object database
+**** Clone: copy this from remote repository
+*** ![image](../assets/areas_1677770427388_0.png){:height 212, :width 379}
+* *Snapshot*
+** Other VCSs use delta-based version control
+*** See it's data as a list of file-based changes
+*** ![image](../assets/deltas_1677769805886_0.png){:height 224, :width 558}
+** Git think about data as snapshot
+*** See it's data as a series of snapshots of a miniature filesystem
+**** If a file doesn't change, reference to the old one
+*** ![image](../assets/snapshots_1677769860554_0.png){:height 226, :width 566}
+* *Data Store*
+** Entire history is on Local
+*** Fast, no network access required
+* *Integrity*
+** SHA-1 hash
+*** 40 hexadecimal characters
+*** Checksum
+**** Avoid modification and corruption that bypassing Git

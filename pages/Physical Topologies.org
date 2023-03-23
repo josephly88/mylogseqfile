@@ -1,0 +1,82 @@
+* *Point-To-Point Topology*
+:PROPERTIES:
+:collapsed: true
+:END:
+** ![image](../assets/point-to-point_1675851600249_0.jpg){:height 172, :width 281}
+* *Daisy Chain Topology*
+:PROPERTIES:
+:collapsed: true
+:END:
+** ![image](../assets/daisy-chain_1675851629296_0.jpg){:height 164, :width 286}
+* *Bus Topology*
+:PROPERTIES:
+:collapsed: true
+:END:
+** ![image](../assets/bus_1675851662441_0.jpg){:height 197, :width 289}
+** Advantages
+*** Cost-effective
+**** Easy to build
+**** Less expensive
+*** For small networks
+*** Very less cable
+*** Easy to add nodes
+*** Single failure would not affect the network
+** Disadvantages
+*** The whole network will fail if the cable gets faulty
+*** Slow in operation
+*** Limited length of cable
+*** Troubleshooting is time-consuming for large network
+* *Star Topology*
+:PROPERTIES:
+:collapsed: true
+:END:
+** ![image](../assets/star_1675851862954_0.png){:height 164, :width 282}
+** Advantages
+*** Easy to build
+*** Relatively less cable
+*** Easily managed the network by the central hub
+*** Easy to add nodes
+*** Single failure would not affect the network
+*** Identifying and Troubleshooting is easier
+** Disadvantages
+*** The whole network will fail if the central hub is failure
+*** Performance depends on the central hub
+* *Ring Topology*
+:PROPERTIES:
+:collapsed: true
+:END:
+** ![image](../assets/ring_1675852271345_0.jpg){:height 160, :width 269}
+** Advantages
+*** Cost-effective
+**** Easy to build
+**** Less expensive
+*** Reduce packet collision ==> Efficient for data transmission (For small ring)
+*** Identifying and Troubleshooting is easier
+** Disadvantages
+*** The whole network will fail if one node is failure
+*** Large ring slow data transmission (Shared bandwidth for all nodes)
+*** Easy to overburden the network resources and capacity
+*** Adding or removing a node require the entire network to be offline
+* *Mesh Topology*
+:PROPERTIES:
+:collapsed: true
+:END:
+** ![image](../assets/mesh_1675852514592_0.jpg){:height 163, :width 277}
+** Data Transmission Method
+*** Routing
+**** Determine the shortest path
+*** Flooding
+**** Sent the data to all neighbors
+** Advantages
+*** Most stable and reliable
+**** Resist the failure
+** Disadvantages
+*** Labor-intensive
+**** Require a lot of wire and configuration
+**** Expensive
+* *Hybrid Topology*
+:PROPERTIES:
+:collapsed: true
+:END:
+** *Tree Topology*
+*** ![image](../assets/tree_1675852842764_0.png){:height 188, :width 327}

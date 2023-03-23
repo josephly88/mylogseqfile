@@ -1,0 +1,111 @@
+* The Open Systems Interconnection model
+** *Level 7 - Application Layer*
+*** Focus on application specific protocols and interfaces
+*** Functions
+**** Network Virtual Terminal
+**** FTAM-File transfer access and management
+**** Mail Services
+**** Directory Services
+*** HTTP, FTP, SMTP
+** *Level 6 - Presentation Layer*
+*** Or called Translation Layer
+*** Focus on data formatting and conversion
+*** Functions
+**** Translation
+**** Encryption/ Decryption
+**** Compression
+** *Level 5 - Session Layer*
+*** Focus on managing session between applications
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Session
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Allows apps to exchange data and state information
+***** Across multiple requests and connections
+***** Example
+****** User login state
+****** Shopping cart state
+****** Conversation
+*** Functions
+**** Session establishment, maintenance, and termination
+**** Synchronization
+**** Dialog Controller
+** *Level 4 - Transport Layer*
+*** Focus on transporting data between processes running on hosts
+*** Part of the OS
+*** Functions
+**** Segmentation and Reassembly
+***** Data from the session layer ==> Segments (Smaller Unit)
+***** Reform data from the segments from the network layer
+**** Service Point Addressing
+***** Deliver to the correct process
+**** Error Detection and Control
+***** CRC (Cyclic Redundancy Check)
+***** Checksum
+*** TCP and UDP
+**** Port number
+***** 80 is the default web application port
+**** TCP (Transmission Control Protocol)
+***** Connection-oriented and reliable
+****** The receiver always sends an ACK
+****** Larger error correction and flow control
+**** UDP (User Datagram Protocol)
+***** Connectionless and unreliable
+****** No ACK
+****** No time is wasted
+** *Level 3 - Network Layer*
+*** Focus on routing packets between networks
+*** Functions
+**** Routing
+*** IP Address
+**** Logical Address
+**** Network Address vs. Host Address
+***** Example: 192.168.1.5
+****** If 255.255.255.0 is the Subnet Mask Value
+******* Then 192.168.1.0 is the Network Address
+******* And 0.0.0.5 is the Host Address
+** *Level 2 - Data Link Layer*
+*** Focus on the same network segment
+**** Without going to another router
+**** Example: Same WiFi access point
+*** Functions
+**** Error detection
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Not correction
+**** Framing
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Header
+***** Packet (Data)
+***** Trailer
+**** Flow Control
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Amount of data can be sent before receiving an acknowledgement
+**** Access control
+*** MAC Address
+**** Media Access Control
+**** Hardware address
+***** Network interface card (NIC)
+****** Assigned by the manufacturer
+**** Globally unique
+**** 48 bits
+***** ~300 Trillion >> 8 Billion People in the world
+** *Level 1 - Physical Layer*
+*** Focus on physical connection
+**** Through cable or electrical signal
+*** Transmission of raw data
+*** Functions
+**** Bit synchronization
+***** Synchronization of clock
+**** Bit rate control
+**** [[Physical Topologies]]
+**** [[Transmission Mode]]
+*

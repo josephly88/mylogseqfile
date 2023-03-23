@@ -1,0 +1,82 @@
+* #Course
+*
+* Overview
+:PROPERTIES:
+:collapsed: true
+:END:
+** Good scientific writing is to inform
+*** Clearly
+*** Effectively
+** Good Writer
+*** Have sth to say
+*** Logical thinking
+** How to be a better writer?
+*** Read, pay attention, and imitate
+*** Write in a journal
+*** Talk before trying to write about it
+*** Write to engage reader (Not to bore them)
+*** Stop waiting for "Inspiration"
+*** Accept that writing is hard for everyone
+*** Revise
+*** Leant how to cut ruthlessly
+*** Find a good editor
+*** Take risks
+** Common mistake (why hard to read?)
+*** Use noun instead of verb
+**** noun stops and verb moves
+*** Big word (Too board, too abstract)
+*** Misuse of Acronym 縮寫
+*** Passive voice
+**** Not the way we talk
+*** Distance between subject and main verb is too long
+*
+* How to Edit?
+** Look at the structure and organization
+** Line by line
+*
+* Technique
+** Cut the clutter
+*** Be ruthless
+**** Try to read the compact version out loud in confident
+**** You can always go back
+*** Where to cut?
+**** Meanings are overlapped
+***** Maybe mentioned in the top
+**** Meaningless words
+***** Dead weight words and phases
+:PROPERTIES:
+:collapsed: true
+:END:
+****** Example
+******* As it is well known
+******* As it has been shown
+****** Just use citation to emphasis!
+***** Empty words and phrase (Too vague, mutually exclusive)
+:PROPERTIES:
+:collapsed: true
+:END:
+****** Example
+******* Methodologic
+******* Important
+***** There is OR There are
+***** that OR on
+**** Too much words
+***** Long words or phases that can be short
+***** Repetitive words or phrases
+:PROPERTIES:
+:collapsed: true
+:END:
+****** Example
+******* Illustrate vs. Demonstrate
+******* Challenges vs. Difficulties
+******* Successful vs. Solution
+***** Adverbs
+:PROPERTIES:
+:collapsed: true
+:END:
+****** very, really, quite, basically, generally
+**** Negatives
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Not

@@ -1,0 +1,18 @@
+* System Design
+** [[Process]]
+** [[Memory]]
+** [[Concurrency]]
+** [[Persistence]]
+*
+* System
+** [[Unix]]
+** [[Windows]]
+*
+* Books
+** [[Operating System: Three Easy Pieces]]
+*
+* Terminology
+** File Semantics
+*** Format of file
+*** Structure of data
+*** The way file represented or stored

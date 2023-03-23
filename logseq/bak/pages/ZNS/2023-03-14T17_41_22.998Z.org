@@ -1,0 +1,32 @@
+* *Zoned Namespace (ZNS) SSD*
+*
+* *Problems of Conventional SSD*
+:PROPERTIES:
+:collapsed: true
+:END:
+** Block interface - One dimensional arrays (matches HDD)
+** Due to the mismatch between write and erase in SSD
+*** Write - Page, Erase - Block (Larger)
+** FTL hides this mismatch from host (In-place update)
+*** Logical-to-physical page mapping
+**** DRAM capacity is expensive (High cost per GB of usable capacity)
+*** Over-provisioning
+**** 28% over-provisioned space is expensive (High cost per GB of usable capacity)
+**** Additional mapping
+*** GC
+**** Throughput Limitation
+**** Write-amplification
+**** Performance unpredictability
+**** High tail latency
+** Expense
+*** Over-provisioning space
+*** DRAM
+* *Responsibility*
+** GC => Host
+** Reliability => ZNS
+** Media-management => ZNS
+* [[ZNS - Zone]]
+*
+* Paper List
+** [[ZNS: Avoiding the Block Interface Tax for Flash-based SSDs (ATC2021)]]
+** [[ZNS+: Advanced Zoned Namespace Interface for Supporting In-Storage Zone Compaction (OSDI2021)]]

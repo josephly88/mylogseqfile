@@ -1,0 +1,5 @@
+* #Software
+* shebang #Unix
+** ~#!~
+** Example: ~#!/bin/sh~
+*** Tell the program loader to run the program ~/bin/sh~, passing the script path as the first argement

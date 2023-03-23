@@ -1,0 +1,8 @@
+* [[Statistics]]
+*
+* Zipfian distribution
+** Zipfian distribution follows the Zipf's Law
+** Observation: Frequent words and rare words
+*** Rank of the word * it's probability(frequency) is approximantely a constant
+**** Rank * P ~ const.
+*** Highly skew

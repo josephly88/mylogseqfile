@@ -1,0 +1,49 @@
+* 01:26
+** 筆記法
+*** 卡片盒筆記法
+*** The Outline Method
+** Construction of T-shirt [[Clothing - Construction]] [[未整理]]
+*** There are several factors to consider when evaluating the construction of a T-shirt:
+*** Seams: The seams of a T-shirt should be double-stitched for added durability. Single-stitched seams are more prone to coming undone or fraying over time.
+*** Neckline: The neckline of a T-shirt should be well-constructed and should not stretch out or become distorted over time. A ribbed neckline can help to keep the neckline in shape.
+*** Hem: The hem of a T-shirt should be well-constructed and should not stretch out or become distorted over time. A double-stitched hem can help to keep the hem in shape.
+*** Shoulder seams: The shoulder seams of a T-shirt should be well-constructed and should not stretch out or become distorted over time. A double-stitched shoulder seam can help to keep the seam in shape.
+*** Sleeves: The sleeves of a T-shirt should be well-constructed and should not stretch out or become distorted over time. A double-stitched sleeve seam can help to keep the seam in shape.
+*** Overall, good construction in a T-shirt involves using high-quality materials and techniques to create a garment that is durable and well-made. By looking for T-shirts with these characteristics, you can ensure that you are getting a T-shirt that is likely to last and maintain its shape over time.
+** [[Clothing - Construction]] [[未整理]]
+*** Stitch
+*** https://caftansandmalbec.wordpress.com/2012/10/22/8-ways-to-recognize-low-and-high-quality-garments-when-you-see-them/
+* 03:16
+** Building APP [[React Native]]
+*** Steps
+**** Learn about React Library
+***** https://developer.mozilla.org/zh-TW/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started
+***** Learn about HTML and CSS
+****** https://www.freecodecamp.org/learn/2022/responsive-web-design/
+**** Learn about the principle of mobile app development
+**** Go through the React Native documentation and tutorials
+**** Build a simple app
+* 03:27
+** Here is a low FODMAP recipe for Hong Kong-style fried noodles:
+** Ingredients:
+*** 1 pound rice noodles
+*** 2 tablespoons vegetable oil
+*** 2 cloves garlic, minced
+*** 1/2 pound sliced bell peppers
+*** 1/2 pound sliced carrots
+*** 1/2 pound sliced bok choy
+*** 1/2 pound sliced mushrooms
+*** 1/2 pound sliced snow peas
+*** 1 pound protein of choice (such as chicken, beef, pork, shrimp, or salmon)
+*** 2 tablespoons gluten-free soy sauce
+*** 2 tablespoons rice vinegar
+*** 1 teaspoon sesame oil
+*** Salt and pepper, to taste
+** Instructions:
+*** Bring a pot of water to a boil. Add the rice noodles and cook according to package instructions. Drain and set aside.
+*** Heat the vegetable oil in a large wok or frying pan over medium-high heat. Add the garlic and stir-fry for 1 minute.
+*** Add the bell peppers, carrots, bok choy, mushrooms, and snow peas to the wok and stir-fry for 2-3 minutes or until the vegetables are tender.
+*** Add the protein of choice to the wok and stir-fry until cooked through.
+*** Add the cooked noodles to the wok and stir to combine.
+*** Stir in the soy sauce, rice vinegar, and sesame oil. Season with salt and pepper to taste.
+*** Serve hot and enjoy!

@@ -1,0 +1,43 @@
+* Shell is a CLI for interfacing the underlying OS
+*
+* Bash
+** Bourne-Again SHell
+** Default shell of most Linux distributions
+** Pros:
+*** Widely used
+*** High compatibility
+**** Compatible with a wide range of OS and platform
+***** e.g., Linux (Various Distributions), macOS, WSL
+**** Core utilizes are standardized and well-documented
+*** Extensive documentation
+** Cons:
+*** Slow and memory intensive for complex script
+* Zsh
+** Z Shell
+** Pros:
+*** Highly customizable
+*** Fast
+*** Feature-rich
+** Cons:
+*** Difficult to learn and set up
+* Tcsh
+** Tenex C Shell
+*** Based on C Shell
+**** Takes many feature from C language
+** Pros:
+*** Fast
+*** With advanced command line editing capabilities
+** Cons:
+*** Less widely used
+*** Limited scripting capabilities
+* Fish
+** Friendly Interactive Shell
+** Pros:
+*** User-friendly
+*** With advanced features and customization options
+**** Syntax highlighting
+**** Automatic sugestions
+**** Plugins and themes
+** Cons:
+*** Less widely used
+*** Not fully compatible with other shells

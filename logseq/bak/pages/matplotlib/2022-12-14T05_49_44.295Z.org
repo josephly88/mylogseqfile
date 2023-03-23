@@ -1,0 +1,101 @@
+* [[Python]]
+*
+* Written in Python and makes use of NumPy
+* Simple Example
+#+BEGIN_SRC python
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([1, 2, 3, 4])
+y = np.array([1, 4, 3, 2])
+
+fig, ax = plt.subplots()
+ax.plot(x, y)
+
+plt.show()
+# For jupyter notebook, use plt.draw() to force an update
+#+END_SRC
+*
+* [[../assets/image_1668741864916_0.png]]
+*
+* Figure vs. Axes
+:PROPERTIES:
+:collapsed: true
+:END:
+** A figure refers to the whole image file
+** A figure could contains multiple axes (Subplot)
+*** ~fig, ax = plt.subplots()~ : A figure with a single Axes
+*** ~fig, axs = plt.subplots(2, 2)~ : A figure with a 2x2 grid of Axes
+* Plotting Functions
+:PROPERTIES:
+:collapsed: true
+:END:
+** ~plt.plot(x,y)~ : Lines
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Default X-Points are 0, 1, 2, 3, ..., len(y)
+*** Style
+:PROPERTIES:
+:id: 6376f1f0-6439-411c-b532-35537e967f58
+:collapsed: true
+:END:
+**** ~plot([x], y, [fmt], [style1], [style2], ...)~
+**** Marker ~marker~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Reference: https://matplotlib.org/stable/api/markers_api.html
+**** Linestyle ~linestyle~ or ~ls~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Reference: https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
+**** Color ~color~ or ~c~
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Reference : https://matplotlib.org/stable/gallery/color/named_colors.html
+**** Short form (fmt)
+:PROPERTIES:
+:collapsed: true
+:END:
+***** ~plot(x, y, 'ro-')~ plot the line using red circle solid line
+**** Marker Size ~ms~
+**** Marker Edge Color ~mec~ or Marker Face Color ~mfc~
+**** Line Width ~linewidth~
+*** Multiple lines
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Either
+**** ~plot(x1, y1)~
+~plot(x2, y2)~
+**** Or ~plot(x1, y1, x2, y2)~
+****
+** ~plt.scatter(x,y)~ : Dots
+** ~plt.bar(x,y)~ : Bar chart
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Horizontal Bars : ~plt.barh()~
+** ~plt.hist(x)~ : Histogram
+** ~plt.pie(y)~ : Pie chart
+* Labels and Title
+:PROPERTIES:
+:collapsed: true
+:END:
+** ~plt.title("TITLE")~ or ~ax.set_title("TITLE")~
+** ~plt.xlabel("X-AXIS")~ or ~ax.set_xlabel("X-AXIS")~
+** ~plt.ylabel("Y-AXIS")~ or ~ax.set_ylabel("Y-AXIS")~
+** Style
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Position the Title ~loc~
+:PROPERTIES:
+:collapsed: true
+:END:
+**** ~center~, ~left~, ~right~
+**
+*

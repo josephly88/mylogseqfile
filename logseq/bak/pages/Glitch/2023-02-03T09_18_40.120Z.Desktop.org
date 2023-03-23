@@ -1,0 +1,6 @@
+* Circuit with Glitch
+** ![image](../assets/image_1675415771397_0.png)
+** ![image](../assets/image_1675415724375_0.png)
+*** Glitch-proof Circuit
+****
+***

@@ -1,0 +1,275 @@
+* #Books
+*
+* Virtualization
+** Process
+*** CH1: Process
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Illusion of running multiple thing simutaneously
+**** Process is an abstraction
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Memory
+***** Registers
+****** PC, IP
+****** Stack pointer and Frame pointer
+***** I/O Info
+**** Process List
+**** Mechanism vs. Policy
+*** CH2:
+** *Address Space*
+:PROPERTIES:
+:collapsed: true
+:END:
+*** CH1. Address Space
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Sharing Memory between processes
+**** The Address Space of a process
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Code
+***** Heap
+***** Stack
+*** CH2. Memory API
+:PROPERTIES:
+:collapsed: true
+:END:
+**** malloc() and free()
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Underlying OS Support - brk (Break)
+****** Change the location of the program's break (the end of the heap)
+**** mmap()
+*** CH3. Address Translation
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Hardware-based address translation
+***** For simple continuous address space for a process
+****** physical address = virtual address + base
+*** CH4. Segmentation
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Three logical segments -> Three base address
+***** code (share)
+***** stack (backward)
+***** heap
+**** First two digit refers to the segment
+**** External Fragmentation
+***** Full of holes -> Compaction (Expensive)
+*** CH5. Free-Space Management
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Heap
+***** Mechanisms
+****** Splitting and Coalescing
+****** Size as the metadata (also magic number)
+****** Embedding a free list
+***** Strategies for choosing free space
+****** Basic
+******* Best-Fit
+******* Worst-Fit
+******* First-Fit
+******* Next-Fit
+****** Advance
+******* Segregated List
+******** A separate list for popular-sized requests for an application
+******* Buddy Allocation
+******** Buddy tree
+******** [[../assets/image_1671003203118_0.png]]
+******** Problem: Internal Fragmentation
+****
+*** CH6. Introduction to Paging
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Segment : Variable size
+**** Page: Fixed size
+**** Page Table for address translation (for each process)
+***** Could be large -> Store in memory (Might be swapped out)
+**** Problem:
+***** Cost of space
+***** Extra memory fetching
+*** CH7. Translation Lookaside Buffers
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Hardware TLB at MMU accelerate the address translation
+**** TLB invalid -> Cache miss
+***** PTE invalid -> Error. The process has not allocated the page
+**** Context Switch
+***** Set all as 0
+***** Address space identifier (ASID)
+**** Policy: LRU or Random
+****
+****
+*** CH8. Advanced Page Tables
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Multi-level Page Table
+**** Inverted Page Table
+***** Instead of having a page table per process
+****** Keep a single page table for all physical pages
+****** Hash Table to search
+****** Entry: Process ID, Virtual page number
+*** CH9. Swapping: Mechanisms
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Swap Space in the disk
+**** Page Fault -> Swap Space
+**** Page-Replacement Policy
+**** Replacement Watermark to trigger the swapping
+*** CH10. Swapping: Policy
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Goal: To minimize the number of cache miss
+**** Eviction Policies
+***** FIFO
+***** Random
+***** LRU
+****** Approximating LRU (Bit & Clock Algorithm)
+******* Scan the page circularly
+******* If ~use_bit == 1~, set to 0
+******* If ~use_bit == 0~, evict
+**** Demand Paging
+***** Brings the page into memory when it is accessed
+**** Prefetching
+***** Guess the page that is about to be used, and bring it to memory
+****
+****
+*
+* Concurency
+*
+* Persistence
+** CH1. I/O Device
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Polling vs. Interrupt (Or Hybrid)
+*** DMA
+*** Port-mapped I/O vs. Memory-mapped I/O
+** CH2. Hard Disk Drives
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Unit: Sector (atomic)
+*** Write Back vs. Write Through
+*** I/O Time:
+**** $T_{I/O} = T_{seek} + T_{rotation} + T_{transfer}$
+**** $Rate_{I/O} = \frac{ Size_{transfer} }{ T_{I/O} }$
+*** Disk Scheduling and Policies
+** CH3. Redundant Arrays of Inexpensive Disks (RAIDs)
+*** Technique that combines multiple disks to serve a single logical storage unit, for
+**** Performance
+**** Capacity
+**** Reliability
+*** Transparency
+:PROPERTIES:
+:collapsed: true
+:END:
+**** No changes to the rest of the system
+*** RAID is very much a specialized computer
+**** Mapping between logical blocks and physical blocks
+*** Types
+**** ![image](../assets/1609317153404_1671095666851_0.jpg){:height 254, :width 524}
+**** Evaluating Performance
+***** N: Number of disk
+***** S: Sequential (Large contiguous)
+***** R: Random (Small distinct)
+**** ![image]( ../assets/image_1671104572331_0.png ){:height 278, :width 514}
+**** In-Depth Analysis
+:PROPERTIES:
+:collapsed: true
+:END:
+***** RAID-0
+:PROPERTIES:
+:collapsed: true
+:END:
+****** Performance
+******* Single-request (Latency)
+******** Read and Write: same as a single disk
+******* Steady-state (Throughput and bandwidth)
+******** Read and Write: N * S and N * R (As the bandwidth is N times)
+****** Capacity : N * S and N * R
+****** Reliability : No
+***** RAID-1
+:PROPERTIES:
+:collapsed: true
+:END:
+****** Performance
+******* Single-request (Latency)
+******** Read : same as a single disk
+******** Write : roughly the same as a single disk
+********* Slightly higher since write must update all disks in parallel
+******* Stead-state (Bandwidth)
+******** Sequential write and read : N/2 * S (Only half of the bandwidth)
+********* Why read is not improved? (Maybe for HDD only?)
+:PROPERTIES:
+:collapsed: true
+:END:
+********** e.g. Read 1,2,3,4,5,6,7,8
+********** Each disk only need to do half of the jobs with the same rotation, deliver half of it's peak bandwidth
+******** Random read : N * R
+******** Random write : N/2 * R
+****** Capacity : N / 2
+****** Reliability : Tolerate the failure of any one disk (Could up to N/2 failures in chance)
+***** RAID-4
+:PROPERTIES:
+:collapsed: true
+:END:
+****** Capacity : (N - 1)
+****** Reliability : 1 disk failure
+****** Performance
+******* Single Request (Latency)
+******** Read : Same as a single disk
+******** Write : Twice as long
+********* Two I/Os perform in a single parity update: one read and one write
+******* Steady State (Bandwidth)
+******** Sequential read : (N - 1) * S (Peek)
+******** Sequential write : (N - 1) * S (Peek)
+********* Technique: Full-stripe write
+******** Random read: (N - 1) * R
+******** Random write:
+********* To overwrite block A, the parity block P must be updated as well
+********* Additive parity vs. Subtractive parity
+:PROPERTIES:
+:collapsed: true
+:END:
+********** Additive
+*********** Read all and do the parity
+********** Subtractive
+*********** Concept: compare the old and new data D, if they are the same than not change is needed in parity P. However, if they are different, then the parity must be flipped
+*********** $P_{new} = (D_{old} \oplus D_{new}) \oplus P_{old}$
+**********
+********* (Subtractive) R/2
+********** Small write problem
+*********** Multiple updates must hit the Parity disk, as single write is 2x of a single disk
+***** RAID-5
+:PROPERTIES:
+:collapsed: true
+:END:
+****** To tackle the Small write problem, rotating the parity block across drives to
+****** Capacity and Reliability : same as RAID-4
+****** Performance
+******* Single request : same as RAID-4
+******* Steady state:
+******** Seq read and Seq write : same as RAID-4
+******** Random read : N * R (At most as it utilizes all disks)
+******** Random write : N/4 * R
+********* For the best case, two writes could perform in parallel without contention - N/2 * R
+********* But for the bad case, two writes hit the same disk, then they need to perform sequentially which multiple another 1/2 to the bandwidth - N/4 * R
+** CH4. Files and Directories
+***
+*
+*

@@ -1,0 +1,15 @@
+* Or Combinational Delay
+* *Reason*
+** Time to charge capacitance
+** Speed of light
+* ![image](../assets/image_1675415504011_0.png)
+** Tcd: Start to change
+** Tpd: Stable
+* *Problems*
+** [[Glitch]]
+** Timing Constraint Error
+*** ![image](../assets/propagation_delay_2_flip_flops_1677593602814_0.png){:height 206, :width 393}
+*** Solution
+**** Slow down clock frequency
+**** Pipelining
+***** ![image](../assets/propagation_delay_fix_pipeline_1677593713303_0.png){:height 254, :width 359}

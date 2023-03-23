@@ -1,0 +1,26 @@
+* ~git config~: get and set config variables
+* *Three level*
+** ~--system~
+*** Apply to every user on the system
+*** Variables location ~[path]/etc/gitconfig~
+** ~--global~
+*** Personal to user
+*** Variables location =~/.gitconfig= or =~/.config/git/config=
+** ~--local~
+*** Current repository
+*** Variables location ~.git/config~
+** Lower level (local) overrides the upper level (system)
+* *Check your setting*
+** ~git config --list --show-origin~
+*** View all your settings and where they are coming from
+** Check specific key's value
+*** ~git config <key>~
+**** e.g., ~git config user.name~
+* *Setup*
+** Identity
+*** ~git config --global user.name "NAME"~
+*** ~git config --global user.email youremail@email.com~
+** Editor
+*** ~git config --global core.editor vim~
+** Default branch name
+*** ~git config --global init.defaultBranch main~

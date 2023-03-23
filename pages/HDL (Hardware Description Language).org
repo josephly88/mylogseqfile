@@ -1,0 +1,32 @@
+* Avoid Latches
+** Created by incomplete assignment in combinational logic
+** #+BEGIN_SRC VHDL
+process (i_data, i_enable)
+begin
+  if i_enable = '1' then
+    o_latch <= i_data;
+  end if;
+end process;
+#+END_SRC
+** ~i_enable = '0'~ is not specified, and thus, the value does not change (Which implies a latch)
+*
+* VHDL
+** Array
+*** #+BEGIN_SRC VHDL
+type STD_LOGIC_VECTOR is array (3 downto 0) of STD_LOGIC;
+-- the range must be natural range (>= 0)
+#+END_SRC
+*
+* Abstraction Level
+** RTL (Register-Transfer Level)
+*** The flow of data between
+**** Registers
+**** Operations
+** Behavioral level
+*** Without implementation of logic gates and interconnections
+** Gate level
+*** Logic gates and interconnections
+*
+* EDA (Electronic Design Automation)
+** Xilinx
+*** [[Vivado]]

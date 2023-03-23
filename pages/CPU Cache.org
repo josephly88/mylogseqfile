@@ -1,0 +1,2 @@
+* Cache Associative
+** ![image](../assets/Untitled_1672739576846_0.png){:height 752, :width 593}

@@ -1,0 +1,30 @@
+* *TA*
+** License Problem
+** Lab 04
+** Lab 07
+** Lab 08
+* *Last work* #Research
+* *New work* #OpenSSD
+** Implement ZNS on OpenSSD
+*** [[ZNS+: Advanced Zoned Namespace Interface for Supporting In-Storage Zone Compaction (OSDI2021)]]
+*** 看一看OpenSSD 的 flash controller interface 及firmware 設計
+**** 先focus FTL design
+***** 要點
+****** mapping table
+****** GC
+****** address translation
+****** buffer management
+****** wear-leveling
+*** 想想如何support zone command
+**** 如何繞過NVMe
+***** 可能要看看NVMe的protocol
+**** 如何similar zone by continuous LBA
+**** 如何support read/write
+***** How to enforce sequential write
+**** 如何Reset zone (Erase)
+**** 如何count active zone
+**** 如何dynamically map zone to FBG
+**** 如何disable GC internally
+**** Buffer policy
+**** Mapping table format
+**** Address translation

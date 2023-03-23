@@ -1,0 +1,8 @@
+* Propagation Delay Or Combinational Delay
+** ![image](../assets/image_1675415504011_0.png)
+*** Tcd: Start to change
+*** Tpd: Stable
+** Reason
+*** Time to charge capacitance
+*** Speed of light
+** Create [[Glitch]]

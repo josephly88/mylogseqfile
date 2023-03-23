@@ -1,0 +1,11 @@
+* [[Unix Tools]]
+* [[GDB]] GNU Debugger
+** Symbolic Debugger
+*** #+BEGIN_SRC bash
+# Add -g to create a symbolic table for GDB
+gcc -g example.c -o example
+gdb ./example
+#+END_SRC
+*** The additional symbolic table only affect the size of the object file.
+*** It does not affect the performance.
+* {{embed [[GDB Command]]}}

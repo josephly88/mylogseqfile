@@ -1,0 +1,7 @@
+* Choosing hat based on your face shape & eye
+** Face shape
+*** Long: Large hat brim
+*** Short: Small hat brim
+** Eye
+*** Warm: Rounded, Soft
+*** Cool: Shaped, Hard

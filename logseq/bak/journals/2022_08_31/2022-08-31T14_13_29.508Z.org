@@ -1,0 +1,6 @@
+* 21:24
+** Cypher [[neo4j]]
+*** Graph data query language
+*** ~()~ Indicates node
+*** ~[]~ Indicates relationship
+*** ~{}~ Indicates property

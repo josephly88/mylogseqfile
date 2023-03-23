@@ -1,0 +1,16 @@
+* Finding files
+** ~find . -path '*.py' -type f~
+*** ~-path~: any path matches ~*.py~ (including the subdirectory)
+*** ~-type~: ~f~ means file, ~d~ means directory
+* Find and Execute
+** ~find . -name '*.tmp' -exec convert {} {}.jpg \;~
+*** ~-exec~: Execute the following commands file by file
+*** What if we want to zip certain files?
+**** ~xargs~: pass the STDIN or input from pipe as arguments
+***** Tar the matched files into ~name.tar~ #tar
+***** ~find XXX | xargs tar -cf name.tar~
+* Options
+** ~-printf~
+*** Example ~-printf '%T@ %p\n'~
+**** ~%T@~: Modification Time
+**** ~%p~: File path

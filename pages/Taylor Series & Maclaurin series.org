@@ -1,0 +1,13 @@
+* *Taylor Series* is a way to approximate a function ~f(x)~ at ~a~ using the following series
+** ![image](../assets/46dd2bf78ad7d792988cf616a6ea94024f30b3d9_1678815777733_0.svg)
+** Which can be written in
+*** ![image](../assets/b43af001b691a52034c46ff67dd15b4133285961_1678815818190_0.svg)
+* When $a = 0$, the series is called *Maclaurin Series*
+*
+* Example: Find the Maclaurin Series of $f(x) = e^x$
+** $f(0) = e^0 = 1$
+** $\frac{f'(0)}{1!}x = e^0x = x$
+** $\frac{f''(0)}{2!}x^2 = \frac{e^0}{2!}x^2 = \frac{x^2}{2!}$
+** $\frac{f'''(0)}{3!}x^3 = \frac{e^0}{3!}x^3 = \frac{x^3}{3!}$
+** Hence, we conclude that $e^x =$
+*** ![image](../assets/078d3df305573a87a7b3d57c8f8d256acb64c783_1678816056161_0.svg)

@@ -1,0 +1,18 @@
+* take on sth #Pharse #English #card
+:PROPERTIES:
+:card-last-score: 1
+:card-repeats: 1
+:card-next-schedule: 2022-06-16T16:00:00.000Z
+:card-last-interval: -1
+:card-ease-factor: 2.36
+:card-last-reviewed: 2022-06-16T09:11:07.302Z
+:collapsed: true
+:END:
+** to begin to have a particular quality
+** 開始具有（某種特徵）；呈現；露出
+** Example:
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Her voice took on a troubled tone.
+*** 從她說話的聲音裡能聽出她遇到了麻煩。

@@ -1,0 +1,38 @@
+* 18:03
+** Thinking about my career path #Career
+*** Should I transfer to MPhil? Or keep pursuing PhD?
+**** Both require me to finish the first paper
+**** PhD
+***** Since my pre-candidacy exam is postponed, maybe half year, my graduation might be postponed at least half year. In total, I would be unpaid for more than a year
+***** Less interested in research. Reading papers are boring to me. No idea how to come up some designs. Seems everything is done by others.
+***** OpenSSD is too unstable, that I can't leave it and run for 5 hours. I need to monitor the status every 15 mins, which is terrible
+***** Might have a better opportunity after graduation. But most of the jobs are not in Hong Kong.
+***** Seems that I am out of touched
+**** Mphil
+***** Most of the jobs require MPhil
+***** Which developer career should I take? #Career
+****** Machine Learning Development
+******* Very Competitive
+******* Not so interested
+****** Web Development
+******* Very competitive
+******* Might be late to start
+******* Full of online resources
+******* A large variety in Salary
+****** Game Development
+******* Late to start
+******* Also competitive in foreign country
+****** FPGA/ASIC Development
+******* Less competitive
+******* Experienced
+******* More related to hardware development
+******* Hong Kong has less opportunity, but with experience, foreign countries provide tons of vacancies
+****** C++/JAVA Development
+******* Mostly about Fin-tech, Low-latency Trading System
+******* Competitive
+******* High salary
+******* Related to Finance
+****** Kernel Development
+******* Mostly from foreign country
+******* Competitive
+******* Require advance knowledge

@@ -1,0 +1,35 @@
+* [[Unix Tools]]
+* GNU Debugger [[GDB]]
+** Symbolic Debugger
+*** #+BEGIN_SRC bash
+# Add -g to create a symbolic table for GDB
+gcc -g example.c -o example
+gdb ./example
+#+END_SRC
+*** The additional symbolic table only affect the size of the object file.
+*** It does not affect the performance.
+* GDB Command
+:PROPERTIES:
+:collapsed: true
+:END:
+** *l* - list : Print 10 lines of code (Next time l would print the next 10 lines)
+:PROPERTIES:
+:id: 62ecebb9-b9c0-4006-b27e-2ccaba788385
+:END:
+** *b* {line number} - breakpoint : Set a breakpoint
+** *r* - run : Run the program until it meets the breakpoint
+** *n* - next & *s* - step : Run one line and break again
+*** n : always goes to the next line, where function will be ran automatically
+*** s : if function call is invoked, go to the first line of the function
+*** Example:
+*** #+BEGIN_SRC C++
+swap(&a, &b);
+cout << a << endl;
+// n would go to line 2
+// s would go into the swap() function
+#+END_SRC
+** *p* {variable name} - print : Print the variable content
+** *watch* {variable name} - watchpoint: stop when the variable has changed
+** *c* - continue : continue running the program. Usually is used with r and watch together.
+** *bt* - backtrace : print the function call stack.
+*** Useful when facing core dump to identify the problem at which line

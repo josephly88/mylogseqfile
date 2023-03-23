@@ -1,0 +1,10 @@
+* #+title: Computer Organization vs. Computer Architecture
+* Computer Architecture
+** Architecture describes what the computer does
+** High-level design issues
+** Involves Logic (Instruction sets, Addressing modes, Data types, Cache optimization)
+* Computer Organization
+** The organization describes how it does it
+** Low-level design issues
+** Involves Physical Components (Circuit design, Adders, Signals, Peripherals)
+** The realization of architecture

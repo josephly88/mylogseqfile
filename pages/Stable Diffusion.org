@@ -1,0 +1,103 @@
+* Prompts
+** Elements
+*** 種類
+**** ink painting, oil painting, comic, illustration, realistic painting
+*** 描述 (必要!)
+*** 畫家/畫風
+**** Van Gogh:3, Monet:2 - 3分梵高 2分莫奈
+*** 參考平台
+**** Facebook, Pixiv, Instagram
+*** 配色
+***
+*** e.g., A beautiful painting (種類) of a singular lighthouse, shining its light across a tumultuous sea of blood (描述) by greg rutkowski and thomas kinkade (畫家/畫風), Trending on artstation (參考平台), yellow color scheme (配色)
+** Reference
+:PROPERTIES:
+:collapsed: true
+:END:
+*** https://docs.google.com/spreadsheets/d/16wR5Zg_aQEbxLdrTOrB9cZf8QmsMrJnSGxFKbZVtrKc/edit#gid=1287954453
+*** https://aitag.top/
+** Negative Prompts Template
+*** deformed, blurry, bad anatomy, disfigured, poorly drawn face, mutation, mutated, extra limb, ugly, poorly drawn hands, two heads, child, kid, gross, mutilated, disgusting, horrible, scary, evil, old, conjoined, out of frame
+*
+* *Interface*
+** Batch Count vs. Batch Size
+*** Batch Size is how many images generated in one single generation
+**** Takes more VRAM if size is higher
+*** Batch Count is how many generations
+** Sampling Method
+:PROPERTIES:
+:collapsed: true
+:END:
+*** DIMM
+**** Generally faster (see earlier thread) and cleaner overall, with nice details at low steps.
+*** Euler
+**** The second best (after DDIM) for speed and low step results. (repeat images from first run, with higher steps)
+***
+*** Except for two slower methods of DPM2 and HEUN, there's really no different as steps > 50
+****
+*** Tested by {{twitter https://twitter.com/GaffiKowatch/status/1563466824460935168}}
+***
+** CFG (Classifier-Free Guidance)
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Images generated using CFG are very similar in composition and objects, but also in high quality
+***
+*** Range
+**** Low (0-6): Free to ignore the prompt
+**** Mid (6-10): Do what you're asking, but you don't mind a bit of variation
+**** High (10+): Do exactly what you tell it, with no deviation
+****
+*** High CFG would stick to the prompt or 'img2img' more
+**** If the CFG scale is too large, the quality will suffer and the image will be distorted
+****
+*** In many cases, we don't need to increase the CFG
+**** Unless you want to generate something the dataset has not trained, or combining multiple concepts
+** Denoising Strength
+*** The larger the value, samples more data, takes longer to complete
+**** The similarity to the original picture would be lower
+*** Let the AI create or stick to the original image
+***
+*** Different Denoising Strength (CFG = 7)
+**** 0.2-0.4: Small changes in objects
+**** 0.6: Objects change
+**** 0.8: Posture, background, and object change
+**** 1: Completely new
+**** ![image](../assets/xy_grid-0000-3398563978-1girl_,bag_,bangs_,beret_,blue_eyes_,blue_hair_,blue_skirt_,blush_,bow_,bowtie_,broken_halo_,candy_,clouds_,collar_,cowboy_shot_1671183946381_0.png){:height 638, :width 656}
+** Script
+*** Prompt Matrix
+:PROPERTIES:
+:collapsed: true
+:END:
+**** e.g., a busy city street in a modern city|illustration|cinematic lighting
+**** A modern city with {illustration / cinematic} lighting
+**** Total 4 images would be created (00, 01, 10, 11)
+*** X-Y Plot
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Create a multi-dimensional array of images for comparison
+*
+** CFG vs. Denoising Strength
+*** DIMM (30 steps)
+**** Real picture
+***** Denoising
+****** 0.2 : Original picture in painting
+****** 0.4 : More paint less realistic
+****** 0.6 : Animated original picture
+****** 0.8 : Completely new picture
+***** CFG
+****** If CFG is too low, increasing the denoising would distort the image
+****** CFG > 7 has no significant changes
+***** ![image](../assets/xy_grid-0001-555898201-a_brown_haired_woman_with_pigtails_in_a_flower_pattern_aqua_bikini_leaning_against_a_palm_tree_on_the_beach_with_palm_trees_in_t_1671126155411_0.png){:height 512, :width 446}
+**** Animated image
+***** Denoising
+****** 0.2 : The exact image with tiny changes
+****** 0.4 - 0.6 : Mostly the original image, but with extra edition
+****** 0.8 : Completely new image
+***** CFG
+****** If CFG is too low, increasing the denoising would distort the image
+****** 7 : The middle between the new generated and the original
+****** 13+ : More the CFG Template and prompts
+***** ![image](../assets/xy_grid-0000-3558577134-1girl,_^_^,_bangs,_black_hair,medium_hair,_ponytail,_black_sailor_collar,_blush,_burger,_closed_eyes,_closed_mouth,_cup,_disposa_1671127153828_0.png){:height 563, :width 448}
+***

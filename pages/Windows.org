@@ -1,0 +1,7 @@
+* How to create Windows Shortcut?
+** Create a Desktop Shortcut (Right click on the Desktop)
+** Open the property of the Desktop Shortcut
+** Set the Keyboard Shortcut
+*
+* Proxy setting on WSL
+** https://medium.com/@astashkinav/configuring-a-proxy-for-ubuntu-wsl-d6ba9df63a41

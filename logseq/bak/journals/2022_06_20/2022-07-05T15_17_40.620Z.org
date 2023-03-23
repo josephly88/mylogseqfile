@@ -1,0 +1,10 @@
+* 19:15
+** Todo
+*** Sort out the new idea
+**** Find out all supporting data
+**** Illustrate the idea in figure
+**** Analysis the performance
+*** Sort out why that paper is not relevant
+**** How do we add our latency then? PCIe should be easier
+** Done
+*** Auto-run the whole tasks

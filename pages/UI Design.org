@@ -1,0 +1,10 @@
+* Colors Theory
+** Complementary color
+*** Opposite on the color wheel
+*** Combine would produce gray
+*** Bad Practice
+**** Text is on a complementary-colored background (Hard to read)
+*** Good Practice
+**** Choose a dominant color, use complementary-color as an accent to draw attention
+* Typography
+**

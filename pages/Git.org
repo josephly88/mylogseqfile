@@ -1,0 +1,58 @@
+* [[Git - Concept]]
+* [[Git - Configuration]]
+* [[Git - Command]]
+*
+*
+* Data Model
+** File: "blob", Directory: "tree"
+#+BEGIN_SRC 
+// a file is a bunch of bytes
+type blob = array<byte>
+
+// a directory contains named files and directories
+type tree = map<string, tree | blob>
+
+// a commit has parents, metadata, and the top-level tree
+type commit = struct {
+    parents: array<commit>
+    author: string
+    message: string
+    snapshot: tree
+}
+#+END_SRC
+* Data Store
+** Objects (blob, tree, or commit) are content-address by their SHA-1 hash
+*** Not their on-disk representation
+** #+BEGIN_SRC 
+type object = blob | tree | commit
+
+objects = map<string, object>
+
+def store(object):
+    id = sha1(object)
+    objects[id] = object
+
+def load(id):
+    return objects[id]
+#+END_SRC
+* Reference
+** human-readable names for SHA-1 hash of snapshot
+** e.g., ~master~, ~HEAD~ (Where we currently are)
+** #+BEGIN_SRC 
+references = map<string, string>
+
+def update_reference(name, id):
+    references[name] = id
+
+def read_reference(name):
+    return references[name]
+
+def load_reference(name_or_id):
+    if name_or_id in references:
+        return load(references[name_or_id])
+    else:
+        return load(name_or_id)
+#+END_SRC
+* Repositories
+** ~objects~ and ~references~
+** Directed Acyclic Graph (DAG) of Commits (snapshots)

@@ -1,0 +1,9 @@
+* NDS
+** Questions:
+*** How GPU retrieve data from memory?
+**** Why sequential store experience much higher CPU overhead?
+* Present 12 mins
+** Understand the Problem (4mins)
+** The main idea/techniques (4mins)
+** Evaluation setting & main results (4mins)
+*

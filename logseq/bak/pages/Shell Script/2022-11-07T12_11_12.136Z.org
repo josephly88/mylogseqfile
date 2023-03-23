@@ -1,0 +1,41 @@
+* [[Programming Language]] #Unix
+* Single Quotes vs. Double Quotes [[Shell Script]]
+:PROPERTIES:
+:collapsed: true
+:END:
+** Single Quotes treat every character as a literal
+*** No single quote can be between single quotes, even with backslash (Escape Character)
+** Double Quotes treat the following characters differently
+*** $ ` \ ! * @
+*** Backslashes is the escape character
+*** Double Quotes can be within another double quote by using backslash
+** Example
+*** #+BEGIN_SRC bash
+echo '$PATH'
+# Output: $PATH
+echo "$PATH"
+# Output: /usr/local/bin:/usr/local/sbin:...
+#+END_SRC
+***
+* ~tee~ [[Shell Script]]
+:PROPERTIES:
+:collapsed: true
+:END:
+** read from standard input and write to standard output and files
+** Example:
+*** ~root_file~ needs higher privilege, but echo doesn't
+*** #+BEGIN_SRC bash
+echo Hello\ World > root_file
+# Permission denied
+echo Hello\ World | sudo tee root_file
+# Hello World
+sudo cat root_file
+# Hello World
+#+END_SRC
+* shebang [[Shell Script]]
+:PROPERTIES:
+:collapsed: true
+:END:
+** ~#!~
+** Example: ~#!/bin/sh~
+*** Tell the program loader to run the program ~/bin/sh~, passing the script path as the first argement

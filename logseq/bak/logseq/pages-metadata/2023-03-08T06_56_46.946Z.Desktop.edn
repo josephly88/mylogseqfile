@@ -1,0 +1,461 @@
+[{:block/name "639d79d9-bb71-4a24-8623-50e9dd39039d",
+  :block/created-at 1673326910108,
+  :block/updated-at 1673326910108}
+ {:block/name "a",
+  :block/created-at 1654895044878,
+  :block/updated-at 1654895044878}
+ {:block/name "accessories",
+  :block/created-at 1675282391361,
+  :block/updated-at 1675282399328}
+ {:block/name "ai tools",
+  :block/created-at 1673326908316,
+  :block/updated-at 1673326908316}
+ {:block/name "app development",
+  :block/created-at 1670996984248,
+  :block/updated-at 1677512378597}
+ {:block/name "application and software",
+  :block/created-at 1673326908337,
+  :block/updated-at 1677768982656}
+ {:block/name "b",
+  :block/created-at 1654895044878,
+  :block/updated-at 1654895044878}
+ {:block/name "body build",
+  :block/created-at 1673326907308,
+  :block/updated-at 1677015343100}
+ {:block/name "boogaloo style",
+  :block/created-at 1673326909331,
+  :block/updated-at 1673326909331}
+ {:block/name "books",
+  :block/created-at 1673326908353,
+  :block/updated-at 1673326908353}
+ {:block/name "bus",
+  :block/created-at 1675773431512,
+  :block/updated-at 1675773431512}
+ {:block/name "c",
+  :block/created-at 1654895044878,
+  :block/updated-at 1654895044878}
+ {:block/name "c and c++",
+  :block/created-at 1673326908466,
+  :block/updated-at 1673338428532}
+ {:block/name "card",
+  :block/created-at 1654895044878,
+  :block/updated-at 1654895044878}
+ {:block/name "clothing - construction",
+  :block/created-at 1673326907530,
+  :block/updated-at 1673326907530}
+ {:block/name "clothing - material",
+  :block/created-at 1673326908786,
+  :block/updated-at 1673326908786}
+ {:block/name "cloudflare",
+  :block/created-at 1676541016239,
+  :block/updated-at 1676541112570}
+ {:block/name "computer architecture",
+  :block/created-at 1673326908797,
+  :block/updated-at 1673326908797}
+ {:block/name "computer engineering",
+  :block/created-at 1674665962713,
+  :block/updated-at 1674666047262}
+ {:block/name "computer organization",
+  :block/created-at 1673326908838,
+  :block/updated-at 1673326908838}
+ {:block/name "computer organization vs. computer architecture",
+  :block/created-at 1673326908796,
+  :block/updated-at 1673326908796}
+ {:block/name "computer science",
+  :block/created-at 1655746740675,
+  :block/updated-at 1677769139745}
+ {:block/name "concurrency",
+  :block/created-at 1673326912056,
+  :block/updated-at 1673326912056}
+ {:block/name "contents",
+  :block/created-at 1654895044878,
+  :block/updated-at 1672993915498}
+ {:block/name "cornell note",
+  :block/created-at 1673352587439,
+  :block/updated-at 1673352927502}
+ {:block/name "countable or uncountable",
+  :block/created-at 1673326908879,
+  :block/updated-at 1673326908879}
+ {:block/name "course",
+  :block/created-at 1673866354163,
+  :block/updated-at 1673866354163}
+ {:block/name "cpu cache",
+  :block/created-at 1673326908995,
+  :block/updated-at 1673326908995}
+ {:block/name "cpu design",
+  :block/created-at 1673326908836,
+  :block/updated-at 1673326908836}
+ {:block/name "css",
+  :block/created-at 1673427100278,
+  :block/updated-at 1674204648787}
+ {:block/name "current ssd techniques & knowledge",
+  :block/created-at 1673326909024,
+  :block/updated-at 1673326909024}
+ {:block/name "cypher",
+  :block/created-at 1661952448879,
+  :block/updated-at 1662412239064}
+ {:block/name "dance",
+  :block/created-at 1673326907916,
+  :block/updated-at 1673326907916}
+ {:block/name "database system",
+  :block/created-at 1673326909067,
+  :block/updated-at 1673326909067}
+ {:block/name "dec 18th, 2022",
+  :block/created-at 1673326907261,
+  :block/updated-at 1673326907261}
+ {:block/name "digestive system",
+  :block/created-at 1665826910767,
+  :block/updated-at 1665858792147}
+ {:block/name "digital logic",
+  :block/created-at 1675412058628,
+  :block/updated-at 1675414992790}
+ {:block/name "digital system",
+  :block/created-at 1675411983160,
+  :block/updated-at 1675412058629}
+ {:block/name "distribution",
+  :block/created-at 1670997001466,
+  :block/updated-at 1670997531093}
+ {:block/name "doing",
+  :block/created-at 1654895044878,
+  :block/updated-at 1654895044878}
+ {:block/name "done",
+  :block/created-at 1654895044878,
+  :block/updated-at 1654895044878}
+ {:block/name "dram",
+  :block/created-at 1655746740627,
+  :block/updated-at 1656946364119}
+ {:block/name "embedded system",
+  :block/created-at 1674665981459,
+  :block/updated-at 1674665981459}
+ {:block/name "english",
+  :block/created-at 1654888428749,
+  :block/updated-at 1673866317691}
+ {:block/name "english - grammar",
+  :block/created-at 1673326909077,
+  :block/updated-at 1673326909077}
+ {:block/name "english - writing",
+  :block/created-at 1673866317690,
+  :block/updated-at 1673866332888}
+ {:block/name "fashion",
+  :block/created-at 1673326909099,
+  :block/updated-at 1673326909099}
+ {:block/name "favorites",
+  :block/created-at 1654895044878,
+  :block/updated-at 1654895044878}
+ {:block/name "feb 22nd, 2023",
+  :block/created-at 1677010464249,
+  :block/updated-at 1677010464249}
+ {:block/name "feb 9th, 2023",
+  :block/created-at 1675886723293,
+  :block/updated-at 1676541141608}
+ {:block/name "find",
+  :block/created-at 1675940959015,
+  :block/updated-at 1676029771575}
+ {:block/name "fodmap",
+  :block/created-at 1665858792146,
+  :block/updated-at 1665952669389}
+ {:block/name "gdb",
+  :block/created-at 1654888428812,
+  :block/updated-at 1659694154815}
+ {:block/name "git",
+  :block/created-at 1677766328548,
+  :block/updated-at 1677779295763}
+ {:block/name "git - basic",
+  :block/created-at 1677779295763,
+  :block/updated-at 1677780392600}
+ {:block/name "git - concept",
+  :block/created-at 1677769757711,
+  :block/updated-at 1677779082442}
+ {:block/name "git - configuration",
+  :block/created-at 1677778715865,
+  :block/updated-at 1677778983995}
+ {:block/name "glitch",
+  :block/created-at 1675414983773,
+  :block/updated-at 1675416110090}
+ {:block/name "graph database",
+  :block/created-at 1661955263950,
+  :block/updated-at 1661955288683}
+ {:block/name "grep",
+  :block/created-at 1675941933244,
+  :block/updated-at 1675943203625}
+ {:block/name "hat",
+  :block/created-at 1675282399327,
+  :block/updated-at 1675282561802}
+ {:block/name "hdl",
+  :block/created-at 1674665645211,
+  :block/updated-at 1677593223631}
+ {:block/name "health",
+  :block/created-at 1656447634692,
+  :block/updated-at 1677014791426}
+ {:block/name "html",
+  :block/created-at 1673427097363,
+  :block/updated-at 1675202731284}
+ {:block/name "http",
+  :block/created-at 1673858120202,
+  :block/updated-at 1673858753312}
+ {:block/name "ide",
+  :block/created-at 1673326908336,
+  :block/updated-at 1677766305032}
+ {:block/name "in-progress",
+  :block/created-at 1654895044878,
+  :block/updated-at 1654895044878}
+ {:block/name "jan 3rd, 2023",
+  :block/created-at 1673326907541,
+  :block/updated-at 1676540364113}
+ {:block/name "jan 9th, 2023",
+  :block/created-at 1673326907921,
+  :block/updated-at 1673340901881}
+ {:block/name "java",
+  :block/created-at 1654891678723,
+  :block/updated-at 1654892698825}
+ {:block/name "javascript",
+  :block/created-at 1670996984283,
+  :block/updated-at 1672992638114}
+ {:block/name "jupyter",
+  :block/created-at 1669348828474,
+  :block/updated-at 1669348828474}
+ {:block/name "latch and flip flop",
+  :block/created-at 1675412105785,
+  :block/updated-at 1675419917822}
+ {:block/name "later",
+  :block/created-at 1654895044878,
+  :block/updated-at 1654895044878}
+ {:block/name "learning agenda",
+  :block/created-at 1669547774397,
+  :block/updated-at 1676541275639}
+ {:block/name "logseq",
+  :block/created-at 1673326909217,
+  :block/updated-at 1673326909217}
+ {:block/name "makefiles",
+  :block/created-at 1676540962589,
+  :block/updated-at 1676555675943}
+ {:block/name "mar 2nd, 2023",
+  :block/created-at 1677766101518,
+  :block/updated-at 1677768633285}
+ {:block/name "mar 3rd, 2023",
+  :block/created-at 1677772858151,
+  :block/updated-at 1677772858151}
+ {:block/name "math",
+  :block/created-at 1654888428879,
+  :block/updated-at 1672993806483}
+ {:block/name "matplotlib",
+  :block/created-at 1669104239829,
+  :block/updated-at 1669548218671}
+ {:block/name "memory",
+  :block/created-at 1673326909226,
+  :block/updated-at 1673326909226}
+ {:block/name "neo4j",
+  :block/created-at 1661952368331,
+  :block/updated-at 1661955263951}
+ {:block/name "networking",
+  :block/created-at 1673858740807,
+  :block/updated-at 1675854553577}
+ {:block/name "note taking system",
+  :block/created-at 1673352540559,
+  :block/updated-at 1673352587440}
+ {:block/name "note taking tool",
+  :block/created-at 1673326908335,
+  :block/updated-at 1673326908335}
+ {:block/name "noun phrase",
+  :block/created-at 1663265937944,
+  :block/updated-at 1663410571056}
+ {:block/name "now",
+  :block/created-at 1654895044878,
+  :block/updated-at 1654895044878}
+ {:block/name "nvme-cli",
+  :block/created-at 1676457151781,
+  :block/updated-at 1676457572143}
+ {:block/name "openssd",
+  :block/created-at 1673350966824,
+  :block/updated-at 1676456155269}
+ {:block/name "operating system",
+  :block/created-at 1656946077077,
+  :block/updated-at 1676541175691}
+ {:block/name "operating system: three easy pieces",
+  :block/created-at 1671000494380,
+  :block/updated-at 1671005794589}
+ {:block/name "osi model",
+  :block/created-at 1675854530479,
+  :block/updated-at 1675854538418}
+ {:block/name "persistence",
+  :block/created-at 1673326909246,
+  :block/updated-at 1673326909246}
+ {:block/name "personal development",
+  :block/created-at 1673326909264,
+  :block/updated-at 1673352579437}
+ {:block/name "physical topologies",
+  :block/created-at 1675851412410,
+  :block/updated-at 1675852891328}
+ {:block/name "popping",
+  :block/created-at 1673326909053,
+  :block/updated-at 1673326909053}
+ {:block/name "popping style",
+  :block/created-at 1673326909332,
+  :block/updated-at 1673326909332}
+ {:block/name "process",
+  :block/created-at 1673326912054,
+  :block/updated-at 1673326912054}
+ {:block/name "processor design",
+  :block/created-at 1674666047261,
+  :block/updated-at 1675411988337}
+ {:block/name "programming language",
+  :block/created-at 1654891349780,
+  :block/updated-at 1655717441485}
+ {:block/name "propagation delay",
+  :block/created-at 1677593801849,
+  :block/updated-at 1677593850274}
+ {:block/name "python",
+  :block/created-at 1669104239816,
+  :block/updated-at 1672992603866}
+ {:block/name "react native",
+  :block/created-at 1670996984319,
+  :block/updated-at 1673425605763}
+ {:block/name "research",
+  :block/created-at 1673326909434,
+  :block/updated-at 1673326909434}
+ {:block/name "research - meeting minutes",
+  :block/created-at 1673326909376,
+  :block/updated-at 1676457064224}
+ {:block/name "rg",
+  :block/created-at 1675943404492,
+  :block/updated-at 1675943521660}
+ {:block/name "sequence",
+  :block/created-at 1654888428971,
+  :block/updated-at 1672993809299}
+ {:block/name "setup time and hold time",
+  :block/created-at 1677594749873,
+  :block/updated-at 1677594756907}
+ {:block/name "shell",
+  :block/created-at 1675944653149,
+  :block/updated-at 1676022187747}
+ {:block/name "shell script",
+  :block/created-at 1656943633289,
+  :block/updated-at 1676541972601}
+ {:block/name "simple sentence",
+  :block/created-at 1662117267120,
+  :block/updated-at 1663763485831}
+ {:block/name "ssd",
+  :block/created-at 1673326909245,
+  :block/updated-at 1676524553546}
+ {:block/name "ssh",
+  :block/created-at 1675282348808,
+  :block/updated-at 1676541131013}
+ {:block/name "ssmtp",
+  :block/created-at 1665912939536,
+  :block/updated-at 1666141104793}
+ {:block/name "stable diffusion",
+  :block/created-at 1670948494923,
+  :block/updated-at 1672993074240}
+ {:block/name "statistics",
+  :block/created-at 1670997475825,
+  :block/updated-at 1670997499230}
+ {:block/name "tar",
+  :block/created-at 1676028183961,
+  :block/updated-at 1676028690194}
+ {:block/name "time chunks",
+  :block/created-at 1673326909671,
+  :block/updated-at 1674135380747}
+ {:block/name "time management",
+  :block/created-at 1673326909261,
+  :block/updated-at 1673326909261}
+ {:block/name "timing",
+  :block/created-at 1675414979112,
+  :block/updated-at 1677594752756}
+ {:block/name "todo",
+  :block/created-at 1654895044878,
+  :block/updated-at 1677102580096}
+ {:block/name "transmission mode",
+  :block/created-at 1675851426738,
+  :block/updated-at 1675852984060}
+ {:block/name "ubuntu",
+  :block/created-at 1675193972727,
+  :block/updated-at 1675194134586}
+ {:block/name "ui design",
+  :block/created-at 1673603205835,
+  :block/updated-at 1674645162700}
+ {:block/name "unix",
+  :block/created-at 1656944890723,
+  :block/updated-at 1676542108585}
+ {:block/name "unix tools",
+  :block/created-at 1656946496215,
+  :block/updated-at 1676542130811}
+ {:block/name "usb",
+  :block/created-at 1675773431511,
+  :block/updated-at 1675773431511}
+ {:block/name "valgrind",
+  :block/created-at 1659694117580,
+  :block/updated-at 1659694901072}
+ {:block/name "version control system",
+  :block/created-at 1677768633285,
+  :block/updated-at 1677769743704}
+ {:block/name "vim",
+  :block/created-at 1663829380683,
+  :block/updated-at 1676293408510}
+ {:block/name "vim - keystrokes",
+  :block/created-at 1676292217571,
+  :block/updated-at 1676556296444}
+ {:block/name "vivado",
+  :block/created-at 1675773432154,
+  :block/updated-at 1677592941194}
+ {:block/name "wait",
+  :block/created-at 1654895044878,
+  :block/updated-at 1654895044878}
+ {:block/name "waiting",
+  :block/created-at 1654895044878,
+  :block/updated-at 1654895044878}
+ {:block/name "web development",
+  :block/created-at 1673427093132,
+  :block/updated-at 1676232801974}
+ {:block/name "windows",
+  :block/created-at 1676541175690,
+  :block/updated-at 1676541229716}
+ {:block/name "writing in the sciences",
+  :block/created-at 1673866332887,
+  :block/updated-at 1673867104990}
+ {:block/name "zns",
+  :block/created-at 1673326909374,
+  :block/updated-at 1673326909374}
+ {:block/name
+  "zns+: advanced zoned namespace interface for supporting in-storage zone compaction (osdi2021)",
+  :block/created-at 1673326909711,
+  :block/updated-at 1673326909711}
+ {:block/name
+  "zns: avoiding the block interface tax for flash-based ssds (atc2021)",
+  :block/created-at 1673326909785,
+  :block/updated-at 1673326909785}
+ {:block/name "刻意練習",
+  :block/created-at 1662751914792,
+  :block/updated-at 1671000582928}
+ {:block/name "副詞 adverb",
+  :block/created-at 1673326911509,
+  :block/updated-at 1673326911509}
+ {:block/name "原子習慣",
+  :block/created-at 1670996984549,
+  :block/updated-at 1675283388814}
+ {:block/name "原子習慣 - 回應",
+  :block/created-at 1675283073333,
+  :block/updated-at 1675283323240}
+ {:block/name "原子習慣 - 實踐",
+  :block/created-at 1673326910113,
+  :block/updated-at 1675283819419}
+ {:block/name "原子習慣 - 提示",
+  :block/created-at 1675282967262,
+  :block/updated-at 1675283032918}
+ {:block/name "原子習慣 - 渴望",
+  :block/created-at 1675283064777,
+  :block/updated-at 1675283131408}
+ {:block/name "原子習慣 - 獎賞",
+  :block/created-at 1675283085966,
+  :block/updated-at 1675283419577}
+ {:block/name "形容詞 adjective",
+  :block/created-at 1673326911510,
+  :block/updated-at 1673326911510}
+ {:block/name "未整理",
+  :block/created-at 1673326907529,
+  :block/updated-at 1673326907529}
+ {:block/name "穿搭技巧",
+  :block/created-at 1673326909094,
+  :block/updated-at 1675282391362}
+ {:block/name "複合名詞 compounds",
+  :block/created-at 1673326910158, 
+  :block/updated-at 1673326910158}]

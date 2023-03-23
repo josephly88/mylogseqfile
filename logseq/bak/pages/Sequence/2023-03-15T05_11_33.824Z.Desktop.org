@@ -1,0 +1,22 @@
+* Question: $$0.1 + 0.02 + 0.003 + 0.0004 + ... = ?$$
+:PROPERTIES:
+:collapsed: true
+:END:
+** Solution:
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Let S = 0.1 + 0.02 + 0.003 + 0.0004 + ...
+*** 0.1 * S = 0.01 + 0.002 + 0.0003 + ...
+*** S - 0.1 * S = 0.1 + 0.01 + 0.001 + 0.0001 + ...
+*** 0.9S = 0.11111....
+*** Converting repeating decimal to fractions
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Let X = 0.11111...
+**** 10 * X = 1.11111...
+**** 10 * X - X = 1
+**** X = 1 / 9
+*** Hence, 0.9S = 1/9
+*** S = 1/9 * 10/9 = 10 / 81

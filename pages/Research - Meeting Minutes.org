@@ -1,0 +1,110 @@
+* *09-03-2023*
+** How do fio do randwrite on ZNS?
+** SR-IOV
+*** Single-Root I/O Virtualization
+*** Virtual machine share PCIe efficiently on hardware level
+*** Based PCI-SIG
+* *16-02-2023*
+** fio result cannot reach the ZN540 claimed performance
+* *09-02-2023*
+** ZNS has the potential bandwidth to reach 2.6MB/s
+*** But average bandwidth is 1.3MB/s
+*** While the Samsung SSD is stable at 2MB/s
+*** Hypothesis: ZNS has some problem in high thread number process
+**** Scalability in throughput
+**** Scalability in process
+**** Unstable
+** Paper sharing: IPLFS
+*** Eliminate GC in F2FS
+**** GC only occur in SSD, not the F2FS
+*** Design
+**** Infinite partition (FS)
+***** Host think the SSD has infinite capacity
+**** In-SSD firmware interval-physical mapping
+* *03-02-2023*
+** FEMU simulation can't scale up IOPS
+*** Due to the CPU
+** Problem of small zone
+*** Mapping table size
+*** Die level protection cannot guarentee
+* *20-01-2023*
+** Currently ZN540 有support wear-leveling
+*** 只是FEMU沒有
+** Study 一下NVMe ZNS protocol的configuration
+** 試一下Implement
+* *12-01-2023*
+** Multi-Namespace
+*** What is Namespace?
+**** A collection of logical block addresses (LBA) accessibly to host software
+***** Isolate different user r/w and erase (For Multi-tenancy)
+*** Share or Private Space
+**** GC can utilize share space
+***** E.g., One of the namespace contains a few space only -> GC would be slow
+***** Share space could solve this problem
+*** Over-provisioning
+**** Reserves inside a namespace
+* *05-01-2023*
+** Do
+*** 去查一下OpenSSD 能夠access 的單位有那些?
+**** 例如: Chip, Die, Plane, Page, Block, ...
+*** 想OpenSSD怎樣去support zone command
+**** 如何reset?
+**** 如何繞過NVMe?
+** Learnt
+*** Multiple Namespace
+**** 有部份研究單位不看好ZNS
+**** 一個SSD 裡有多個virtual SSD
+***** 可能切割Flash成一塊塊
+***** 每一塊都有一個micro prossesor
+*** WD Device current zone size is 2GB #ZNS
+*** Stream SSD
+**** madvice / fadvice command to advice the SSD
+***** but the SSD may ignore it
+*** IO Schedular 亂序對ZNS的影響
+**** 有可能是IO Schedular re-order
+***** Zone之間的access也可能會因此不even
+**** 亦有可能IO Schedular順序發但SSD re-order
+*** fio 會經過io schedular
+**** 切割large size request
+**** Logical request size > block layer request size unit 會不能測出更佳的bandwidth -> 可能未能fully utilize
+***** 由於 io scheudlar 切割large size request
+***** 同時mq-deadline = 1規定每個Zone每次只能寫入1次
+***** 因些, 就算increase logical request size也不會scale上去
+*** Small size zone may suffer in lower read performance than large size zone
+*** Flashcache
+** Idea
+*** Stream ZNS
+**** Like stream SSD, we give hints to ZNS or Zone to reduce interference
+*** Middleware 去allocate zones to applications
+**** multiple small zones form into a large zone to boost read performance
+* *02-01-2023*
+** fio testing on OpenSSD
+*** Increase I/O depth (I/O size = 4KB)
+**** Analogy: Pouring water to the drain
+***** The I/O depth is like a water tank
+***** If the device process fast enough, the I/O in I/O depth would always be 0 or 1
+****** The water immediately fall down
+**** If increasing the I/O depth cannot scale up the performance, the device processing speed is the bottleneck
+**** OpenSSD saturate at ~128-256 depth
+*** Increase I/O size
+**** OpenSSD performance increase
+*** Possible explanation: OpenSSD single thread
+**** SSD on the market would have multiple-core
+***** Maybe allocated to SQ or CQ
+***** Or each core manage several chips
+* *29-12-2022*
+** Learnt
+*** ~mq-deadline~ 設定為0才能確保write order #ZNS
+**** 設定I/O queue depth為1 (會令performance下降)
+*** FEMU simulator #ZNS
+*** 不是沒有GC overhead, 而是回歸GC的權利給host #ZNS
+**** 以合適的設計能減少GC overhead的影響
+*** Open Zone: 非空或全滿的Zone (正在有寫入) #ZNS
+**** 數量有限制
+*** Multi-tenancy interference problem in ZNS #ZNS
+**** Access 撞在同一channel or die
+*** Zone Append vs Zone Write #ZNS
+** Speculation
+*** Zone在SSD裡面會改變Mapping #ZNS
+**** 為了wear-leveling的balance
+**** 應該是Reallocated after reset

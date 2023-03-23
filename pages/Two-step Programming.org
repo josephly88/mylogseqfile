@@ -1,0 +1,9 @@
+* Example: 8 bit
+** :PROPERTIES:
+:background-color: yellow
+:END:
+#+BEGIN_SRC
+Create a lookup table for 8 bit number
+	e.g. (00000000 - 0), (00000001 - 1), (00000010 - 1), ..., (11111111 - 0)
+Break the data into 8-bit chunks and performing XOR operations
+#+END_SRC

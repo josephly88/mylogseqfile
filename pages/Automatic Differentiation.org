@@ -1,0 +1,16 @@
+* *Automatic Differentiation* evaluates the partial differentiation of a function by a computer program
+* Two Types
+** Forward accumulation
+*** Efficient when few inputs and many outputs
+*** Example: $f(x,y) = x^2 + y^2 + xy$
+**** $f(x + a, y + b) = (x+a)^2 + (y+b)^2 + (x+a)(y+b)$
+**** $= (x^2 + 2xa + a^2) + (y^2 + 2yb + b^2) + (xy + ay) + (xb + ab)$
+**** $a$ and $b$ > first order are negligible (Too small)
+***** So we remove $a^2, b^2, ab$
+***** $f(x + a, y + b) \approx x^2 + 2xa + y^2 + 2yb + xy + ay + xb$
+***** When we want to find $\frac{\partial}{\partial x}f(x,y)$, we just find all the terms with $a$
+****** $\frac{\partial}{\partial x}f(x,y) \approx 2x + y$
+***** Similarly to find $\frac{\partial}{\partial y}f(x,y)$, we just find all the terms with $b$
+****** $\frac{\partial}{\partial y}f(x,y) \approx 2y + x$
+** Reverse accumulation
+*** Efficient when many inputs and few outputs

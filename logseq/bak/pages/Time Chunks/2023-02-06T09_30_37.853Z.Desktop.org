@@ -1,0 +1,15 @@
+* Dividing a day by 3 hours per chunk
+** A day could have 8 chunks (3 chunks are for sleeping) - Total 5 awake chunks
+*
+* Working
+** Recommend 6-8 hours per day (30 - 40 hours per week)
+** Each working chunk consists of 3 * (45 min working + 15 min rest)
+*
+* Notation:
+** C - Number of chunks
+** +Xmins - Excess minutes
+** -Xmins - Missing minutes
+*
+* [[Feb 6th, 2023]]
+** 15:45 - 16:35
+** 16:50 - 17:40

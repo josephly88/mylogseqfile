@@ -1,0 +1,44 @@
+* [[Unix Tools]]
+*
+* Send email through Command Line
+* STDIN -> MTA (Mail Transfer Agent, e.g. Gmail) -> Send email
+* Install
+** ~sudo apt-get install ssmtp mailutils -y~
+* Configuration
+** ~sudo vim /etc/ssmtp/ssmtp.conf~
+** #+BEGIN_SRC bash
+# 接收系統郵件的 Email
+root=ntausr4@gmail.com
+
+# 使用 GMail 的 MTA 送信 
+# 587 (TLS) or 465 (SSL)
+mailhub=smtp.gmail.com:465
+
+# 設定 hostname
+hostname=raspberrypi
+
+# 允許使用者設定 Email 的 From 欄位
+FromLineOverride=YES
+
+# Google 帳號與密碼
+AuthUser=YOUR_GOOGLE_ACCOUNT
+AuthPass=YOUR_PASSWORD
+
+# 啟用安全加密連線
+UseSTARTTLS=YES
+UseTLS=YES
+
+# 輸出除錯資訊
+Debug=YES
+#+END_SRC
+* 由於Google啟用兩步驟驗證登入
+** 進入 https://myaccount.google.com/security?hl=zh-TW
+** 選擇「應用程式密碼」
+** 產生一個新的應用程式密碼
+** 複製新的應用程式密碼，總共 16 碼
+*** 把ssmtp.conf的google password轉為這16碼
+* Test
+** ~echo "This is a test" | ssmtp recipient@your.email.com~
+**
+* Sending emails with subject and body
+** ~cat EMAIL_FILE | mail -s "SUBJECT" recipient@your.email.com~

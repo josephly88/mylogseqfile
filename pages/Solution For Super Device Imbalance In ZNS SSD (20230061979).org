@@ -1,0 +1,16 @@
+* https://www.freepatentsonline.com/y2023/0061979.html
+*
+* Terms
+** Super Device (SD): Namespaces??
+** Super Block (SB): A set of blocks across each die of an SSD
+*** This organization is for high write performance
+*
+* Balancing between SDs
+** Reason:
+*** Assume each SD have a write performance 1000 Mbps
+**** In total: 2000 Mbps
+*** If one SD is no longer be written
+**** Amount of free space decreasing below a critical threshold
+*** The resultant performance become: 1000 Mbps
+*** Hence, must balance zones across one or more SDs in a ZNS SSD
+**

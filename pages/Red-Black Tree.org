@@ -1,0 +1,53 @@
+* *Space*: O(n)
+* *Search*:
+** Amortized: O(log n)
+** Worst Case: O(log n)
+* *Insert*:
+** Amortized: O(1)
+** Worst Case: O(log n)
+* *Delete*:
+** Amortized: O(1)
+** Worst Case: O(log n)
+*
+* *Rules*
+** Root must be Black
+** NIL are Black
+** If a node is Red, it's children must be Black
+** Every path to leaf must maintain the same # of Black nodes
+*
+* *Insertion*
+** The inserted node is Red
+*** Fix-up is needed when parent is also Red
+** *Fix-up*
+*** ![image](../assets/Untitled_Diagram.drawio_(8)_1678350737054_0.png){:height 589, :width 729}
+**** Correctness
+***** Case 1
+****** Interchange color of two level -> Each path has same number of black
+***** Case 2
+****** Transfer one red to left, all path remains the same number of black
+***** Case 3
+****** Transfer one red to right, all path remains the same number of black
+*** ![image](../assets/image_1678350223301_0.png){:height 264, :width 232}
+* *Deletion*
+** If it has 2 children, find its successor/predecessor as replacement R
+*** Else, itself is the replacement R
+** Simple deletion for R
+*** If R has one child, it's child occupies R's position
+*** If R is not itself, swap their data
+** If R is Black, fix-up is needed
+** *Fix-up*
+*** Child of R could be NIL
+*** ![image](../assets/Untitled_Diagram.drawio_(6)_1678350149232_0.png){:height 658, :width 717}
+**** Correctness
+***** Case 1
+****** Left has one extra Black and Red, balance the deleted Black
+***** Case 2
+****** Right has one less Black and one extra Red, balance the other side
+******* If parent is Red -> Black
+******* Else, keep looping
+***** Case 3
+****** Right has one extra red, the number is same as deleted (For Case 4 balancing)
+***** Case 4
+****** Move one Black to left, balance the deleted black
+*** ![image](../assets/image_1678350930528_0.png)
+**

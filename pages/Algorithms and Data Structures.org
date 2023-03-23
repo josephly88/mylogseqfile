@@ -1,0 +1,8 @@
+* Algorithm
+** [[Computer Algebra]]
+** Random Shuffle Problem
+*** [[Fisher-Yates Shuffle Algorithm]]
+*
+* Data Structure
+** Search Tree
+*** [[Red-Black Tree]]

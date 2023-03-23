@@ -1,0 +1,16 @@
+* *2023 Target*
+** Computer Science: OpenSSD (Verilog, C, Vivado, NVMe, Flash)
+** Computer Science: Basic Web Development (Frontend, Backend)
+** Dance: Keep track of Dance
+** Dance: Keep track of Battle
+** Others: Body Building (Posture, Pull Up, Single Leg Squat)
+** Others: Fundamental Analysis
+** *Finish*
+* *TA*
+** License Problem
+** Lab 07
+** Lab 08
+* *Last work* #Research
+* *New work* #OpenSSD
+** Implement ZNS on OpenSSD
+*** [[ZNS+: Advanced Zoned Namespace Interface for Supporting In-Storage Zone Compaction (OSDI2021)]]

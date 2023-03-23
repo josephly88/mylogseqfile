@@ -1,0 +1,24 @@
+* App Development Framework written in Javascript
+*
+* Development Environment
+** Expo Go and Expo CLI
+*** Expo Go run the project on your phone (Able to develop iOS app on Window)
+*** Expo CLI serve your project
+*
+* Create a new project
+** #+BEGIN_SRC shell
+npx create-expo-app PROJECT_NAME
+
+cd PROJECT_NAME
+npx expo start
+#+END_SRC
+** The default connection between Expo GO is LAN
+** If you want to use Tunnel
+*** ~npx expo start tunnel~
+** Now you could modify the App.js
+*
+* Tutorials
+** https://reactnative.dev/docs/getting-started
+** https://docs.expo.dev/get-started/installation/
+** https://reactnative.dev/docs/tutorial
+*

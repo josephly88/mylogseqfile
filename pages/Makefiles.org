@@ -1,0 +1,57 @@
+* Decide which parts of a large program need to be recompiled
+* https://makefiletutorial.com
+** Fancy Rules
+*
+* Syntax
+** #+BEGIN_SRC Makefiles
+targets: prerequisites
+	command
+    command 
+    command
+#+END_SRC
+* Hello World
+** #+BEGIN_SRC Makefiles
+hello: hello.o
+	cc hello.o -o hello # Runs third
+hello.o: hello.c
+	cc -c hello.c -o hello.o # Runs second
+hello.c:
+	echo "int main() {return 0;}" > hello.c # Runs first
+    
+clean:
+	rm -f hello*
+#+END_SRC
+*** if ~hello~ does not exist, it would run ~hello.o~ first
+**** then ~hello.o~ does not exist, run ~hello.c~ first
+*** Run ~make~ again, the command would said ~$make: 'hello' is up to date~
+**** If the dependencies has a newer filesystem timestamps, the targets' and dependencies' command would execute
+*** clean is triggered by ~make clean~
+* Variable
+** #+BEGIN_SRC Makefiles
+files := file1 file2
+target_file: $(files)
+	echo "Variables are " $(files)
+    touch target_file
+#+END_SRC
+*** ~$()~ and ~${}~ are both the same
+* Multiple targets
+** #+BEGIN_SRC Makefiles
+all: file1 file2 file3
+
+file1:
+	touch file1
+...
+#+END_SRC
+** The first line would always be executed
+* Wildcards and Automatic Variables
+** Wildcard
+*** ~*~
+**** ~variable := $(wildcard *.o)~
+***** Use ~$(*.o)~ is not recommended
+****** When ~*~ matches no files, it is left as ~*~
+*** ~%~
+** Automatic Variables
+*** ~$@~: The target names
+*** ~$?~: All prerequisites newer than the target
+*** ~$^~: All prerequisites
+*

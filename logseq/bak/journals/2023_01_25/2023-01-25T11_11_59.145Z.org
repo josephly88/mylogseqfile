@@ -1,0 +1,7 @@
+* To-do:
+** Lec 02
+** Ask Fiona about accessing lab for students
+** License problem
+** Implementation Example
+**
+*

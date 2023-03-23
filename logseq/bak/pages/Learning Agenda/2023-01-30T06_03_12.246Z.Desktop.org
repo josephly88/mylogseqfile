@@ -1,0 +1,15 @@
+* Agenda
+** Doing:
+*** [[Operating System: Three Easy Pieces]]
+*** Writing in the Sciences (Coursera)
+**** Week 1/8
+***** Sort out the note in iPad
+*** FreeCodeCamp
+***
+** To-do:
+*** https://csdiy.wiki/en/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/
+*** Missing Semester (MIT)
+*** Grammar Book
+*** xv6 (MIT)
+*** Advanced Microcontroller Design and System on Chip
+**** https://www.youtube.com/playlist?list=PLDqMkB5cbBA4OW0fDTu1FY6aw4uBWOpBa

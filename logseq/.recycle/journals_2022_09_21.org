@@ -1,0 +1,55 @@
+* 20:00
+** For example vs. Such as vs. Like
+:PROPERTIES:
+:collapsed: true
+:END:
+*** https://www.hopenglish.com/how-to-use-for-example-such-as-and-like
+*** For example
+**** 等同 For instance
+**** 通常只接一個例子
+***** There are a number of rules you must follow. For example, you have to submit an application before using the conference room.（有一些規則你需要遵守。舉例來說，你在使用會議室之前必須要提出申請。）
+**** 可以放在句首、句尾，也可以插入句中，是「插入語」的角色
+***** 既然是插入語，就不能忘了加上逗點，讓它跟本文隔開喔。
+****** For example, air is comprised mainly of nitrogen and oxygen.
+****** Air, for example, is comprised mainly of nitrogen and oxygen.
+****** Air is comprised mainly of nitrogen and oxygen, for example.
+*** Such as
+**** 後面不能接上句子，而是要接舉例的事物
+**** 可以列舉一個以上
+**** 如果有一個以上的例子，such as 前就需要逗號
+***** Small countries such as Belgium are dependent on open economies.（例如比利時這樣的小國家仰賴開放經濟。）
+***** Traditional media channels, such as television, newspapers, magazines and radio, have been going downhill in recent years.（傳統媒體管道，例如電視、報紙、雜誌和廣播，近幾年都開始式微。）
+*** Like
+**** 比較不正式的字
+**** 跟 such as 十分類似，甚至可以交替使用
+**** 當用 like 的時候，表示你所舉例的事物並不屬於你當下談論的群體。
+***** Writers like Shakespeare are harder to find these days.（像莎士比亞的作家現在是越來越少見了。）
+***** 莎士比亞只有一個，而且確實存在過，並不屬於這裡提到的群體「越來越少見的作家」，因此使用 like。
+**** 而 such as 則是列舉當下談論群體中的個體
+***** This juice is made from tropical fruits, such as pineapples, mangoes, and papayas.（這果汁是由熱帶水果製成的，例如鳳梨、芒果，以及木瓜。）
+** Who, whom, which, that, when, where
+*** 關係代名詞 (Who, whom, which, that)
+**** 身兼代名詞與連接詞兩種角色
+**** 代替先前出現的人事物（先行詞），另一方面引導從屬子句（作為形容詞子句），來修飾它所替代的詞。
+**** who, whom
+***** 指稱先前提過的「人」
+***** 若要代替的「人」在關係子句裡是「主詞」，就用主格 who
+****** I went to the library with Anthony, who is also in my math class.
+***** 若要代替的「人」在關係子句裡是「受詞」，就用受格 whom
+****** This is the man whom you want to see.
+**** which
+***** 用來指稱先前提過的「事物、動物和地點」
+****** The gallery, which was located on the concourse level, displayed several interesting pieces of contemporary sculpture.
+**** that
+***** 代替 which、who、whom
+****** My father restored the car that was parked in the garage.
+***** that 前面不能有逗號或介係詞喔
+**** 關係副詞
+***** when
+****** 修飾前面出現過的「時間」
+******* I still remember the day when he arrived.
+******* Tell me the time when you can come.
+***** where
+****** 修飾前面出現過的「地點或方向」
+******* This is the cafeteria where I see my friends.
+******* This is the place where he was born.

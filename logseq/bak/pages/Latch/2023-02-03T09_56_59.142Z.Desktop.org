@@ -1,0 +1,32 @@
+* *Cross-coupled inverters*
+** ![image](../assets/image_1675416732244_0.png){:height 142, :width 269}
+*** (a) and (b) are the same (Just organized in vertical to show symmetry)
+** Both Q and Q' are stable, so we call that bistable
+** Storing 1 bit information
+** Not useful
+*** Value in Q and Q' would not change
+*** Since it has no input
+* *SR-Latch*
+** ![image](../assets/04173_1675417514309_0.webp){:height 152, :width 400}
+** Understand the Truth Table
+:PROPERTIES:
+:collapsed: true
+:END:
+*** NOR Gate : Both (0,0) --> 1, else --> 0
+*** Case 1 (0,1) and 2 (1,0)
+**** Case 1
+***** R is 1 --> Q = 0
+****** Q and S are 0 --> Q' = 1
+**** Similarly for Case 2
+*** Case 3 (0,0)
+**** Assume Q,Q' = (0,1)
+***** Q and S are 0 --> Q' = 1
+****** R is 0 and Q' is 1 --> Q = 0
+***** Keeping the previous Q,Q' = (0,1)
+**** Similarly for Q,Q' = (1,0)
+*** Case 4 (1,1)
+**** R is 1 --> Q = 0
+**** S is 1 --> Q' = 0
+**** No meaning
+** S: Set, R: Reset
+** Awkward beacuse S

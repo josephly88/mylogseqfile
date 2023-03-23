@@ -1,0 +1,48 @@
+* 01:39
+** Range-based for loop in C++ 11 [[C/C++]] [[Programming Language]]
+*** Example
+*** #+BEGIN_SRC C++
+std::vector<int> v = {0, 1, 2, 3, 4, 5};
+
+// Iterating over whole vector
+for (auto i : v)
+        std::cout << i << ' ';
+
+// the initializer may be a braced-init-list
+for (int n : {0, 1, 2, 3, 4, 5})
+        std::cout << n << ' ';
+
+// Iterating over array
+int a[] = {0, 1, 2, 3, 4, 5};    
+for (int n : a)
+        std::cout << n << ' ';
+
+// Printing keys and values of a map
+std::map <int, int> MAP({{1, 1}, {2, 2}, {3, 3}});
+for (auto i : MAP)
+  		std::cout << '{' << i.first << ", " 
+                  << i.second << "}\n";
+#+END_SRC
+** Array vs. &Array [[C/C++]] [[Programming Language]]
+*** #+BEGIN_SRC C++
+int array[5];
+cout << array << " " << &array << endl;
+// e.g. 0x7fffce606b90 0x7fffce606b90
+#+END_SRC
+*** So you might think that ~array~ and ~&array~ are the same
+*** Well, they aren't not!!
+*** #+BEGIN_SRC C++
+int array[5];
+cout << array << " " << array + 1 << endl;
+cout << &array << " " << &array + 1 << endl;
+// e.g. 0x7ffc6ab5daa0 0x7ffc6ab5daa4 
+// e.g. 0x7ffc6ab5daa0 0x7ffc6ab5dab4
+#+END_SRC
+*** With pointer arithmetic, we can see the difference
+**** ~array~ is a pointer to the first element of array
+***** ~array + 1~ would be the pointer to the second element
+**** ~&array~ is a pointer to whole array of 5 integers
+***** ~&array + 1~ results in addition of 5 * 4B = 20 = 0x14
+***** Which is the address right after the array
+***
+*

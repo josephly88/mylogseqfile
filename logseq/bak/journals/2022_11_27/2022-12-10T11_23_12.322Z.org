@@ -1,0 +1,8 @@
+* [[Learning Agenda]]
+** Operating System Three Easy Pieces (Textbook)
+** Writing in the Sciences (Coursera)
+** Missing Semester (MIT)
+** xv6 (MIT)
+** Advanced Microcontroller Design and System on Chip
+*** https://www.youtube.com/playlist?list=PLDqMkB5cbBA4OW0fDTu1FY6aw4uBWOpBa
+**

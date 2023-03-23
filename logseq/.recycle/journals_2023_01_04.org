@@ -1,0 +1,3 @@
+* 18:17
+** Should I link the page from parent or from the child?
+** [[Time Chunks]]

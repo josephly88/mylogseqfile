@@ -1,0 +1,41 @@
+* *Processing*
+** [[Operating System: Three Easy Pieces]]
+*** Virtualization
+**** Process
+**** Memory
+*** Concurrency
+*** Persistence
+** Writing in the Sciences (Coursera)
+*** Week 2/8
+** FreeCodeCamp
+*** Responsive Web Design
+**** 7/20
+*
+* *Subject*
+** Computer Science
+*** Online Courses
+**** CS-Courses Guide: https://csdiy.wiki/en/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/
+**** Missing Semester (MIT)
+**** xv6 (MIT)
+**** Advanced Microcontroller Design and System on Chip
+:PROPERTIES:
+:collapsed: true
+:END:
+***** https://www.youtube.com/playlist?list=PLDqMkB5cbBA4OW0fDTu1FY6aw4uBWOpBa
+**** Verification Academy https://verificationacademy.com/
+*** Textbooks
+**** The C Programming Langauge
+**** Introduction to Algorithm
+**** Computer Architecture: A Quantitative Approach
+**** Understanding Linux Kernel
+**** Digital Design and Computer Architecture
+*** Web Tutorial
+**** https://ithelp.ithome.com.tw/articles/10201706
+** English
+*** 旋元佑文法
+*** English Grammar in Use
+** Electronic Engineering
+*** Online Course
+**** https://www.coursera.org/learn/electronics
+**** https://www.electronics-tutorials.ws/
+*** FPGA : Advanced Digital Systems: Study topics such as memory and peripheral interfaces, clock generation and management, power management, and digital signal processing

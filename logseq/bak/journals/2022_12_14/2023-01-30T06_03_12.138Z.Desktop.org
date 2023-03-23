@@ -1,0 +1,8 @@
+* [[Stable Diffusion]] [[未整理]]
+** https://www.zhihu.com/question/558019952
+** https://www.bilibili.com/read/cv19211897?from=articleDetail
+** Poor man's outpainting
+** https://www.reddit.com/r/WaifuDiffusion/comments/xudcdp/prompts_guide_by_cdcruz/
+** https://rentry.co/8vaaa
+*
+*

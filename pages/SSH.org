@@ -1,0 +1,15 @@
+* Secure Shell
+*
+* ~ssh username@serverhost~
+** server host
+*** IP Address or Domain Name
+**** Linux Public IP: ~curl ifconfig.me~
+* OpenSSH Server
+** To accept SSH connections
+** Checking
+*** ~ssh localhost~
+**** Without: ~ssh: connect to host localhost port 22: Connection refused~
+***** Then install the SSH server by
+****** ~sudo apt install ssh -y~
+** Public SSH Server Through Cloudflare Tunnel
+*** ((63ecaff6-8eb6-482e-a69a-98aec0faa402))

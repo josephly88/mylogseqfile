@@ -1,0 +1,18 @@
+* Universal Serial Bus
+* ![image](../assets/d6e91d51_1675760213622_0.webp){:height 421, :width 692}
+* USB 2.0
+** Charge-only USB cable
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Not common
+*** Reason
+**** USB 2.0 only offers low-current power
+***** Mouse: OK, Phone: Not OK
+*** For better charging current
+**** The peripheral needs to communicate with the charger
+***** Occupy the data portion
+***** Not bidirectional
+**** Advantage
+***** Eliminate the risk of being hacked through a spoofed charging port
+***** Save money

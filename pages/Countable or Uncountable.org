@@ -1,0 +1,39 @@
+* 注意 ^^可數 ／ 不可數^^
+** 區分
+*** 可數
+**** 形狀固定, 不可被分割
+**** 度量衡
+*** 不可數
+**** 形狀不固定, 分割後仍是同一樣
+***** 加上量詞後, 單位可數. e.g., Three bottles of water
+**** 抽像名詞
+**** 動名詞, 如 smoking, swimming
+**** 專有名詞 (因只有一個特定對象，如人名或地名，沒有數的必要)
+** 類別及規則
+*** 可數
+**** 單數：限定詞位置加上 a 或 an 或 the
+**** 複數：名詞詞尾加上 -s, the也可使用
+*** 不可數
+**** 沒有單複之分：不能使用a, an, -s. 但其他仍可使用
+** *(語意 能影響名詞為可數或不可數)*
+:PROPERTIES:
+:collapsed: true
+:END:
+*** 例子:
+**** Paper
+***** 紙不可數。因撕開一角，仍是一張紙
+***** I have a paper to write tonight 意指報告
+**** Beer
+***** 液體原是不可數
+***** Drinking a couple of beers a day won't do you any harm 意指一瓶或一杯啤酒
+**** Food
+***** 食物是個抽象概念，不可數
+***** Several essential foods have risen in price lately 意指食物種類
+***** 許多不可數名詞, 只要解釋成種類都是可作可數名詞使用
+**** Beauty
+***** 抽象概念，不可數
+***** Your sister is a real beauty 名詞省略, 可詳寫為 a real beauty person
+**** Armstrong
+***** 人名，專有名詞，不可數
+***** I'd like to invite the Armstrongs over for dinner
+***** 一家人都是這個姓氏，多於一個Armstrong(不再專有)，所以可用複數

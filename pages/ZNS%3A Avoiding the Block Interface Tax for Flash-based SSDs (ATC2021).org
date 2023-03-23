@@ -1,0 +1,72 @@
+* *3 Evolving towards ZNS*
+** *3.1 Hardware Impact*
+*** *Zone Sizing*
+**** Zone Capacity = N * Flash Block
+***** Stripe across multiple flash dies
+****** High read/write speed
+****** Protect die level failure by per-stripe parity
+***** Common practice 16-128 blocks across dies
+****** Hundreds of MB - X GB (Single digit)
+**** Large Zone
+***** (+) Better Performance
+***** (-) Host lose the data placement freedom
+**** Small Zone (Prefer)
+***** (+) Host has more data placement freedom
+***** (-) Worse Performance
+****** Unless increase the host complexity, such as host-side parity, deeper I/O queue depth
+***** If no stripe-wide parity --> Even smaller zone size could achieve
+*** *Device Resources*
+**** Number of active zone constraint
+***** Around 8-32
+***** Due to the hardware resource
+****** XOR engines, memory (SRAM and DRAM), power capacity
+****** Data and parity could occupy hundreds of KB to MB
+******* Due to two-step programming
+***** Increase the number of active zone by
+****** Extra power capacitors
+****** DRAM for data movement
+****** Reduce parity requirement
+****** Write-back Cache (e.g., SLC)
+** *3.2 Host Software Adoption*
+*** *Host-side FTL (HFTL)*
+**** Responsibility
+***** Translation Mapping
+***** Garbage Collection
+**** Should not affect the host applications
+* *4 Implementation*
+** *4.1 General Linux Support*
+*** Linux kernel's Zoned Block Device (ZBD) subsystem
+**** Unified zoned storage API
+***** In-kernel API
+***** An ioctl-based userspace API
+*** *fio*
+**** Use Userspace API
+**** Modification
+***** Avoid I/O beyond zone capacity
+**** Not modified
+***** No active zone limit tracking
+*** *Zone Capacity*
+**** Kernel maintain an in-memory zone descriptors
+*** Evaluated ZNS SSD
+**** Expose a fraction of conventional block device
+**** ZNS
+* *5 Evaluation*
+** *Device*
+*** Max Active Zones: 14
+*** Zone Size: 2048 MB
+*** Zone Capacity: 1077MB
+** *5.1 Raw I/O Characteristics*
+*** Zone Seq Write Throughput
+**** 7%OP: 370MB/s
+**** 28%OP: 590MB/s
+**** ZNS: 1010MB/s
+***** 1.7 - 2.7X higher
+*** Read Latency
+**** Write and Random read simutaneously
+**** Latency increase linearly with the write target
+*** Reason
+**** Align writes onto distinct erase blocks
+**** Avoid GC
+***** No host data movement is accounted?
+***** Any extra care for data with similar lifetime?
+**

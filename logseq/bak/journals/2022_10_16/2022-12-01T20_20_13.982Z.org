@@ -1,0 +1,51 @@
+* Doing:
+** Editting
+*** First, summarize the idea.
+*** Check the completeness of the information
+*** Second, passage checking
+*** Citation
+*** Finally, check short-form
+***
+** Keywords Checking
+*** Process
+*** Done
+**** FTL
+**** in-place, out-place
+****
+** Check List
+*** Abstract
+*** Introduction
+**** Background of SSD
+**** SSD Research Methodology
+**** Contributions
+*** Background
+**** Dual interface SSD
+**** Consistency
+**** Assumption
+**** Motivation
+*** Design
+**** Node-Block Mapping
+**** Observation of B-Tree
+**** IU Appending
+**** Interval-to-Leaf Cache
+*** Implementation
+*** Evalution
+**** Setup
+**** Micro
+**** Mixed
+**** YCSB
+*** Discussion
+*** Conclusion
+*** Future Work
+*
+* Paper Writing:
+** Editing
+*** Figures
+**** 圖字跟paper字差不多就可以 (Dense 一點)
+*** Don't know where to put
+**** Design 3 原用node-block mapping 因為node ID
+**** split or merging is not the overhead
+**** How does delete workload generated?
+**
+** Citation
+*

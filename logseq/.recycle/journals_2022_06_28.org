@@ -1,0 +1,7 @@
+* 15:44
+** Done:
+*** Optimize merge
+*** Write the review
+*** Read the last 1/3
+*** generate delete log.txt
+*** rerun without log

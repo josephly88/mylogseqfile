@@ -1,0 +1,7 @@
+* Circuit with Glitch
+** ![image](../assets/image_1675415771397_0.png)
+** ![image](../assets/image_1675415724375_0.png)
+*** Glitch occur when a change in a variable cross the circle in K-map
+*** Glitch-proof Circuit
+**** ![image](../assets/image_1675415869351_0.png)
+****

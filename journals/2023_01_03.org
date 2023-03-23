@@ -1,0 +1,22 @@
+* 01:26
+** Construction of T-shirt [[Clothing - Construction]] [[未整理]]
+*** There are several factors to consider when evaluating the construction of a T-shirt:
+*** Seams: The seams of a T-shirt should be double-stitched for added durability. Single-stitched seams are more prone to coming undone or fraying over time.
+*** Neckline: The neckline of a T-shirt should be well-constructed and should not stretch out or become distorted over time. A ribbed neckline can help to keep the neckline in shape.
+*** Hem: The hem of a T-shirt should be well-constructed and should not stretch out or become distorted over time. A double-stitched hem can help to keep the hem in shape.
+*** Shoulder seams: The shoulder seams of a T-shirt should be well-constructed and should not stretch out or become distorted over time. A double-stitched shoulder seam can help to keep the seam in shape.
+*** Sleeves: The sleeves of a T-shirt should be well-constructed and should not stretch out or become distorted over time. A double-stitched sleeve seam can help to keep the seam in shape.
+*** Overall, good construction in a T-shirt involves using high-quality materials and techniques to create a garment that is durable and well-made. By looking for T-shirts with these characteristics, you can ensure that you are getting a T-shirt that is likely to last and maintain its shape over time.
+** [[Clothing - Construction]] [[未整理]]
+*** Stitch
+*** https://caftansandmalbec.wordpress.com/2012/10/22/8-ways-to-recognize-low-and-high-quality-garments-when-you-see-them/
+* 03:16
+** Building APP [[React Native]]
+*** Steps
+**** Learn about React Library
+***** https://developer.mozilla.org/zh-TW/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started
+***** Learn about HTML and CSS
+****** https://www.freecodecamp.org/learn/2022/responsive-web-design/
+**** Learn about the principle of mobile app development
+**** Go through the React Native documentation and tutorials
+**** Build a simple app

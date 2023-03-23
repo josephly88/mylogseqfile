@@ -1,0 +1,53 @@
+* Cheat sheet: https://vim.rtorr.com/
+:PROPERTIES:
+:id: 63e74c03-0cbd-4a04-8b0f-c55657ffb491
+:END:
+*
+* Concept
+** [[Vim - Keystrokes]]
+** Modal
+*** Normal ~<Esc>~
+*** Insert ~i~
+*** Replace ~R~
+*** Visual ~v~, ~V~(Line), ~<Ctrl-V>~(Block)
+*** Command-line ~:~
+** Buffers, Tabs, Window
+*** Buffer: A set of opened files
+*** Tab: Each tab page can have multiple windows
+*** Window: A view to a buffer
+** Customizing Vim
+*** Basic config: =/.vimrc=
+*** Plugins
+**** Built-in package management since Vim 8.0
+**** Create the dir =~/.vim/pack/vendor/start/=
+***** Put plugins inside using ~git clone~
+**** See [[https://vimawesome.com/][Vim Awesome]] for plugins
+*
+* macro
+** ~q{char}~: start recording a micro in register
+** ~q~: stop recording
+*** ~qejq~: recording ~e~ register, ~j~ (Go next line) and stop
+*** ~qeq~: clear the macro in register ~e~
+** ~@{char}~: replays the macro
+*** ~{num}@{char}~: execute numbers of time
+** Recursive macro
+*** Example:
+**** ~qa{sth}q~: record macro ~a~
+**** ~qb{sth}@a{sth}q~: record macro ~b~ using ~a~
+*** Example: convert xml to json
+:PROPERTIES:
+:collapsed: true
+:END:
+**** ~Gdd~, ~ggdd~ delete first and last lines
+**** Macro to format a single element (register ~e~)
+***** Go to line with ~<name>~
+***** ~qe^r"f>s": "<ESC>f<C"<ESC>q~
+**** Macro to format a person
+***** Go to line with ~<person>~
+***** ~qpS{<ESC>j@eA,<ESC>j@ejS},<ESC>q~
+**** Macro to format a person and go to the next person
+***** Go to line with ~<person>~
+***** ~qq@pjq~
+**** Execute macro until end of file
+***** ~999@q~
+**** Manually remove last ~,~ and add ~[~ and ~]~ delimiters

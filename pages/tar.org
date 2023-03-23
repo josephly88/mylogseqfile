@@ -1,0 +1,19 @@
+* Tape Archive
+** Archiving: Combining multiple files into a single file
+*
+* Gzip
+** Widely used data compression algorithm
+** Without ~-z~, tar will not do the compression
+*
+* Compression
+** ~tar -czf output.tar.gz input~
+*** ~-c~: Create a new archive
+*** ~-z~: Use gzip algorithm
+*** ~-v~: Verbose, list all the files
+*** ~-f~: The name of the archive
+* Decompression
+** ~tar -xzvf input.tar.gz~
+*** ~-x~: Extract the contents of the archive
+*** ~-z~: It is gzip algorithm
+*** ~-v~: Verbose, list all the files
+*** ~-f~: The name of the archive

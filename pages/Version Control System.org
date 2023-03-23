@@ -1,0 +1,19 @@
+* Types
+** Local Version Control Systems
+*** e.g., RCS
+*** Saved in a simple database
+*** Problem
+**** No collaboration is allowed
+**** Data loss if storage failure
+** Centralized Version Control Systems (CVCSs)
+*** Central VCS Server keeps the Version Database
+*** Problem
+**** Cannot work if server failure
+**** Data loss if server's storage failure
+** Distributed Version Control Systems (DVCSs)
+*** Example
+**** [[Git]]
+**** Mercurial
+**** Bazaar
+**** Darcs
+*** Fully mirror the repository

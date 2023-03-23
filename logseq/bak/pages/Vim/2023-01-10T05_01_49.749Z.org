@@ -1,0 +1,18 @@
+* [[Unix Tools]]
+*
+* Search and Replace [[Vim]]
+:PROPERTIES:
+:collapsed: true
+:END:
+** ~:s~ (substitude)
+*** Current line only: ~:s/foo/bar/g~
+*** All lines: ~:%s/foo/bar/g~
+**** g: Every occurrence in a single line
+**** %: Every line
+*** Range of lines: ~:5,12s/foo/bar/g~
+* Delete Multiple Lines [[Vim]]
+** ::[start],[end]d
+** Wildcards
+*** ~.~ : Current Line
+*** ~$~ : The end of file
+*** ~%~ : Match all lines in file, e.g. ~:%d~

@@ -1,0 +1,12 @@
+* TODO!
+** Sort out Meeting Minutes
+*
+* To recompile the nvme-cli in Ubuntu if you installed it using apt install, you need to build it from source code. Here are the steps:
+** Download the source code of nvme-cli from the official repository, e.g., https://github.com/linux-nvme/nvme-cli.
+** Extract the downloaded source code.
+** Change to the directory containing the source code using cd.
+** Configure the build using ./configure. This step will check for dependencies and configure the build.
+** Build the source code using make. This step will compile the source code.
+** Install the compiled binary using sudo make install. This step will install the binary in the appropriate location.
+** Finally, verify that the new version of nvme-cli has been installed by running nvme and checking the version.
+** Note that the above steps are for building nvme-cli from source code on Ubuntu. The steps may differ for other operating systems.

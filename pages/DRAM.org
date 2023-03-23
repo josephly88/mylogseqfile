@@ -1,0 +1,17 @@
+* RAM Architecture
+:PROPERTIES:
+:collapsed: true
+:END:
+** ![image](https://cdn1.techbang.com/system/images/164376/original/8b5f20f18325626d9b01a7d489395306.jpg?1401360280){:height 311, :width 531}
+*** Row buffer access locality
+** ![image](../assets/5-Figure8-1_(1)_1655717143143_0.png){:height 391, :width 381}
+*** Bank parallelism
+* Memory Refresh
+:PROPERTIES:
+:collapsed: true
+:END:
+** Periodically reading data from an area of RAM and immediately rewriting it to the same area
+** Reason:
+*** Data is stored inside DRAM by an electrical charge in capacitors
+*** The charge is only temporary, so capacitors are needed to recharge periodically.
+*** Either memory controller or CPU perform this process automatically

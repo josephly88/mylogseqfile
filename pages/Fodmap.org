@@ -1,0 +1,33 @@
+* Fermentable, Oligo-, Di-, Monosaccharides And Polyols
+:PROPERTIES:
+:collapsed: true
+:END:
+** Fermentable 可發酵的
+*** 無法被消化、或被吸收的短鏈碳水化合物，會被腸道的細菌發酵產生氣體
+** Oligosaccharides 寡醣
+*** 如半乳寡醣、果聚糖，存在於某些蔬菜、水果、豆類、穀類、堅果、茶類等
+** Disacchareides 雙醣
+*** 如乳糖，存在於大部分的乳製品
+** Monosaccharides 單醣
+*** 如果糖，存在大部分水果，部分蔬菜及甜味劑
+** Polyols 多元醇
+*** 如山梨醇、甘露醇，存在於某些蔬菜、水果及人工甜味劑中
+* 在腸道發酵的短鏈碳水化合物
+** 在小腸道無法被消化或被吸收，因此滯留在腸道中會發酵產氣
+** 或是會造成過多的水分移動到腸道中，造成脹氣、腹痛、腹瀉、痙孿等症狀。
+* 三階段執行低FODMAP飲食
+** 1: 完全執行低FODMAP飲食 (Low FODMAP Diet)
+*** 為期2~6周，只能吃低FODMAP的食物
+** 2: 重新引進期 (FODMAP Reintroduction)
+*** 花6~8周的時間，將前述FODMAP中五種分類的食物（即含果糖、乳糖、果聚糖、半乳寡糖、多元醇的五類食物）慢慢重新引進飲食中，測試每個人的耐受度
+** 3: 個別化時期 (FODMAP Personalization)
+*** 建立個人化的飲食菜單，避開自己較無法忍受的食物。
+*
+* Food Guide
+** https://www.ibsdiets.org/fodmap-diet/fodmap-food-list/
+** ![image](../assets/5b1f951096faa0a9615cfb819428b888_1665859306721_0.jpg){:height 478, :width 837}
+** ![Image](../assets/image_1665859567668_0.png){:height 625, :width 462}
+** ![Image](../assets/image_1665865886461_0.png){:height 560, :width 734}
+** ![image](../assets/image_1665865897267_0.png){:height 566, :width 736}
+** ![image](../assets/image_1665865907255_0.png){:height 585, :width 739}
+** ![Image](../assets/image_1665865914133_0.png){:height 567, :width 739}

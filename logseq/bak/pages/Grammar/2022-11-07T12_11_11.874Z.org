@@ -1,0 +1,59 @@
+* Suppose vs. Supposed #Grammar #English #card
+:PROPERTIES:
+:card-last-score: 5
+:card-repeats: 2
+:card-next-schedule: 2022-06-20T09:10:42.722Z
+:card-last-interval: 4
+:card-ease-factor: 2.7
+:card-last-reviewed: 2022-06-16T09:10:42.722Z
+:collapsed: true
+:END:
+** https://www.grammarly.com/blog/supposed-to/
+** *Supposed* - obligation or force to
+- I have to be home by midnight or my coach will turn into a pumpkin.
+- I am *supposed* to be home by midnight or my coach will turn into a pumpkin.
+** *Suppose* - Assume or Presume
+- Max isn’t here yet, so I *suppose* his train was delayed.
+- The committee *supposes* that the decline in profits is due to a faulty product design.
+As an imperative, it can mean the equivalent of what would happen if.
+- *Suppose* my coach really does turn into a pumpkin. What will I do then?
+* Do you know ... ? vs. Did you know ... ? #Grammar #English #card
+:PROPERTIES:
+:collapsed: true
+:END:
+** Do you know :  發問者不知道答案
+*** e.g., Do you know the girl’s name? She’s so hot!
+** Did you know : 發問者己知答案
+*** 發問者想知道問這題前, 回答者是否已知答案, 因此使用過去式
+*** e.g., Did you know that our teacher used to play for the national basketball team?
+*** 回答者可直接Yes Or No
+:LOGBOOK:
+CLOCK: [2022-06-16 Thu 17:01:05]
+:END:
+* Q: Did you know ... ? A: I ^^don't / didn't^^ know that ?? #Grammar #English #Card
+:PROPERTIES:
+:collapsed: true
+:END:
+** See this first ((62aaf3cb-5420-48c0-ad18-3289c3c14323))
+** Correct Answer: I didn't know that.
+** 別人問這句的當下, 你就知道了, 因些用過去式表達我之前不知道
+** 如果對方與你都不知道答案, 則使用 I don't know.
+** Similar Example:
+*** I forgot. 我之前忘記, 現在想起了
+* Q: 不是故意的 : I ^^don't / didn't^^ mean it ? #Grammar #English #card
+:PROPERTIES:
+:collapsed: true
+:END:
+** Correct Answer: I *didn't* mean it.
+** 因為是解釋之前的事並非故意, 因此使用過去式
+* Q: 搞垮了 : I ^^blow / blew^^ it ?  (NOT I blow it) #Grammar #English #card
+:PROPERTIES:
+:collapsed: true
+:END:
+** 搞垮的時候是一瞬間的事, 當你告知別人時, 事情已存在於過去
+* Q: "I forgot". Do I remember now ? #Grammar #English #card
+:PROPERTIES:
+:collapsed: true
+:END:
+** Correct Answer: Yes
+** I forgot is in the past. Now I remember.

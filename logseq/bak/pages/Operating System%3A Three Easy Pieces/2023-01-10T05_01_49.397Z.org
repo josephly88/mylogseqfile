@@ -1,0 +1,170 @@
+* #+title: Operating System: Three Easy Pieces
+* [[Operating System]] [[Book]]
+*
+* Virtualization
+** Process
+*** CH1: Process
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Illusion of running multiple thing simutaneously
+**** Process is an abstraction
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Memory
+***** Registers
+****** PC, IP
+****** Stack pointer and Frame pointer
+***** I/O Info
+**** Process List
+**** Mechanism vs. Policy
+*** CH2:
+** *Address Space*
+:PROPERTIES:
+:collapsed: true
+:END:
+*** CH1. Address Space
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Sharing Memory between processes
+**** The Address Space of a process
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Code
+***** Heap
+***** Stack
+*** CH2. Memory API
+:PROPERTIES:
+:collapsed: true
+:END:
+**** malloc() and free()
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Underlying OS Support - brk (Break)
+****** Change the location of the program's break (the end of the heap)
+**** mmap()
+*** CH3. Address Translation
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Hardware-based address translation
+***** For simple continuous address space for a process
+****** physical address = virtual address + base
+*** CH4. Segmentation
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Three logical segments -> Three base address
+***** code (share)
+***** stack (backward)
+***** heap
+**** First two digit refers to the segment
+**** External Fragmentation
+***** Full of holes -> Compaction (Expensive)
+*** CH5. Free-Space Management
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Heap
+***** Mechanisms
+****** Splitting and Coalescing
+****** Size as the metadata (also magic number)
+****** Embedding a free list
+***** Strategies for choosing free space
+****** Basic
+******* Best-Fit
+******* Worst-Fit
+******* First-Fit
+******* Next-Fit
+****** Advance
+******* Segregated List
+******** A separate list for popular-sized requests for an application
+******* Buddy Allocation
+******** Buddy tree
+******** [[../assets/image_1671003203118_0.png]]
+******** Problem: Internal Fragmentation
+****
+*** CH6. Introduction to Paging
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Segment : Variable size
+**** Page: Fixed size
+**** Page Table for address translation (for each process)
+***** Could be large -> Store in memory (Might be swapped out)
+**** Problem:
+***** Cost of space
+***** Extra memory fetching
+*** CH7. Translation Lookaside Buffers
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Hardware TLB at MMU accelerate the address translation
+**** TLB invalid -> Cache miss
+***** PTE invalid -> Error. The process has not allocated the page
+**** Context Switch
+***** Set all as 0
+***** Address space identifier (ASID)
+**** Policy: LRU or Random
+****
+****
+*** CH8. Advanced Page Tables
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Multi-level Page Table
+**** Inverted Page Table
+***** Instead of having a page table per process
+****** Keep a single page table for all physical pages
+****** Hash Table to search
+****** Entry: Process ID, Virtual page number
+*** CH9. Swapping: Mechanisms
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Swap Space in the disk
+**** Page Fault -> Swap Space
+**** Page-Replacement Policy
+**** Replacement Watermark to trigger the swapping
+*** CH10. Swapping: Policy
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Goal: To minimize the number of cache miss
+**** Eviction Policies
+***** FIFO
+***** Random
+***** LRU
+****** Approximating LRU (Bit & Clock Algorithm)
+******* Scan the page circularly
+******* If ~use_bit == 1~, set to 0
+******* If ~use_bit == 0~, evict
+**** Demand Paging
+***** Brings the page into memory when it is accessed
+**** Prefetching
+***** Guess the page that is about to be used, and bring it to memory
+****
+****
+*
+* Concurency
+*
+* Persistence
+** CH1. I/O Device
+*** Polling vs. Interrupt (Or Hybrid)
+*** DMA
+*** Port-mapped I/O vs. Memory-mapped I/O
+** CH2. Hard Disk Drives
+*** Unit: Sector (atomic)
+*** Write Back vs. Write Through
+*** I/O Time:
+**** $T_{I/O} = T_{seek} + T_{rotation} + T_{transfer}$
+**** $Rate_{I/O} = \frac{ Size_{transfer} }{ T_{I/O} }$
+*** Disk Scheduling and Policies
+**
+*
+*
+*

@@ -1,0 +1,10 @@
+* Using switching or button as clock would appear an error
+** Since Vivado automatically connect any pin that has clock event to clock input buffer
+** [Place 30-574] Poor placement for routing between an IO pin and BUFG.
+*** A routing issue between the input buffer (IBUF) of the clock (CLK_IBUF) and the global clock buffer (BUFG) in your design. The message is suggesting that the placement of the input buffer and the global clock buffer is sub-optimal and could cause routing congestion.
+**** IBUF: An interface between input signal and internal digital circuit
+***** CLK_{IBUF}: a special IBUF to receive clock signals
+****** make sure the clock signal meets the requirement input specification
+** By adding this to .xdc file ~set_property CLOCK_DEDICATED_ROUTE FLASE [get_nets CLK_IBUF];~
+*** set the clock dedicated route property to ~FALSE~ for the ~CLK_IBUF~ net
+*** indicate that the clock signal should not be assigned to a dedicated routing resource on the device, such as a global clock network.

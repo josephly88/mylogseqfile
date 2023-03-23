@@ -1,0 +1,12 @@
+* Zoned Namespace (ZNS) SSD
+*
+* Zone: The logical address space is divided into fixed-sized zone
+** Read/Write Feature
+*** Sequential Write
+*** Random Read
+*** Reset-before-Rewrite
+** States
+**
+* Paper List
+** [[ZNS: Avoiding the Block Interface Tax for Flash-based SSDs (ATC2021)]]
+** [[ZNS+: Advanced Zoned Namespace Interface for Supporting In-Storage Zone Compaction (OSDI2021)]]

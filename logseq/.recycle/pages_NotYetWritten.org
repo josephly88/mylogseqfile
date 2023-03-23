@@ -1,0 +1,5 @@
+* [[GDB]] [[未整理]]
+** GDB tui
+*** https://www.cntofu.com/book/46/gdb/gdbshi_yong_jiao_xue_ff1a_zi_dong_hua_ni_de_debug.md
+** GDB with python
+*** https://www.cntofu.com/book/46/gdb/gdbshi_yong_jiao_xue_ff1a_zi_dong_hua_ni_de_debug.md

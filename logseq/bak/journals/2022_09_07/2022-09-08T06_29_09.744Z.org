@@ -1,0 +1,8 @@
+* Plot graphs
+* Merge all paper survey into one slide
+** ~Drive/SSD_B-tree_Survey/ppt~
+** ~Drive/Research/Indexing...~
+** ~Drive/SSD_B-tree_Survey/Copy_on_write_BTree/draw.io~
+** Notion/Research/CoW B-tree Survey
+* Categorize all the surveys
+*

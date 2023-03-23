@@ -1,0 +1,30 @@
+* HTTP Method
+** OPTIONS
+** GET
+** HEAD
+** POST
+** PUT
+** DELETE
+** TRACE
+** CONNECT
+*
+* GET vs. POST
+:PROPERTIES:
+:id: 63c50ccb-9d6a-41ea-928e-33b956c3c2f4
+:END:
+** HTTP is like mailing a letter
+*** Format/Mechanism: HTTP
+*** http-header <-> envelope
+*** message-body <-> letter
+** GET is like a postcard, no letter inside
+*** Content must be written on the http-header(envelope)
+*** For example
+**** #+BEGIN_SRC html
+<form method="get" action="">
+<input type="text" name="id" />
+<input type="submit" />
+</form>
+#+END_SRC
+**** After submit, the link ~http://xxx.com/~ becomes ~http://xxx.com/?id=10101~
+** POST is a letter in envelope
+*** Content are in message-body

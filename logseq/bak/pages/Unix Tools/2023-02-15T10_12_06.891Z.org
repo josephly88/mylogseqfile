@@ -1,0 +1,60 @@
+* *Documentation or Manuel*
+** ~man~
+** ~tldr~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Focus on examples
+* *Navigation*
+** Other than ~ln -s~ to create symlinks
+** ~fasd~
+** ~autojump~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~j cool~ to jump to ~/home/user/files/cool_project~ that you often visit
+* *Searching*
+** File or Directory
+*** [[find]]
+*** ~fd~
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Fast find
+**** Feature
+***** User-friendly interface
+***** Support regex
+***** Color highlight
+***** Ignore result specified ~.gitignore~
+**** ~fd .txt~ : Search txt in the current directory and its subdirectory
+*** ~locate~
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Uses a database for searching (Fast)
+***** DB is created by ~updatedb~
+***** Periodically update to reflect the file system
+****** Sometimes it may not be up-to-date
+** File Content
+*** [[grep]]
+*** ~ack~
+*** ~ag~
+*** [[rg]]
+** Shell comands
+*** ~history~
+**** Access the shell history
+* *IDE*
+** [[Vim]]
+* *Syntax Checker and Debugger*
+** shellcheck
+:PROPERTIES:
+:collapsed: true
+:END:
+*** A tools will help you find errors in your sh/bash scripts
+*** https://github.com/koalaman/shellcheck
+** [[GDB]]
+** [[Valgrind]]
+* *Others*
+** [[tar]]
+** [[SSMTP]]
+** [[SSH]]

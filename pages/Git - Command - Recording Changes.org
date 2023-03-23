@@ -1,0 +1,65 @@
+* Getting a Git Repository
+** Options
+*** Turn a local directory to a Git repository
+**** ~git init~: create ~.git~
+*** ~clone~ an existing Git repo
+**** ~git clone <url>~
+* Recording Changes
+** Check by ~git status~
+*** ~git status -s~ (short version)
+**** Two columns
+***** Left: Staging Aread
+***** Right: Working Tree (Non-staged)
+**** Untracked: ~??~
+**** Newly added: ~A~
+**** Modified: ~M~
+***** ~MM~ means staged but modified again
+** Two states of file
+*** ~tracked~
+**** ~git add~
+***** Untracked --> Tracked
+***** Track the modified version
+****** If you modify a file, add it, and modify again, the stage would only track the last modification
+*** ~untracked~
+**** ~.gitignore~ automatically untrack
+***** Example
+#+BEGIN_SRC
+# ignore all .a files
+*.a
+
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+
+# ignore all files in any directory named build
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory and any of its subdirectories
+doc/**/*.pdf
+#+END_SRC
+****** ~!~ Negate a pattern (For exception)
+****** ~#~ Comment
+****** ~**~ For nested directory
+* Viewing Changes
+** ~git diff~
+*** Only see changes of non-staged files
+*** To see staged files: ~git diff --staged~ (or ~--cached~ the same)
+* Commit Changes
+** ~git commit~
+*** Inline with message ~git commit -m "YOUR_MESSAGE"~
+*** Skipping the staging area: ~git commit -a~
+* Removing Files
+** ~git rm~
+*** Also remove the file in the working tree
+*** If you want to untrack but not delete: ~git rm --cached~
+* Moving Files
+** ~git mv~
+*** Same as
+**** ~mv A.txt B.txt~
+**** ~git rm A.txt~
+**** ~git add B.txt~

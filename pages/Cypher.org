@@ -1,0 +1,98 @@
+* Graph data query language
+*
+* ~()~ Indicates node
+* ~[]~ Indicates relationship
+* ~{}~ Indicates property
+*
+* Command
+** ~CREATE~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Node
+**** Exmaple:
+#+BEGIN_SRC cypher
+CREATE (p: Person {name: 'Emil', from: 'Sweden', kloutScore: 99}) RETURN p
+#+END_SRC
+**** ~p~ is the node variable
+**** ~Person is the node label~
+*** Relationship
+**** Example:
+#+BEGIN_SRC cypher
+MATCH (a: Person {name: 'a'}), (b: Person {name: 'b'})
+Create (a) - [r:KNOWS {since: 2001}] -> (b)
+RETURN r
+#+END_SRC
+****
+** ~MATCH~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Nodes by property
+**** Example:
+#+BEGIN_SRC cypher
+MATCH (p: Person) WHERE p.name = 'Emil' RETURN p
+// OR
+MATCH (p: Person {name: 'Emil'}) RETURN p
+#+END_SRC
+*** Pattern
+**** Example:
+#+BEGIN_SRC cypher
+MATCH (ee:Person)-[:KNOWS]-(friends)
+WHERE ee.name = 'Emil' RETURN ee, friends
+#+END_SRC
+** ~SET~ [[Cypher]]
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Update property
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Example:
+#+BEGIN_SRC cypher
+MATCH (p:Person)-[w:WATCHED]->(movie)
+WHERE p.name = "Mikey"
+SET w.rating = 5
+#+END_SRC
+*** Change label
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Example
+#+BEGIN_SRC cypher
+MATCH (n:OLD_LABLE) WHERE ID(n)=14
+REMOVE n:OLD_LABLE
+SET n:NEW_LABEL
+#+END_SRC
+**** ~REMOVE~ is to remove properties or labels
+** ~DELETE~ [[Cypher]]
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Node or Relationship by pattern matching
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Example:
+#+BEGIN_SRC cypher
+MATCH (n)-[r]-()
+WHERE n.name = 'Soren'
+DELETE r
+#+END_SRC
+*** ~DETACH DELETE~
+:PROPERTIES:
+:collapsed: true
+:END:
+**** delete all nodes and relationships
+**** Example:
+#+BEGIN_SRC cypher
+MATCH (n) DETACH DELETE n
+#+END_SRC
+*** By ID
+**** Example:
+#+BEGIN_SRC cypher
+MATCH (p:Person) where ID(p)=1
+DETACH DELETE p
+#+END_SRC
+*

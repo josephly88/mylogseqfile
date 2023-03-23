@@ -1,0 +1,9 @@
+* 16:21
+** Memory Refresh #DRAM
+*** Periodically reading data from an area of RAM and immediately rewriting it to the same area
+*** Reason:
+**** Data is stored inside DRAM by an electrical charge in capacitors
+**** The charge is only temporary, so capacitors are needed to recharge periodically.
+**** Either memory controller or CPU perform this process automatically
+** RAM Architecture #DRAM
+*** /link

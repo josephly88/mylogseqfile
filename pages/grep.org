@@ -1,0 +1,16 @@
+* Global Regular Expression Print
+* Example
+** ~grep "word" file.txt~
+* Flags
+** ~-C~: Context
+*** Display the line before and after the match
+*** e.g., ~grep -C 2 "word" file.txt~
+**** Display two lines before and after the matched line
+** ~-v~: Invert
+*** Invert the regex
+** ~-R~: Recursive
+*** Search for all subdirectory
+*** e.g, ~grep -R "word" /path/to/dir~
+**** Search for all files in ~dir~ and it's subdirectory
+** ~-i~: Ignore case
+** ~-n~: Show line number

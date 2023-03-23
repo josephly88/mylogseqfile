@@ -1,0 +1,125 @@
+* Document: [[https://developer.mozilla.org/en-US/docs/Web/CSS/Reference][MDN Web Docs - CSS]]
+*
+* *Structure*
+** #+BEGIN_SRC CSS
+selector1, selector2, ... {
+ property: value;
+}
+/* comment */
+#+END_SRC
+*
+* *Properties*
+** Basic: https://www.w3schools.com/css/default.asp
+** Advanced: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout
+* *Value*
+** ~unset~: Remove the earlier rules
+*
+* *Selector*
+** Basic: https://www.w3schools.com/cssref/css_selectors.php
+** Advanced: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
+** Major Selector Examples
+*** Class: ~.class-name~
+*** ID: ~#id_name~
+*** Match with attribute: ~element[attr-name]~
+*** Universal Selector: ~*~
+*** Nested: ~.class-name element-name~
+*** Pseudo Selector: ~:~
+*** Insert Element: ~::~
+* *Unit*
+:PROPERTIES:
+:collapsed: true
+:END:
+** Length Unit
+:PROPERTIES:
+:id: 63ca4b66-8602-4c69-b973-f9fc8de52703
+:END:
+*** Basic: https://www.w3schools.com/cssref/css_units.php
+*** Advanced: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
+* *Color Value*
+:PROPERTIES:
+:collapsed: true
+:END:
+** Basic: https://www.w3schools.com/cssref/css_colors_legal.php
+** Advanced: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+** RGBA (What is A?)
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Alpha Channel
+**** Opacity (Transparency)
+** CMYK
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~cmyk(cyan, magenta, yellow, black)~
+*** For print
+** HSL
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~hsl(hue, saturation%, lightness%)~
+*** Hue
+**** Select color by the color wheel
+**** E.g., 0 - red, 120 - green, 240 - blue
+*** Saturation
+**** Intensity of color
+**** E.g., 0% - Grey, 100% - Pure color
+*** Lightness
+**** Brightness
+**** E.g., 0% - Black, 50% - Neutral, 100% - White
+** Gradient Color
+:PROPERTIES:
+:collapsed: true
+:END:
+*** https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients
+*** ~linear-gradient(gradientDirection, color1, color2, ...)~
+*** Require at least two colors
+*** Gradient Direction
+**** By default from top to bottom ( ~180deg~ )
+**** From left to right ~90deg~
+*** Color-stops
+**** Accept any ((63ca4b66-8602-4c69-b973-f9fc8de52703))
+**** e.g. ~linear-gradient(90deg, red 90%, black);~ : 90% red - 10% gradient
+** #[[UI Design]]
+* *CSS Box Model*
+** Basic: https://www.w3schools.com/css/css_boxmodel.asp
+** Advanced: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model
+** Padding vs. Margin
+*** ![image](../assets/1_xOn6MsNhUcju7Did367ssQ_1673592932515_0.jpeg){:height 163, :width 453}
+:PROPERTIES:
+:id: 63c10064-f075-4d6e-875c-3e7aec5d7ae2
+:END:
+*** ~auto~ : take up the available space or 0 px
+** Collapsing Margins
+*** When two block elements collide to share a margin (Only occur in vertical margins)
+**** Since margin only ask is that element has that much space above/beneath (Without hitting any border)
+***** For Figure 1 Example 1, both parent and child has 20px and 10px space above
+*** Solutions
+**** Adding border to the parent
+**** Adding padding to the parent (auto defines the borders)
+**** ~overflow: hidden~ (auto defines the borders)
+*** ![image](../assets/is2BD_1673985319291_0.png){:height 386, :width 320}
+*** ![image](../assets/1_irihT0essp7Rs2cqtHxyQw_1673985350634_0.png){:height 287, :width 393}
+***
+*
+* *CSS 3*
+** *CSS Flexible Box Layout*
+*** Basic: https://www.w3schools.com/css/css3_flexbox_container.asp
+*** Advanced: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout
+*** ![image](../assets/hy2oqjvsbk60ef92nktg_1674186724880_0.png){:height 304, :width 630}
+*** One-Dimension Layout Model
+*** ~display: flex~ Turn a element to a flex container
+**** Attributes
+***** ~flex-direction~
+****** Determine the direction of main axis, and thus cross axis
+****** ~row~, ~row-reverse~, ~column~, ~column-reverse~
+***** ~flex-wrap~
+****** ~nowrap~ (Default): Does not push any item to the next line by shrinking them
+****** ~wrap~: Allow items to wrap to the next row and column
+***** ~justify-content~
+****** How the items are positioned along the main axis
+****** ~center~: Align center to the main axis
+***** ~align-items~
+****** Position along the vertical axis (just like ~justify-content~)
+*
+*

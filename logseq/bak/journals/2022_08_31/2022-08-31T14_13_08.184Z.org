@@ -1,0 +1,22 @@
+* 21:24
+** Cypher [[neo4j]]
+*** Graph data query language
+*** ~()~ Indicates node
+*** ~[]~ Indicates relationship
+*** ~{}~ Indicates property
+*** SET [[Cypher]]
+**** Update property
+***** Example:
+#+BEGIN_SRC cypher
+MATCH (p:Person)-[w:WATCHED]->(movie)
+WHERE p.name = "Mikey"
+SET w.rating = 5
+#+END_SRC
+*** DELETE [[Cypher]]
+**** You cannot delete a node without also deleting relationships that start or end on said node
+**** Example:
+#+BEGIN_SRC cypher
+MATCH (n)-[r]-()
+WHERE n.name = 'Soren'
+DELETE r
+#+END_SRC

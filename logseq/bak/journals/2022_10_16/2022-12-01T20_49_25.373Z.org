@@ -1,0 +1,13 @@
+*
+* Paper Writing:
+** Editing
+*** Figures
+**** 圖字跟paper字差不多就可以 (Dense 一點)
+*** Don't know where to put
+**** Design 3 原用node-block mapping 因為node ID
+**** split or merging is not the overhead
+**** How does delete workload generated?
+**** Data buffer is persistence
+**
+** Citation
+*

@@ -1,0 +1,4 @@
+* *Differentiation*
+** [[Automatic Differentiation]]
+* *Function Approximation*
+** [[Taylor Series & Maclaurin series]]

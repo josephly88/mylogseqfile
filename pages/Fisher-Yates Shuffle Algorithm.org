@@ -1,0 +1,9 @@
+* Algorithm
+** #+BEGIN_SRC
+A = Array[N]
+for [N-1, 1]:
+	Genertae a randome integer j such that 0 <= j <= i
+	Swap A[i] with A[j]
+#+END_SRC
+** Unbiased Algorithm
+* Complexity: ~O(n)~

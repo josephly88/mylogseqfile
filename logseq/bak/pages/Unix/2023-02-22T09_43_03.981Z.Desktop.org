@@ -1,0 +1,22 @@
+* *Shortcut*
+** Command searching
+*** ~Ctrl-R~: Reverse-i-search mode
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Search command history
+**** Usage
+***** Type the keywords you want to match
+***** Keep pressing ~Ctrl-R~ for searching
+***** Press ~Enter~ to execute
+** Jump to line position
+*** ~Ctrl-A~: Jump to beginning of the line
+*** ~Ctrl-E~: Jump to the end of the line
+*** ~Ctrl-Left~ or ~Ctrl-Right~: Jump to last or next word
+*
+* [[Unix Tools]]
+* [[Shell Script]]
+* [[Shell]]
+*
+* *Linux Distribution*
+** [[Ubuntu]]

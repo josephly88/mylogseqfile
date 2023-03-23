@@ -1,0 +1,77 @@
+* [[Python]]
+*
+* Written in Python and makes use of NumPy
+* Simple Example
+#+BEGIN_SRC python
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([1, 2, 3, 4])
+y = np.array([1, 4, 3, 2])
+
+fig, ax = plt.subplots()
+ax.plot(x, y)
+
+plt.show()
+# For jupyter notebook, use plt.draw() to force an update
+#+END_SRC
+*
+* [[../assets/image_1668741864916_0.png]]
+*
+* Figure vs. Axes
+:PROPERTIES:
+:collapsed: true
+:END:
+** A figure refers to the whole image file
+** A figure could contains multiple axes (Subplot)
+*** ~fig, ax = plt.subplots()~ : A figure with a single Axes
+*** ~fig, axs = plt.subplots(2, 2)~ : A figure with a 2x2 grid of Axes
+* Plotting Functions
+:PROPERTIES:
+:collapsed: true
+:END:
+** ~plt.plot(x,y)~ : Lines
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Default X-Points are 0, 1, 2, 3, ..., len(y)
+*** Multiple lines
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Either
+**** ~plot(x1, y1)~
+~plot(x2, y2)~
+**** Or ~plot(x1, y1, x2, y2)~
+** ~plt.scatter(x,y)~ : Dots
+** ~plt.bar(x,y)~ : Bar chart
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Horizontal Bars : ~plt.barh()~
+*** Stacked Bars
+:PROPERTIES:
+:collapsed: true
+:END:
+**** ~ax.bar(x, y1)~
+**** ~ax.bar(x, y2, bottom=y1)~
+** ~plt.hist(x)~ : Histogram
+** ~plt.pie(y)~ : Pie chart
+* Labels and Title
+:PROPERTIES:
+:collapsed: true
+:END:
+** ~plt.title("TITLE")~ or ~ax.set_title("TITLE")~
+** ~plt.xlabel("X-AXIS")~ or ~ax.set_xlabel("X-AXIS")~
+** ~plt.ylabel("Y-AXIS")~ or ~ax.set_ylabel("Y-AXIS")~
+** Style
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Position the Title ~loc~
+:PROPERTIES:
+:collapsed: true
+:END:
+**** ~center~, ~left~, ~right~
+**
+*

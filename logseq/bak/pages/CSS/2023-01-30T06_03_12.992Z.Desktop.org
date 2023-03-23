@@ -1,0 +1,242 @@
+* Document: [[https://developer.mozilla.org/en-US/docs/Web/CSS/Reference][MDN Web Docs - CSS]]
+*
+* *Structure*
+** #+BEGIN_SRC CSS
+selector1, selector2, ... {
+ property: value;
+}
+/* comment */
+#+END_SRC
+*
+* *Selector*
+** Type selector ~element-name~
+** Class selector ~.class-name~
+** Attribute selector ~element[attr-name="attr-value"]~
+** Pseudo selector
+*** ~a:visited~
+**** The visited link
+*** ~a:hover~
+**** When the mouse hover on the link
+*** ~a:active~
+**** When the mouse is clicking the link
+**
+** Nested element
+*** e.g. ~.item p~: matches all ~<p>~ inside ~class="item"~
+** Last element
+*** ~p:last-of-type~: select the last ~p~
+*
+* Concepts
+** Color models
+:PROPERTIES:
+:collapsed: true
+:END:
+*** #[[UI Design]]
+*** Color keywords: ~red~, ~blue~, ...
+*** RGB (additive): ~rgb(red, green, blue)~
+**** For electronic device
+**** From 0 - 255 (0 - FF)
+**** Format
+***** ~rgb(0,255,0)~ or ~#4b5320~
+**** Basic Color
+:PROPERTIES:
+:collapsed: true
+:END:
+***** Black ~rgb(0,0,0)~ , White ~rgb(255,255,255)~
+***** Primary color
+****** ~rgb(255,0,0)~ red, ~rgb(0,255,0)~ green, ~rgb(0,0,255)~ blue
+***** Secondary color
+****** ~rgb(255, 255, 0)~, ~rgb(255, 0, 255)~, ~rgb(0, 255, 255)~
+***** Tertiary color
+****** ~rgb(255, 127, 0)~, ~rgb(255, 0, 127)~, ...
+**** Alpha channel: ~rgba(255,0,0,50%)~ or ~#3b7e20cc~ or ~hsla(223, 59%, 31%, 0.8)~
+***** Sets the opacity (transparency)
+*** CMYK (subtractive): ~cmyk(cyan, magenta, yellow, black)~
+:PROPERTIES:
+:collapsed: true
+:END:
+**** For print
+*** HSL : ~hsl(hue, saturation%, lightness%)~
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Hue
+***** Select color by the color wheel
+***** E.g., 0 - red, 120 - green, 240 - blue
+**** Saturation
+***** Intensity of color
+***** E.g., 0% - Grey, 100% - Pure color
+**** Lightness
+***** Brightness
+***** E.g., 0% - Black, 50% - Neutral, 100% - White
+*** Gradient Color
+:PROPERTIES:
+:collapsed: true
+:END:
+**** ~linear-gradient(gradientDirection, color1, color2, ...)~
+**** Requirement: At least two colors ( ~gradientDirection~ is optional)
+**** Accept keywords, rgb, hex, cmyk, hsl as colors
+**** Gradient Direction
+***** By default from top to bottom (~180deg~)
+***** From left to right ~90deg~
+**** Color-stops
+***** Accept any length unit (e.g. ~px~, ~%~)
+***** e.g. ~linear-gradient(90deg, red 90%, black);~
+***** 90% would be red along with the gradient
+** Padding and Margin
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ![image](../assets/1_xOn6MsNhUcju7Did367ssQ_1673592932515_0.jpeg){:height 163, :width 453}
+:PROPERTIES:
+:id: 63c10064-f075-4d6e-875c-3e7aec5d7ae2
+:END:
+*** Accept negative value
+*** ~-top~, ~-bottom~, ~-left~, ~-right~
+*** Single value ( ~margin: 10px~ )
+**** Set all four direction to 10px
+*** Double values ( ~padding: 10px 0~ )
+**** Set ~top~ and ~bottom~ to ~10px~ and ~left~ and ~right~ to ~0~
+*** Four values ( ~margin: 0 0 0 0.5em~ )
+**** ~top~ -> ~right~ -> ~bottom~ -> ~left~
+** Unit
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Absolute Length
+**** ~px~: Pixels
+*** Relative Length
+**** ~%~: Relative to the parent element
+**** ~vh~: Viewpoint height (Relative to 1% of the height of viewpoint)
+**** ~vw~: Viewpoint width (Relative to 1% of the width of the viewport)
+**** ~em~: Relative to the font-size of the parent element (e.g. 2em is 2 times the size of the current font)
+**** ~rem~: Relative to the font-size of the Root element (html element)
+**
+* *Properties*
+** ~text-align~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~center~
+** ~vertical-align~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~middle~
+**
+** ~background~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Could accept color or image as a value
+*** Gradient color creates an image, so use ~background~ instead of ~background-color~
+** ~background-color~
+** ~background-image~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~url(image_url)~
+** ~opacity~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~0~ is transparent, ~1.0~ is non-transparent
+*** Could also configured by alpha channel ~rgba()~
+**
+** ~border~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Shorthand: ~border: width, style, color;~
+** ~border-color~
+** ~border-width~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Adding direction: e.g., ~border-left-width~
+** ~border-style~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~solid~
+*** ~double~
+**
+** ~box-shadow~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Add a shadow
+*** ~box-shadow: offsetX offsetY color;~
+*** Accept negative offset
+*** Optional values
+**** ~blueRadius~
+***** ~box-shadow: offsetX offsetY blurRadius color;~
+***** Length as the blurring radius (0 - Sharp and no blur)
+**** ~spreadRadius~
+***** ~box-shadow: offsetX offsetY blurRadius spreadRadius color;~
+***** Enlarge the shadow without blur
+**
+** ~width~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** e.g., width of a ~div~
+*** Unit
+**** ~px~
+**** ~%~: X% of the parent element
+** ~max-width~ or ~min-width~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Avoid the width extent too much or too little on a wide screen
+** ~max-height~ or ~min-height~
+**
+** ~margin-~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Space around an element
+*** Example
+**** Centering a block: Set both ~margin-left~ and ~margin-right~ to auto
+***** ~auto~
+****** take up the available space or 0 px
+** ~padding-~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Space between the border and the content
+**
+** ~display~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~inline-block~: Make a block inline
+**** Example: Making two ~<p>~s inline while A is on the left and B is on the right
+***** Assuming A is left aligned and B is right aligned
+***** Using ~inline-block~ would move two ~<p>~s to the left
+****** Since it only takes up the width of its content (e.g. 8 words)
+***** Solution: Put two ~<p>~ on the same line (Without any space between them)
+****** Set both the width to ~50%~ (or ~75%~ and ~25%~ depending on your need)
+*** ~block~: Make an inline element to a block element
+**
+** ~font-family~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Text font
+*** Fallback value
+**** Assign multiple value to ~font-family~
+***** In case the first one is not found/available
+** ~font-style~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** ~italic~
+** ~font-size~
+** ~color~
+:PROPERTIES:
+:collapsed: true
+:END:
+*** font color
+*
+* *Value*
+** ~unset~: Remove the earlier rules
