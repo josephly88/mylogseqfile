@@ -175,7 +175,7 @@
  :graph/settings {:journal? false, :orphan-pages? true, :builtin-pages? false, :excluded-pages? true}
  :favorites ["TODO" "Learning Agenda" "Unix Tools"]
  :preferred-format :org
- :journal/page-title-format "EEE, dd-MM-yyyy"
+ :journal/page-title-format "EEEE, yyyy/MM/dd"
 
  ;; any number between 0 and 1 (the greater it is the faster the changes of the next-interval of card reviews) (default 0.5)
  ;; :srs/learning-fraction 0.5
