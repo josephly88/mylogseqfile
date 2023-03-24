@@ -1,3 +1,8 @@
+* *Questions*
+** How do host handle GC without affecting the performance?
+** Is ZNS only suitable for sequential workload, such as LSM-Tree, F2FS?
+** Open Zone vs. Active Zone? What device resource constraint the number of Open Zone and Active Zone?
+*
 * *3 Evolving towards ZNS*
 ** *3.1 Hardware Impact*
 *** *Zone Sizing*
@@ -69,4 +74,4 @@
 **** Avoid GC
 ***** No host data movement is accounted?
 ***** Any extra care for data with similar lifetime?
-**
+-
