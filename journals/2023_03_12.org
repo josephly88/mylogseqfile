@@ -1,3 +1,3 @@
-* SPI, I2C, UART IP Block
+* SPI, I2C, UART IP Block #[[HDL (Hardware Description Language)]]
 ** https://www.makarenalabs.com/spi-i2c-uart-on-pynq-a-pl-approach/
 * Prompt Engineering

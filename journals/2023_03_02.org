@@ -1,4 +1,4 @@
-* Zedboard Use UART0 instead of UART1
+* Zedboard Use UART0 instead of UART1 #Zedboard
 ** https://blog.csdn.net/sumerun/article/details/79848581
 ** https://fpgawork.wordpress.com/2019/01/05/uart-peripheral-uart-0-and-uart1-implementation-on-zedboard-a-development-board-for-zynq-7000/
 ** [[../assets/USB-type-A-and-B-pinout-1024x576_1677766137974_0.webp]]
