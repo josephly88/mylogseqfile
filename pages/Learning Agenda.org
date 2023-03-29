@@ -23,6 +23,7 @@
 :END:
 ***** https://www.youtube.com/playlist?list=PLDqMkB5cbBA4OW0fDTu1FY6aw4uBWOpBa
 **** Verification Academy https://verificationacademy.com/
+**** Parallel Programming for FPGAs: https://kastner.ucsd.edu/hlsbook/
 *** Textbooks
 **** The C Programming Langauge
 **** Introduction to Algorithm
@@ -30,7 +31,7 @@
 **** Understanding Linux Kernel
 **** Digital Design and Computer Architecture
 *** Web Tutorial
-**** https://ithelp.ithome.com.tw/articles/10201706
+**** Design Pattern: https://ithelp.ithome.com.tw/articles/10201706
 ** English
 *** 旋元佑文法
 *** English Grammar in Use
