@@ -1,0 +1,50 @@
+- [[ZNS: Avoiding the Block Interface Tax for Flash-based SSDs (ATC2021)]]
+	- Efficient Key-Value Data Placement for ZNS SSD (ApplSci'2021)
+	- Exploring Index Structures for Zoned Namespaces SSDs (Big Data'2021)
+	- Don't be a blockhead: zoned namespaces make work on conventional SSDs obsolete (HotOS'2021)
+	- ZNS+: Advanced Zoned Namespace Interface for Supporting In-Storage Zone
+	  Compaction (OSDI'2021)
+	- From blocks to rocks: a natural extension of zoned namespaces (HotStorage'2021)
+	- Append is Near: Log-based Data Management on ZNS SSDs (CIDR'2022)
+	- Selective Power-Loss-Protection Method for Write Buffer in ZNS SSDs (Electronics'2022)
+	  collapsed:: true
+		- Keywords: PLP, SSD Buffer Reduction
+		- **Background & Motivation**
+			- ZNS are useful in multi-tenant system
+			- ZNS SSD need a much larger write buffer than legacy SSDs (Questionable)
+				- support many I/O stream
+					- each stream require its own buffer space for write buffering
+						- Larger SSD buffer
+							- More Capacitors for Power-Loss Protection (PLP) for Durability
+								- More internal space consumption and cost
+		- **Design**
+			- Ensure durability for WAL or journal only
+				- Reduce the size of buffer
+			- Balanced flush to zones to reduce as parallel as possible
+				- Avoid PLP flush to the same plane (Questionable)
+					- Reduce PLP time
+		- **Evaluated by FEMU and RocksDB**
+		- **Concern**
+			- ZNS tends to use less DRAM than legacy SSD
+			- The hidden assumption of design 2 is single zone data would gather in the same plane
+				- A single zone should span over the parallel unit, which is already balanced
+	- Efficient LSM-Tree Key-Value Data Management on Hybrid SSD/HDD Zoned Storage (arXiv'2022)
+	- Understanding NVMe Zoned Namespace (ZNS) Flash SSD Storage Devices (arXiv'2022)
+	  id:: 64214f56-b4c6-463f-bb55-a33733ecd093
+	- Compaction-aware zone allocation for LSM based key-value store on ZNS SSDs (HotStorage '2022)
+	- Lifetime-leveling LSM-tree compaction for ZNS SSD (HotStorage'2022)
+	- What you can't forget: exploiting parallelism for zoned namespaces (HotStorage'2022)
+	- Design Considerations of A Novel Distributed Key-Value Store for New Storage (ICDCS'2022)
+	- ZonedStore: A Concurrent ZNS-Aware Cache System for Cloud Data Storage (ICDCS'2022)
+	- ZNSKV: Reducing Data Migration in LSMT-Based KV Stores on ZNS SSDs (ICCD'2022)
+	- InDeF: An Advanced Defragmenter Supporting Migration Offloading on ZNS SSD (ICCD'2022)
+	- Separating Data via Block Invalidation Time Inference for Write Amplification Reduction in Log-Structured Storage (FAST'2022)
+	- Accelerating RocksDB for small-zone ZNS SSDs by parallel I/O mechanism (Middleware Industrial Track'2022)
+	- Efficient Data Placement for Zoned Namespaces (ZNS) SSDs (NPC'2022)
+	- Revisiting LSM-Tree-Based Key-Value Stores for ZNS SSDs (Big Data'2022)
+	- Fair-ZNS: Enhancing Fairness in ZNS SSDs through Self-balancing I/O Scheduling (IEEE Access'2022)
+	- Preemptive Zone Reset Design within Zoned Namespace SSD Firmware (Electronics'2023)
+	- ZenFS+: Nurturing Performance and Isolation to ZenFS (IEEE Access'2023)
+	- RAIZN: Redundant Array of Independent Zoned Namespaces (ASPLOS'2023)
+	-
+	-

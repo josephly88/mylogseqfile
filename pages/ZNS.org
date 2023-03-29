@@ -33,7 +33,7 @@
 *** Only for zone mapping (Coarse-grained)
 *
 * Paper List
-** [[ZNS: Avoiding the Block Interface Tax for Flash-based SSDs (ATC2021)]]
+** [[ZNS Paper Trace]]
 ** [[ZNS+: Advanced Zoned Namespace Interface for Supporting In-Storage Zone Compaction (OSDI2021)]]
 * Patent
 ** [[Solution For Super Device Imbalance In ZNS SSD (20230061979)]]
