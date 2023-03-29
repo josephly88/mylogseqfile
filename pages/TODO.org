@@ -6,10 +6,6 @@
 ** Others: Body Building (Posture, Pull Up, Single Leg Squat)
 ** Others: Fundamental Analysis
 ** *Finish*
-* *TA*
-** License Problem
-** Lab 07
-** Lab 08
 * *Last work* #Research
 * *New work* #OpenSSD
 ** Implement ZNS on OpenSSD
