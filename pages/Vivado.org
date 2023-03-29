@@ -1,4 +1,7 @@
 * File Format
+:PROPERTIES:
+:heading: 2
+:END:
 ** hdf file (Hardware Definition File)
 *** The source code for the hardware design
 *** Describes the hardware architecture of an FPGA design, including the IP (Intellectual Property) cores, interconnections, and other hardware components. It is used as an input file for the FPGA design tool, such as Vivado, to synthesize, implement, and generate the bitstream file.
@@ -10,7 +13,10 @@
 *** Automate various tasks in tools like Xilinx Vivado, Cadence, and Synopsys
 **** Configure and run a synthesis, place-and-route, or simulation process, or to define and execute custom flows and processes.
 *
-* ## Errors
+* Errors
+:PROPERTIES:
+:heading: 2
+:END:
 ** Using switching or button as clock would appear an error
 *** Error Prompt
 **** [Place 30-574] Poor placement for routing between an IO pin and BUFG.
