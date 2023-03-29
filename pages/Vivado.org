@@ -10,7 +10,7 @@
 *** Automate various tasks in tools like Xilinx Vivado, Cadence, and Synopsys
 **** Configure and run a synthesis, place-and-route, or simulation process, or to define and execute custom flows and processes.
 *
-* Problem
+* ## Errors
 ** Using switching or button as clock would appear an error
 *** Error Prompt
 **** [Place 30-574] Poor placement for routing between an IO pin and BUFG.
