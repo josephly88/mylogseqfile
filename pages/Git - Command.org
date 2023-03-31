@@ -92,5 +92,10 @@
 		  git add forgotten_file
 		  git commit --amend
 		  ```
-	- Unstaging a Staged File
-		-
+	- Unstaging a Staged File (`git reset HEAD`)
+		- `git reset HEAD <file>`
+			- Keep modified, but is once again unstaged
+	- Unmodifying a Modified File (`git checkout HEAD`)
+		- `git checkout HEAD <file>`
+			- Discard changes in working directory
+	-
