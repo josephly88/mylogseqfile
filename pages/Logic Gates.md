@@ -1,3 +1,8 @@
 - # Family or Forms
 	- TTL (Transistor-Transistor Logic)
+		- 7400 series
+		- TTL logic IC: NPN and PNP type Bipolar Junction Transistors
+	- CMOS (Complementary Metal-Oxide-Silicon)
+		- 4000 series
+		- CMOS logic IC: MOSFET or JFET type Field Effect Transistors
 	-
