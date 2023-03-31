@@ -1,3 +1,13 @@
+* Fundamental
+:PROPERTIES:
+:heading: 1
+:END:
+** [[Logic Gates]]
+* Combinational Logic
+:PROPERTIES:
+:heading: 1
+:END:
+**
 * [[Digital Logic]]
 * Error Detection and Correction
 ** Parity
