@@ -1,12 +1,11 @@
 - # Reason
 	- When [[Setup Time and Hold Time]] are violated
 		- Sampling a signal external to the FPGA
-		- Crossing clock domain
+		- Crossing clock domain (From slower clock to faster clock)
 	- ![202303311834.png](../assets/202303311834_1680258941558_0.png){:height 323, :width 323}
 		- Output is metastable for some amount of time
 			- After it settles to either a 0 or 1
 - # Solution
 	- Double-Flop
-		- ![202303311844.png](../assets/202303311844_1680259464012_0.png)
-			-
-			-
+		- ![202303311844.png](../assets/202303311844_1680259464012_0.png){:height 175, :width 554}
+		-
