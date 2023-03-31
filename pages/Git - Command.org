@@ -84,9 +84,13 @@
 		- `--graph`
 		- `--since=2.weeks`
 - # Undoing Things
-	- `git commit --amend`
+	- Undo a commit (`git commit --amend`)
+	  collapsed:: true
+		- For last commit still local and have not been pushed
 		- ```  shell
 		  git commit -m 'Initial commit'
 		  git add forgotten_file
 		  git commit --amend
 		  ```
+	- Unstaging a Staged File
+		-
