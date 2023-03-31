@@ -1,2 +1,2 @@
-* {{embed [[Computer Organization vs. Computer Architecture]]}}
 * [[Bus]]
+* [[CPU Design]]
