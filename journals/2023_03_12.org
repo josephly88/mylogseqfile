@@ -1,4 +1,4 @@
-* SPI, I2C, UART IP Block #[[HDL (Hardware Description Language)]]
+* SPI, I2C, UART IP Block #[[FPGA]]
 ** https://www.makarenalabs.com/spi-i2c-uart-on-pynq-a-pl-approach/
 * Prompt Engineering #[[Prompt Engineering]]
 ** https://promptingguide.azurewebsites.net/

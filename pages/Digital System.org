@@ -5,6 +5,12 @@
 ** [[Logic Gates]]
 ** Boolean Algebra
 ** Karnaugh Maps
+** Error Detection and Correction
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Parity
+**** [[Two-step Programming]]
 * Combinational Logic
 :PROPERTIES:
 :heading: 1
@@ -24,10 +30,23 @@
 :END:
 *** Slow to Fast: See [[Metastability]]
 *** Fast to Slow: Signal Stretching
-**
-* [[Digital Logic]]
-* Error Detection and Correction
-** Parity
-*** [[Two-step Programming]]
-*
-* [[HDL (Hardware Description Language)]]
+* Memory and Stroage
+:PROPERTIES:
+:heading: 1
+:END:
+** RAM
+** ROM
+* Arithmetic Circuits
+:PROPERTIES:
+:heading: 1
+:END:
+** Adder
+** Subtractor
+** Multiplier
+* Programmable Logic Device
+:PROPERTIES:
+:heading: 1
+:END:
+** CPLD
+** [[FPGA]]
+* [[FPGA]]
