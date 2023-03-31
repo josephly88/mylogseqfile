@@ -1,6 +1,6 @@
 * File Format
 :PROPERTIES:
-:heading: 2
+:heading: 1
 :END:
 ** hdf file (Hardware Definition File)
 *** The source code for the hardware design
@@ -15,7 +15,7 @@
 *
 * Errors
 :PROPERTIES:
-:heading: 2
+:heading: 1
 :END:
 ** Using switching or button as clock would appear an error
 *** Error Prompt

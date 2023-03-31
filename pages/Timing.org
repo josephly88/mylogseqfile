@@ -1,3 +1,4 @@
 * [[Propagation Delay]]
 * [[Setup Time and Hold Time]]
-*
+* [[Metastability]]
+-

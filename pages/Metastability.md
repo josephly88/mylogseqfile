@@ -1,0 +1,3 @@
+- When [[Setup Time and Hold Time]] are violated
+	- By button press or cross clock domains
+-

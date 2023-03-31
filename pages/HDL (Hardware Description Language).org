@@ -1,4 +1,7 @@
 * Avoid Latches
+:PROPERTIES:
+:heading: 1
+:END:
 ** Created by incomplete assignment in combinational logic
 ** #+BEGIN_SRC VHDL
 process (i_data, i_enable)
@@ -11,6 +14,9 @@ end process;
 ** ~i_enable = '0'~ is not specified, and thus, the value does not change (Which implies a latch)
 *
 * VHDL
+:PROPERTIES:
+:heading: 1
+:END:
 ** Array
 *** #+BEGIN_SRC VHDL
 type STD_LOGIC_VECTOR is array (3 downto 0) of STD_LOGIC;
@@ -18,6 +24,9 @@ type STD_LOGIC_VECTOR is array (3 downto 0) of STD_LOGIC;
 #+END_SRC
 *
 * Abstraction Level
+:PROPERTIES:
+:heading: 1
+:END:
 ** RTL (Register-Transfer Level)
 *** The flow of data between
 **** Registers
@@ -28,5 +37,8 @@ type STD_LOGIC_VECTOR is array (3 downto 0) of STD_LOGIC;
 *** Logic gates and interconnections
 *
 * EDA (Electronic Design Automation)
+:PROPERTIES:
+:heading: 1
+:END:
 ** Xilinx
 *** [[Vivado]]
