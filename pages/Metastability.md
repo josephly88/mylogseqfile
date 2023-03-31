@@ -1,3 +1,7 @@
-- When [[Setup Time and Hold Time]] are violated
-	- By button press or cross clock domains
--
+- # Reason
+	- When [[Setup Time and Hold Time]] are violated
+		- By button press or cross clock domains
+	- ![202303311834.png](../assets/202303311834_1680258941558_0.png){:height 323, :width 323}
+		- Output is metastable for some amount of time
+			- After it settles to either a 0 or 1
+- ?
