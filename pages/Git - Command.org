@@ -1,7 +1,7 @@
-* [[Git - Command - Recording Changes]]
-* [[Git - Command - Viewing the Commit History]]
--
-- # Recording Changes
+* Recording Changes
+:PROPERTIES:
+:heading: 1
+:END:
 	- Getting a Git Repository (`git init` or `git clone`)
 	  collapsed:: true
 		- Options
@@ -21,13 +21,13 @@
 				- Modified: `M`
 					- `MM` means staged but modified again
 		- Two states of file
-			- ~tracked~
-				- ~git add~
+			- `tracked`
+				- `git add`
 					- Untracked --> Tracked
 					- Track the modified version
 						- If you modify a file, add it, and modify again, the stage would only track the last modification
-			- ~untracked~
-				- ~.gitignore~ automatically untrack
+			- `untracked`
+				- `.gitignore` automatically untrack
 					- Example
 					  #+BEGIN_SRC
 					  # ignore all .a files
@@ -48,27 +48,33 @@
 					  # ignore all .pdf files in the doc/ directory and any of its subdirectories
 					  doc/**/*.pdf
 					  #+END_SRC
-						- ~!~ Negate a pattern (For exception)
-						- ~#~ Comment
-						- ~**~ For nested directory
-	- Viewing Changes
+						- `!` Negate a pattern (For exception)
+						- `#` Comment
+						- `**` For nested directory
+	- Viewing Changes (`git diff`)
 	  collapsed:: true
 		- `git diff`
 			- Only see changes of non-staged files
 			- To see staged files: `git diff --staged` (or `--cached` the same)
-	- Commit Changes
+	- Commit Changes (`git commit`)
+	  collapsed:: true
 		- `git commit`
 			- Inline with message ~git commit -m "YOUR_MESSAGE"~
 			- Skipping the staging area: ~git commit -a~
-	- Removing Files
+	- Removing Files (`git rm`)
 	  collapsed:: true
 		- `git rm`
 			- Also remove the file in the working tree
 			- If you want to untrack but not delete: `git rm --cached`
-	- Moving Files
+	- Moving Files (`git mv`)
 	  collapsed:: true
 		- `git mv`
 			- Same as
 				- `mv A.txt B.txt`
 				- `git rm A.txt`
 				- `git add B.txt`
+- # Viewing the Commit History
+	- `git log`
+		- `-p` / `--patch`: Shows the difference (just like diff)
+		- `-2`: Show only the last two entries
+		-
