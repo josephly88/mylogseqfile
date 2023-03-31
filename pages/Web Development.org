@@ -1,8 +1,10 @@
-* Language
+* Front-end Language
+:PROPERTIES:
+:heading: 1
+:END:
 ** [[HTML]]
 ** [[CSS]]
 ** [[Javascript]]
-*
 *
 * [[UI Design]]
 *

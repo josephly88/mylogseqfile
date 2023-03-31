@@ -8,6 +8,9 @@
 * [[Computer Engineering]]
 * [[Database System]]
 * [[Networking]]
+* Artificial Intelligence
+* Security
+* Software Engineering
 *
 * Software Development
 ** [[Web Development]]

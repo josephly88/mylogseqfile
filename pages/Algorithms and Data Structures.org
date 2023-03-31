@@ -1,8 +1,13 @@
 * Algorithm
+:PROPERTIES:
+:heading: 1
+:END:
 ** [[Computer Algebra]]
 ** Random Shuffle Problem
 *** [[Fisher-Yates Shuffle Algorithm]]
-*
 * Data Structure
+:PROPERTIES:
+:heading: 1
+:END:
 ** Search Tree
 *** [[Red-Black Tree]]
