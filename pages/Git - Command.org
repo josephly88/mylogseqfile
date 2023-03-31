@@ -93,10 +93,11 @@
 		  git commit --amend
 		  ```
 	- Unstaging or Unmodifying (`git restore`)
+	  collapsed:: true
 		- `git restore --staged <file>`
 			- Unstaging a staged file
 				- Keep changes, but is once again unstaged
-	- Unmodifying a Modified File (`git checkout HEAD`)
-		- `git checkout HEAD <file>`
+		- `git restore <file>`
 			- Discard changes in working directory
+- # Working with Remotes
 	-
