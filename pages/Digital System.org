@@ -49,4 +49,4 @@
 :END:
 ** CPLD
 ** [[FPGA]]
-* [[FPGA]]
+*
