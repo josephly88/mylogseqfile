@@ -2,22 +2,24 @@
 * [[Git - Command - Viewing the Commit History]]
 -
 - # Recording Changes
-	- Getting a Git Repository
+	- Getting a Git Repository (`git init` or `git clone`)
+	  collapsed:: true
 		- Options
 			- Turn a local directory to a Git repository
-				- `git init`: create `.git``
-			- ~clone~ an existing Git repo
-				- ~git clone <url>~
-	- Recording Changes
-		- Check by ~git status~
-			- ~git status -s~ (short version)
+				- `git init`: create `.git`
+			- `clone` an existing Git repo
+				- `git clone <url>`
+	- Recording Changes (`git status`)
+	  collapsed:: true
+		- Check by`git status`
+			- `git status -s` (short version)
 				- Two columns
 					- Left: Staging Aread
 					- Right: Working Tree (Non-staged)
-				- Untracked: ~??~
-				- Newly added: ~A~
-				- Modified: ~M~
-					- ~MM~ means staged but modified again
+				- Untracked: `??`
+				- Newly added: `A`
+				- Modified: `M`
+					- `MM` means staged but modified again
 		- Two states of file
 			- ~tracked~
 				- ~git add~
@@ -50,20 +52,23 @@
 						- ~#~ Comment
 						- ~**~ For nested directory
 	- Viewing Changes
-		- ~git diff~
+	  collapsed:: true
+		- `git diff`
 			- Only see changes of non-staged files
-			- To see staged files: ~git diff --staged~ (or ~--cached~ the same)
+			- To see staged files: `git diff --staged` (or `--cached` the same)
 	- Commit Changes
-		- ~git commit~
+		- `git commit`
 			- Inline with message ~git commit -m "YOUR_MESSAGE"~
 			- Skipping the staging area: ~git commit -a~
 	- Removing Files
-		- ~git rm~
+	  collapsed:: true
+		- `git rm`
 			- Also remove the file in the working tree
-			- If you want to untrack but not delete: ~git rm --cached~
+			- If you want to untrack but not delete: `git rm --cached`
 	- Moving Files
-		- ~git mv~
+	  collapsed:: true
+		- `git mv`
 			- Same as
-				- ~mv A.txt B.txt~
-				- ~git rm A.txt~
-				- ~git add B.txt~
+				- `mv A.txt B.txt`
+				- `git rm A.txt`
+				- `git add B.txt`
