@@ -1,4 +1,7 @@
 * *The Three States*
+:PROPERTIES:
+:heading: 1
+:END:
 ** ~modified~
 *** Change the file but no committed
 ** ~staged~
@@ -17,6 +20,9 @@
 **** Clone: copy this from remote repository
 *** ![image](../assets/areas_1677770427388_0.png){:height 212, :width 379}
 * *Snapshot*
+:PROPERTIES:
+:heading: 1
+:END:
 ** Other VCSs use delta-based version control
 *** See it's data as a list of file-based changes
 *** ![image](../assets/deltas_1677769805886_0.png){:height 224, :width 558}
