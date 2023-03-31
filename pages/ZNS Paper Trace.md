@@ -46,5 +46,3 @@
 	- Preemptive Zone Reset Design within Zoned Namespace SSD Firmware (Electronics'2023)
 	- ZenFS+: Nurturing Performance and Isolation to ZenFS (IEEE Access'2023)
 	- RAIZN: Redundant Array of Independent Zoned Namespaces (ASPLOS'2023)
-	-
-	-
