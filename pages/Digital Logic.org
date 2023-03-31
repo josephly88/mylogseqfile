@@ -1,2 +1,1 @@
-* [[Latch and Flip Flop]]
 * [[Digital Logic - Timing]]

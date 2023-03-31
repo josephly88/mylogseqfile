@@ -3,10 +3,27 @@
 :heading: 1
 :END:
 ** [[Logic Gates]]
+** Boolean Algebra
+** Karnaugh Maps
 * Combinational Logic
 :PROPERTIES:
 :heading: 1
 :END:
+** Combinational Logic
+** [[Propagation Delay]]
+* Sequential Logic
+:PROPERTIES:
+:heading: 1
+:END:
+** [[Latch and Flip Flop]]
+** [[Setup Time and Hold Time]]
+** [[Metastability]]
+** Crossing Clock Domain
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Slow to Fast: See [[Metastability]]
+*** Fast to Slow: Signal Stretching
 **
 * [[Digital Logic]]
 * Error Detection and Correction

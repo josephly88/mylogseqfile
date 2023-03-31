@@ -1,3 +1,4 @@
+- https://www.electronics-tutorials.ws/logic/logic_1.html
 - # Family or Forms
 	- TTL (Transistor-Transistor Logic)
 		- 7400 series
@@ -5,4 +6,5 @@
 	- CMOS (Complementary Metal-Oxide-Silicon)
 		- 4000 series
 		- CMOS logic IC: MOSFET or JFET type Field Effect Transistors
+- # AND Gate
 	-
