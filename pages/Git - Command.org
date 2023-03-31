@@ -84,4 +84,9 @@
 		- `--graph`
 		- `--since=2.weeks`
 - # Undoing Things
-	-
+	- `git commit --amend`
+		- ```  shell
+		  git commit -m 'Initial commit'
+		  git add forgotten_file
+		  git commit --amend
+		  ```
