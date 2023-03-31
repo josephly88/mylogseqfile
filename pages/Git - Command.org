@@ -75,6 +75,13 @@
 				- `git add B.txt`
 - # Viewing the Commit History
 	- `git log`
+	  collapsed:: true
 		- `-p` / `--patch`: Shows the difference (just like diff)
 		- `-2`: Show only the last two entries
-		-
+		- `--stat`: Shows lines of change
+		- `--oneline` / `--pretty=oneline`
+			- pretty format: https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+		- `--graph`
+		- `--since=2.weeks`
+- # Undoing Things
+	-
