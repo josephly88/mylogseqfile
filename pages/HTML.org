@@ -54,7 +54,6 @@
 * *Tags*
 ** *Meta Tags*
 :PROPERTIES:
-:collapsed: true
 :END:
 *** ~<meta name="viewport" content="width=device-width, initial-scale=1.0">~
 :PROPERTIES:
@@ -66,13 +65,11 @@
 **** ~initial-scale=1.0~: Initial ratio is 100%, no enlarge or shrink
 ** *Images Tags*
 :PROPERTIES:
-:collapsed: true
 :END:
 *** Basic: https://www.w3schools.com/tags/tag_img.asp
 *** Advanced: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
 ** *Forms Tags*
 :PROPERTIES:
-:collapsed: true
 :END:
 *** Basic: https://www.w3schools.com/html/html_forms.asp
 *** Advanced: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
@@ -87,10 +84,17 @@
 ****** ~get~
 ****** ~post~
 ****** ((63c50ccb-9d6a-41ea-928e-33b956c3c2f4))
-*** ~<label></label>~
-:PROPERTIES:
-:collapsed: true
-:END:
+*** ~<label></label>~ and ~for~ attribute
+**** For example, checkbox is small which is difficult for user to click it.
+***** ``` HTML
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I have a bike</label><br>
+
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label><br>
+```
+****** ~for~ attribute in label could associate the text to the checkbox
+*******
 **** Associate the text for the ~input~, so clicking the text in ~label~ also check the ~radio~
 ***** Nest the ~input~ and the text
 ***** OR Nest the text only, and add an attribute ~for~ with the same ~id~ as the ~input~
@@ -102,7 +106,6 @@
 **** Advanced: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
 ** *Link Tags*
 :PROPERTIES:
-:collapsed: true
 :END:
 *** ~<a>~: https://www.w3schools.com/html/html_links.asp
 *** ~<link>~: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link
@@ -121,7 +124,6 @@
 **** Link to the css sheet
 ** *List Tags*
 :PROPERTIES:
-:collapsed: true
 :END:
 *** Basic: https://www.w3schools.com/html/html_lists.asp
 ** *Style and Semantic Tags*
