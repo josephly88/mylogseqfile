@@ -1,0 +1,45 @@
+* *Zoned Namespace (ZNS) SSD*
+*
+* *Problems of Conventional SSD*
+:PROPERTIES:
+:collapsed: true
+:END:
+** Block interface - One dimensional arrays (matches HDD)
+** Due to the mismatch between write and erase in SSD
+*** Write - Page, Erase - Block (Larger)
+** FTL hides this mismatch from host (In-place update)
+*** Logical-to-physical page mapping
+**** DRAM capacity is expensive (High cost per GB of usable capacity)
+**** 1GB for 1TB
+*** Over-provisioning
+**** 28% over-provisioned space is expensive (High cost per GB of usable capacity)
+**** Additional mapping
+*** GC
+**** Throughput Limitation
+**** Write-amplification
+**** Performance unpredictability
+**** High tail latency
+** Expense
+*** Over-provisioning space
+*** DRAM
+*
+* *ZNS Overview*
+** Responsibility
+*** GC => Host
+*** Reliability => ZNS
+*** Media-management => ZNS
+** [[ZNS - Zone]]
+** Mapping Table
+*** Only for zone mapping (Coarse-grained)
+*
+* Paper List
+** [[ZNS Paper Trace]]
+** [[ZNS+: Advanced Zoned Namespace Interface for Supporting In-Storage Zone Compaction (OSDI2021)]]
+* Patent
+** [[Solution For Super Device Imbalance In ZNS SSD (20230061979)]]
+** Purposeful Super Device Imbalance For ZNS SSD Efficiency
+*** https://www.freepatentsonline.com/y2023/0062285.html
+** Controlled Imbalance In Super Block Allocation In ZNS SSD
+*** https://www.freepatentsonline.com/y2023/0076985.html
+** Super Block Allocation Across Super Device In ZNS SSD
+*** https://www.freepatentsonline.com/y2023/0075329.html
