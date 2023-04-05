@@ -85,6 +85,9 @@
 ****** ~post~
 ****** ((63c50ccb-9d6a-41ea-928e-33b956c3c2f4))
 *** ~<label></label>~ and ~for~ attribute
+:PROPERTIES:
+:collapsed: true
+:END:
 **** For example, checkbox is small which is difficult for user to click it.
 ***** ``` HTML
 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
@@ -93,11 +96,9 @@
 <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
 <label for="vehicle2"> I have a car</label><br>
 ```
-****** ~for~ attribute in label could associate the text to the checkbox
-*******
-**** Associate the text for the ~input~, so clicking the text in ~label~ also check the ~radio~
-***** Nest the ~input~ and the text
-***** OR Nest the text only, and add an attribute ~for~ with the same ~id~ as the ~input~
+****** If the value of ~for~ attribute is the same as the checkbox ~id~
+******* The text would associate to the checkbox when clicking
+****** Or nest the ~<input>~ and the text
 *** ~<input>~
 :PROPERTIES:
 :collapsed: true
