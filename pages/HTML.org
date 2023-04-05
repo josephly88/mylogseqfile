@@ -43,10 +43,13 @@
 *** Span is inline-level
 ** WAI-ARIA Role
 :PROPERTIES:
-:collapsed: true
 :END:
-*** Provides semantic meaning to content for non-semantic elements (e.g., div, span)
+*** Web Accessibility Initiative - Accessible Rich Internet Applications
+**** More accessible for people with disability
+***** Provides semantic meaning to content for non-semantic elements (e.g., div, span)
 *** https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
+** Keyboard Shortcut
+*** https://webtips.dev/webtips/html/how-to-add-keyboard-shortcut-to-elements
 *
 * *Tags*
 ** *Meta Tags*
