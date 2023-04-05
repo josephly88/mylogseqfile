@@ -1,0 +1,6 @@
+* [[Digital Logic]]
+* Error Detection and Correction
+** Parity
+*** [[Two-step Programming]]
+*
+* [[HDL (Hardware Description Language)]]

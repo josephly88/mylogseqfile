@@ -1,3 +1,2 @@
 * [[Digital System]]
-*
 * Embedded System

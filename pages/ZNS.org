@@ -1,10 +1,12 @@
-* *Zoned Namespace (ZNS) SSD*
-*
-* *Problems of Conventional SSD*
+* Zoned Namespace SSD
 :PROPERTIES:
-:collapsed: true
+:heading: 1
 :END:
-** Block interface - One dimensional arrays (matches HDD)
+* Problems of Conventional SSD
+:PROPERTIES:
+:heading: 2
+:END:
+** Block interface - One dimensional arrays (matches HDD only)
 ** Due to the mismatch between write and erase in SSD
 *** Write - Page, Erase - Block (Larger)
 ** FTL hides this mismatch from host (In-place update)
@@ -22,8 +24,10 @@
 ** Expense
 *** Over-provisioning space
 *** DRAM
-*
-* *ZNS Overview*
+* ZNS Overview
+:PROPERTIES:
+:heading: 2
+:END:
 ** Responsibility
 *** GC => Host
 *** Reliability => ZNS

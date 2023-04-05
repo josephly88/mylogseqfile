@@ -49,4 +49,7 @@
 :END:
 ** CPLD
 ** [[FPGA]]
-*
+- # Advacned Topics
+	- [[Computer Architecture]]
+	- Digital Signal Processing
+	- Embedded System

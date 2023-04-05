@@ -1,0 +1,10 @@
+- # Terminal Multiplexer
+	- How to run a program using ssh and disconnect the ssh without terminating the program?
+		- Run
+			- `tmux`
+			- Run program
+			- `Ctrl-b`+ `d` (Detach)
+				- Remember the session number
+		- Open again
+			- `tmux ls`
+			- `tmux attach-session -t <session-name>`

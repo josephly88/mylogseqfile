@@ -1,24 +1,32 @@
-* The logical address space is divided into fixed-sized zone
-*
-* *Access*
+* *The logical address space is divided into fixed-sized zone*
+* Access
+:PROPERTIES:
+:heading: 1
+:END:
 ** Sequential Write
 ** Random Read
 ** Reset-before-Rewrite
-* *Zone State*
+* Zone State
+:PROPERTIES:
+:heading: 1
+:END:
 ** ![image](../assets/image_1678354227001_0.png)
 ** Open zone limit or Active zone limit
 *** Device Resource (Data Buffer)
 *** Program Disturb
 ** Close must transitioned to Open again before serving additional write
-* *Zone Descriptor*
+* Zone Descriptor
+:PROPERTIES:
+:heading: 1
+:END:
 ** Commands
 *** Retrieve - Zone Management Receive
 *** Modify - Zone Management Send
 ** Zone State
 ** Zone Start Logical Block Address (ZSLBA)
-** Zone Capacity
+** Zone Capacity vs Zone Size
 *** ![image](../assets/image_1672888206797_0.png){:height 161, :width 422}
-*** Zone size must align with power-of-two
-*** Writeable zone capacity can be smaller than the zone size
+*** Zone Size must align with power-of-two
+**** Zone Capacity must be smaller or equal to Zone Size
 **** Correlated with the erase block size
 ** Write Pointer (WP)
