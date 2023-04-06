@@ -4,7 +4,7 @@
 		- Performance Limit
 - ## Definitions
 	- Arithmetic Intensity
-		- The number of floating-point operations that can be performed per byte of data moved to and from memory
+		- The number of arithmetic operations (such as floating-point operations) per byte of data transfer between memory and the processor
 	- ![image.png](../assets/image_1680811578714_0.png)
 	-
 -
