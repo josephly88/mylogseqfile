@@ -11,6 +11,15 @@
 	- Indicates reducing $C_L$ or $V$ or $TR$ will result in a reduction in dynamic power per transistor
 - ### Techniques for Reducing Power
 	- Clock Gating
-		- Selectively disabling the clock to certain parts a circuit when they are not in use
-			- Since clock signals are a major contributor to power consumption ($TL$
-			- )
+		- Selectively disabling the clock to certain parts of the circuit when they are not in use
+			- Since clock signals are a major contributor to power consumption ($TL$)
+	- Power Gating
+		- Completely turn of part of the circuit
+			- Particularly for reducing leakage power
+				- Leakage Power: the power consumed even when a transistor is not switching
+	- Voltage Scaling
+		- Reducing the operating voltage of a circuit
+	- Dynamic Voltage and Frequency Scaling (DVFS)
+		- Adject voltage and frequency based on its workload
+	- Data Compression
+		- Compress before transmitted or stored to reduce power c
