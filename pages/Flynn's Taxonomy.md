@@ -1,2 +1,13 @@
 - ## Definitions
-	-
+	- Classifies computer architectures into four main categories based on the number of instruction and data streams
+- ## Categories
+	- ### SISD (Single Instruction, Single Data)
+		- PC, servers
+	- ### SIMD (Single Instruction, Multiple Data)
+		- Parallel processing of large amounts of data
+		- Video or Audio Processing
+	- ### MISD (Multiple Instruction, Single Data)
+		- Rarely used because they are difficult to implement
+	- ### MIMD (Multiple Instruction, Multiple Data)
+		- Most complex type
+		- Scientific simulations and parallel databases, distributed computing environments
