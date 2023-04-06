@@ -2,11 +2,4 @@
 * [[CPU Design]]
 *
 * [[Instruction Set Architecture]]
-- Thermal Design Power (TDP)
-	- Maximum amount of power that a component is expected to draw under normal operating conditions (W)
-		- Also the maximum temperature that the component is designed to operate at
-			- Higher -> Generate More Heat -> Require more cooling
-- Dynamic Energy or Power per Transistor
-	- Dynamic Power $\propto C_{L} * V^2 * TR$
-		- C_L
--
+* [[Computer Architecture - Power]]

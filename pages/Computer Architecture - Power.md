@@ -1,0 +1,16 @@
+- ### Thermal Design Power (TDP)
+	- Maximum amount of power that a component is expected to draw under normal operating conditions (W)
+		- Also the maximum temperature that the component is designed to operate at
+			- Higher -> Generate More Heat -> Require more cooling
+- ### Dynamic Energy or Power per Transistor
+	- Dynamic Power $\propto C_{L} * V^2 * TR$
+		- $C_L$: Capacitive Loading
+		- $V$: Voltage
+		- $TR$: Toggle rate (Frequency of toggling)
+	- Dynamic Energy is without $TR$
+	- Indicates reducing $C_L$ or $V$ or $TR$ will result in a reduction in dynamic power per transistor
+- ### Techniques for Reducing Power
+	- Clock Gating
+		- Selectively disabling the clock to certain parts a circuit when they are not in use
+			- Since clock signals are a major contributor to power consumption ($TL$
+			- )
