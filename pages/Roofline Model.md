@@ -27,7 +27,11 @@
 				- = n / 4 (n/p + n/m + 1)
 				- Since n is usually much smaller than m and p
 					- Approximately = 1 / 4 FLOP/byte
-	-
+	- Performance Limit
+		- Maximum computational capacity of a given computer architecture
+			- By measure the peak performance of hardware
 	- ![image.png](../assets/image_1680811578714_0.png)
-	-
+		- This line is rooftline
+			- If an application falls below the roofline
+				- he arithmetic intensity is not high enough to fully utilize the peak performance of the hardware
 -
