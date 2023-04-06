@@ -10,6 +10,8 @@
 	- [[Flynn's Taxonomy]]
 - ### Gustafson's Law
   id:: 642f1ac0-46c2-4c75-bc15-e2a01c443a87
+	- {{embed ((642f2177-d3cc-4261-b74a-3d9567633639))}}
 	- [[Gustafson's Law]]
 - ### Amdahl's Law for Power
+	-
 - ### Roofline Model
