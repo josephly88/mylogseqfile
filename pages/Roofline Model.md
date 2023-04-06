@@ -5,6 +5,12 @@
 - ## Definitions
 	- Arithmetic Intensity
 		- The number of arithmetic operations (such as floating-point operations) per byte of data transfer between memory and the processor
+		- Example: Matrix Multiplication
+			- A * B = C
+				- size(A) = m * n
+				- size(B) = n * p
+					- Hence, size(C) = m * p
+			-
 	- ![image.png](../assets/image_1680811578714_0.png)
 	-
 -
