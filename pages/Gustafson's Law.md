@@ -1,0 +1,9 @@
+- ## Idea
+	- The performance of parallel systems can be greatly increased by scaling the problem size to match the number of processors
+	- Address the limitation of Amdahl's Law
+		- Assumed that
+			- The problem size is fixed
+			- Parallelism can only improve performance up to a certain point
+	- Observation
+		- Many real-world problems have large amounts of parallelism that can be effectively exploited by parallel systems
+-
