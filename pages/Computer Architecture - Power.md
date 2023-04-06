@@ -12,7 +12,11 @@
 - ### Static Power
 	- Or called leakage power
 	- Power consumed by a circuit even when it is in a static (Non-switching)
-	-
+		- Due to leakage current that flows through transistors
+			- Static Power $\propto I_{static} * V_{dd}$
+				- $I_{static}$: The leakage current of the transistors in the circuit
+					- Scale with the num(transistor)
+				- $V_{dd}$: The supply voltage of the circult
 - ### Techniques for Reducing Power
 	- Clock Gating
 		- Selectively disabling the clock to certain parts of the circuit when they are not in use
