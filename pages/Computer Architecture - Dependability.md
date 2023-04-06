@@ -1,0 +1,29 @@
+- ## Definition
+	- Ability to operate correctly under a wide range of operating conditions
+	- Related Attributes
+		- Reliability
+			- Ability to perform the intended function without failure or errors over a specified period of time
+		- Availability
+			- Ability to be operational and accessible when needed
+				- Uptime, repair time, recover form failure or error
+		- Safety
+			- Ability to operate without causing harm or damage
+				- To people, environment, or other system
+		- Security
+			- Ability to protect against unauthorized access, modification, or theft of information
+- ## Metrics
+	- Mean time to failure (MTTF)
+		- Average time between the occurrences of a failure in a system
+		- $MTTF = \frac{\text{Total Operating Time}}{\text{\# of Failures}}$
+	- Mean time to repair (MTTR)
+		- Average time taken to repair a system once it has failed
+		- $MTTR = \frac{\text{Total Repair Time}}{\# of Repairs}$
+	- Mean time between failure (MTBF)
+		- Average time between the occurrences of two consecutive failures in a system
+		- $MTBF = MTTF + MTTR$
+	- Availability
+		- $Availability = \frac{MTTF}{MTBF + MTTR} * 100\%$
+	- Summary
+		- MTTF and MTBF: System Reliability
+		- Availability: System's Uptime
+-
