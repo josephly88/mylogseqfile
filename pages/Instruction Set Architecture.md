@@ -1,0 +1,22 @@
+- # Instruction Set Architecture (ISA)
+- Set of instructions that a computer processor can execute
+	- Defines:
+		- Machine Language
+		- Format of Instruction
+		- Number of Register
+		- [[Memory Address Mode]]
+		- Data Type for Instruction
+	- Standard Interface between software and hardware
+- ## User-visible ISA vs. Implementation-specific ISA
+	- ### User-visible ISA
+		- Part of the ISA visible to software (compiler or programmer)
+		- Communicate with
+			- Processor
+			- Registers
+			- Memory address modes
+	- ### Implementation-specific ISA
+		- Details of the microarchitecture
+			- Pipeline depth
+			- Cache size
+			- Instruction execution times
+	- Same user-visible ISA could have different implementation-specific ISA

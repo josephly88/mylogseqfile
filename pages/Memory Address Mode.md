@@ -1,0 +1,10 @@
+- ### Immediate Addressing
+	- ~ADD R1, #5~
+- ### Direct Addressing
+	- ~MOV R1, [1000]~ : Memory Address 1000
+- ### Indirect Addressing
+	- ~MOV R1, [R2]~ :
+- ### Indexed Addressing
+	- ~MOV R1, [R2 + 100]~ : Memory Location at the sum of the register and the constant
+- ### Relative Addressing
+	- ~JUMP +10~ : Program Counter (PC) - relative

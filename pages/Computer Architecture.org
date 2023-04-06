@@ -1,36 +1,7 @@
 * [[Bus]]
 * [[CPU Design]]
 *
-*
-* Instruction Set Architecture (ISA)
-** Set of instructions that a computer processor can execute
-*** Defines:
-**** Machine Language
-**** Format of Instruction
-**** Number of Register
-**** Memory Address Mode
-***** Immediate Addressing
-****** ~ADD R1, #5~
-***** Direct Addressing
-****** ~MOV R1, [1000]~ : Memory Address 1000
-***** Indirect Addressing
-****** ~MOV R1, [R2]~ :
-***** Indexed Addressing
-****** ~MOV R1, [R2 + 100]~ : Memory Location at the sum of the register and the constant
-***** Relative Addressing
-****** ~JUMP +10~ : Program Counter (PC) - relative
-**** Data Type for Instruction
-*** Standard Interface between software and hardware
-** User-visible ISA vs. Implementation-specific ISA
-*** User-visible ISA
-**** Part of the ISA visible to software (compiler or programmer)
-**** Communicate with
-***** Processor
-***** Registers
-***** Memory address modes
-*** Implementation-specific ISA
-**** Details of the microarchitecture
-***** Pipeline depth
-***** Cache size
-***** Instruction execution times
-*** Same user-visible ISA could have different implementation-specific ISA
+* [[Instruction Set Architecture]]
+- Thermal Design Power (TDP)
+	- Maximum amount of power that a component is expected to draw under normal operating conditions (W)
+		- Also the maximum temperature
