@@ -4,4 +4,6 @@
 * [[Instruction Set Architecture]]
 - Thermal Design Power (TDP)
 	- Maximum amount of power that a component is expected to draw under normal operating conditions (W)
-		- Also the maximum temperature
+		- Also the maximum temperature that the component is designed to operate at
+			- Higher -> Generate More Heat -> Require more cooling
+	-
