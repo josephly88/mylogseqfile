@@ -3,3 +3,17 @@
 *
 * [[Instruction Set Architecture]]
 * [[Computer Architecture - Power]]
+*
+* Dependability
+** Ability to operate correctly under a wide range of operating conditions
+** Related Attributes
+*** Reliability
+**** Ability to perform the intended function without failure or errors over a specified period of time
+*** Availability
+**** Ability to be operational and accessible when needed
+***** Uptime, repair time, recover form failure or error
+*** Safety
+**** Ability to operate without causing harm or damage
+***** To people, environment, or other system
+*** Security
+**** Ability to protect against unauthorized access, modification, or theft of information
