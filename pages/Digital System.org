@@ -1,6 +1,6 @@
 * Fundamental
 :PROPERTIES:
-:heading: 1
+:heading: 2
 :END:
 ** [[Logic Gates]]
 ** Boolean Algebra
@@ -13,13 +13,13 @@
 **** [[Two-step Programming]]
 * Combinational Logic
 :PROPERTIES:
-:heading: 1
+:heading: 2
 :END:
 ** Combinational Logic
 ** [[Propagation Delay]]
 * Sequential Logic
 :PROPERTIES:
-:heading: 1
+:heading: 2
 :END:
 ** [[Latch and Flip Flop]]
 ** [[Setup Time and Hold Time]]
@@ -32,24 +32,27 @@
 *** Fast to Slow: Signal Stretching
 * Memory and Stroage
 :PROPERTIES:
-:heading: 1
+:heading: 2
 :END:
 ** RAM
 ** ROM
 * Arithmetic Circuits
 :PROPERTIES:
-:heading: 1
+:heading: 2
 :END:
 ** Adder
 ** Subtractor
 ** Multiplier
 * Programmable Logic Device
 :PROPERTIES:
-:heading: 1
+:heading: 2
 :END:
 ** CPLD
 ** [[FPGA]]
-- # Advacned Topics
-	- [[Computer Architecture]]
-	- Digital Signal Processing
-	- Embedded System
+* Advanced Topics
+:PROPERTIES:
+:heading: 2
+:END:
+** [[Computer Architecture]]
+** Digital Signal Processing
+** Embedded System

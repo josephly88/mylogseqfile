@@ -1,11 +1,23 @@
-* [[Bus]]
-* [[CPU Design]]
-*
-* [[Instruction Set Architecture]]
-* [[Computer Architecture - Power]]
-*
-* [[Computer Architecture - Dependability]]
+* ISA
+:PROPERTIES:
+:heading: 2
+:END:
+** [[Instruction Set Architecture]]
+* Power
+:PROPERTIES:
+:heading: 2
+:END:
+** [[Computer Architecture - Power]]
+* Dependability
+:PROPERTIES:
+:heading: 2
+:END:
+** [[Computer Architecture - Dependability]]
 * Performance Metrics
+:PROPERTIES:
+:heading: 2
+:collapsed: true
+:END:
 	- Execution Time
 	- Throughput
 	- Latency
@@ -14,3 +26,6 @@
 	- Instructions Per Cycle (IPC)
 	- Floating-Point Operations Per Second (FLOPS)
 	- Bandwidth
+- ## Others
+	- [[Bus]]
+	- [[CPU Design]]
