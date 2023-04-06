@@ -1,5 +1,6 @@
 - ## Idea
 	- The overall performance of a system is limited by the performance of its slowest component
+	  id:: 642f1b3b-7bc7-4551-8bfb-6a2daec33a04
 	- Improvement to faster components will have diminishing returns if the slower component remains unchanged
 - ## Definition
 	- $Speedup = 1 / (( 1-P) + \frac{P}{S})$
@@ -11,5 +12,4 @@
 				- Since $Time_{old} > Time_{new}$
 - ## Meaning
 	- The maximum speedup is limited by the propotion $P$ of the systme that cannot be parallelized
-		- $P$ closer to 1 -> Speedup is greater
-	-
+		- $P$ closer to 1 -> Denominator is smaller -> $Speedup$ is greater
