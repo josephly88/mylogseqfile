@@ -21,6 +21,9 @@
 		- https://www.usenix.org/system/files/vault20_slides_bjorling.pdf
 		- One writer per zone -> Good performance
 		- Multiple writers per zone -> Lock contention
+			- Performance could improve by writing multiple zones
+				- But performance is limited
+					- Reason?  N * qd ?
 			- Zone Append for rescue
 				- APIs see slides
 				- Use-cases
