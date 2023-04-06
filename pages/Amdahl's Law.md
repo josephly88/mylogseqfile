@@ -13,3 +13,6 @@
 - ## Meaning
 	- The maximum speedup is limited by the propotion $P$ of the systme that cannot be parallelized
 		- $P$ closer to 1 -> Denominator is smaller -> $Speedup$ is greater
+	- Also applied to power consumption
+		- Estimate the potential energy savings that can achieved by reducing the power consumption of a component
+		- The savings is limited by the unsaved components
