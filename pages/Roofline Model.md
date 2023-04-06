@@ -1,0 +1,10 @@
+- ## Idea
+	- Visualizes the maximum performance of a given computer architecture as a function of two factors
+		- Arithmetic Intensity
+		- Performance Limit
+- ## Definitions
+	- Arithmetic Intensity
+		- The number of floating-point operations that can be performed per byte of data moved to and from memory
+	- ![image.png](../assets/image_1680811578714_0.png)
+	-
+-
