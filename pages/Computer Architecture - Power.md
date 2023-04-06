@@ -2,13 +2,17 @@
 	- Maximum amount of power that a component is expected to draw under normal operating conditions (W)
 		- Also the maximum temperature that the component is designed to operate at
 			- Higher -> Generate More Heat -> Require more cooling
-- ### Dynamic Energy or Power per Transistor
+- ### Dynamic Power per Transistor
 	- Dynamic Power $\propto C_{L} * V^2 * TR$
 		- $C_L$: Capacitive Loading
 		- $V$: Voltage
 		- $TR$: Toggle rate (Frequency of toggling)
 	- Dynamic Energy is without $TR$
 	- Indicates reducing $C_L$ or $V$ or $TR$ will result in a reduction in dynamic power per transistor
+- ### Static Power
+	- Or called leakage power
+	- Power consumed by a circuit even when it is in a static (Non-switching)
+	-
 - ### Techniques for Reducing Power
 	- Clock Gating
 		- Selectively disabling the clock to certain parts of the circuit when they are not in use
@@ -22,4 +26,18 @@
 	- Dynamic Voltage and Frequency Scaling (DVFS)
 		- Adject voltage and frequency based on its workload
 	- Data Compression
-		- Compress before transmitted or stored to reduce power c
+		- Compress before transmitted or stored to reduce power consumption
+			- Although more computation are require for compression and decompression
+				- Effective for transmission or storage is a major bottleneck
+				  collapsed:: true
+					- Wireless communication intensive
+					- Embedded system with limited memory
+				- Well design compression techniques to minimize
+					- Computation complexity
+					- Power consumption
+	- Low-power Design Techniques
+		- e.g.,
+			- Minimize the use of power-hungry components
+				- such as clock buffers
+			- Reduce the number of transistor between 0 and 1
+-
