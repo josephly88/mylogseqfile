@@ -5,4 +5,11 @@
 	- $Speedup = 1 / (( 1-P) + \frac{P}{S})$
 		- $P$ : Proportion of the system that can be parallelized
 		- $S$: Speedup factor that can be achieved by making the parallelized portion faster
-		- Since $Time_{new} = Time_{old}
+		- Prove:
+			- $Time_{new} = Time_{old} * ((1-P) + \frac{P}{S})$
+			- $Speedup = Time_{old} / Time_{new}$
+				- Since $Time_{old} > Time_{new}$
+- ## Meaning
+	- The maximum speedup is limited by the propotion $P$ of the systme that cannot be parallelized
+		- $P$ closer to 1 -> Speedup is greater
+	-
