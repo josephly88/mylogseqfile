@@ -32,7 +32,7 @@
 :PROPERTIES:
 :heading: 2
 :END:
-**
+** {{embed ((642f1a38-f7c1-463d-a5e3-cfa0a593b1ae))}}
 ** [[Quantitative Principles of Computer Design]]
 - ## Others
 	- [[Bus]]
