@@ -1,15 +1,15 @@
-- ### Thermal Design Power (TDP)
+- ## Thermal Design Power (TDP)
 	- Maximum amount of power that a component is expected to draw under normal operating conditions (W)
 		- Also the maximum temperature that the component is designed to operate at
 			- Higher -> Generate More Heat -> Require more cooling
-- ### Dynamic Power per Transistor
+- ## Dynamic Power per Transistor
 	- Dynamic Power $\propto C_{L} * V^2 * TR$
 		- $C_L$: Capacitive Loading
 		- $V$: Voltage
 		- $TR$: Toggle rate (Frequency of toggling)
 	- Dynamic Energy is without $TR$
 	- Indicates reducing $C_L$ or $V$ or $TR$ will result in a reduction in dynamic power per transistor
-- ### Static Power
+- ## Static Power
 	- Or called leakage power
 	- Power consumed by a circuit even when it is in a static (Non-switching)
 		- Due to leakage current that flows through transistors
@@ -17,19 +17,19 @@
 				- $I_{static}$: The leakage current of the transistors in the circuit
 					- Scale with the num(transistor)
 				- $V_{dd}$: The supply voltage of the circult
-- ### Techniques for Reducing Power
-	- Clock Gating
+- ## Techniques for Reducing Power
+	- ### Clock Gating
 		- Selectively disabling the clock to certain parts of the circuit when they are not in use
 			- Since clock signals are a major contributor to power consumption ($TL$)
-	- Power Gating
+	- ### Power Gating
 		- Completely turn of part of the circuit
 			- Particularly for reducing leakage power
 				- Leakage Power: the power consumed even when a transistor is not switching
-	- Voltage Scaling
+	- ### Voltage Scaling
 		- Reducing the operating voltage of a circuit
-	- Dynamic Voltage and Frequency Scaling (DVFS)
+	- ### Dynamic Voltage and Frequency Scaling (DVFS)
 		- Adject voltage and frequency based on its workload
-	- Data Compression
+	- ### Data Compression
 		- Compress before transmitted or stored to reduce power consumption
 			- Although more computation are require for compression and decompression
 				- Effective for transmission or storage is a major bottleneck

@@ -1,5 +1,6 @@
 - ## Idea
 	- Visualizes the maximum performance of a given computer architecture as a function of two factors
+	  id:: 642f2670-3d87-4423-ad15-bdcdad09b0f7
 		- Arithmetic Intensity
 		- Performance Limit
 - ## Definitions
@@ -33,5 +34,5 @@
 	- ![image.png](../assets/image_1680811578714_0.png)
 		- This line is rooftline
 			- If an application falls below the roofline
-				- he arithmetic intensity is not high enough to fully utilize the peak performance of the hardware
+				- It is not taking full advantage of the available hardware resources (Computational Capabilities)
 -

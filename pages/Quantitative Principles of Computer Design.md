@@ -13,4 +13,5 @@
 	- {{embed ((642f2177-d3cc-4261-b74a-3d9567633639))}}
 	- [[Gustafson's Law]]
 - ### Roofline Model
+	- {{embed ((642f2670-3d87-4423-ad15-bdcdad09b0f7))}}
 	- [[Roofline Model]]
