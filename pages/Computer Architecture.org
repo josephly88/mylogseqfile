@@ -1,2 +1,13 @@
 * [[Bus]]
 * [[CPU Design]]
+*
+* Instruction Set Architecture (ISA)
+** Set of instructions that a computer processor can execute
+*** Defines:
+**** Machine Language
+**** Format of Instruction
+**** Number of Register
+**** Memory Address Mode
+**** Data Type for Instruction
+*** Standard Interface between software and hardware
+***
