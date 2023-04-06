@@ -17,3 +17,10 @@
 ***** To people, environment, or other system
 *** Security
 **** Ability to protect against unauthorized access, modification, or theft of information
+** Metrics
+*** Mean time to failure (MTTF)
+**** Average time between the occurrences of a failure in a system
+**** $MTTF = \frac{\text{Total Operating Time}}{# of Failures}$
+****
+*** Mean time to repair (MTTR)
+*** Mena time between failure (MTBF)
