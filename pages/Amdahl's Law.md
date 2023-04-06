@@ -1,4 +1,8 @@
 - ## Idea
-	- The overall performance of a system
+	- The overall performance of a system is limited by the performance of its slowest component
+	- Improvement to faster components will have diminishing returns if the slower component remains unchanged
 - ## Definition
-	-
+	- $Speedup = 1 / (( 1-P) + \frac{P}{S})$
+		- $P$ : Proportion of the system that can be parallelized
+		- $S$: Speedup factor that can be achieved by making the parallelized portion faster
+		- Since $Time_{new} = Time_{old}
