@@ -1,0 +1,5 @@
+- ## Definitions
+	- Basic principles that guide computer architect to meet performance, power, cost, and other design goals
+		- Performance: Parallelism and Locality
+- Amdahl's Law
+	-

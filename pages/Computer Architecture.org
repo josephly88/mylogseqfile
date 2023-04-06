@@ -2,6 +2,7 @@
 :PROPERTIES:
 :heading: 2
 :END:
+** {{embed ((128abdf3-0739-4576-a667-2d718e605b87))}}
 ** [[Instruction Set Architecture]]
 * Power
 :PROPERTIES:
@@ -12,6 +13,7 @@
 :PROPERTIES:
 :heading: 2
 :END:
+** {{embed ((69a84471-9d5e-4ca8-ac0b-b2fca7b9167c))}}
 ** [[Computer Architecture - Dependability]]
 * Performance Metrics
 :PROPERTIES:
@@ -26,6 +28,12 @@
 	- Instructions Per Cycle (IPC)
 	- Floating-Point Operations Per Second (FLOPS)
 	- Bandwidth
+* Quantitative Principles of Computer Design
+:PROPERTIES:
+:heading: 2
+:END:
+**
+** [[Quantitative Principles of Computer Design]]
 - ## Others
 	- [[Bus]]
 	- [[CPU Design]]
