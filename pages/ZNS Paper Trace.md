@@ -18,7 +18,6 @@
 				- XFS, Btrfs, F2FS, dm-zoned, etc...
 			- Qemu with ZNS support
 	- Zone Append: A New Way of Writing to Zoned Storage (WD'2020)
-	  collapsed:: true
 		- https://www.usenix.org/system/files/vault20_slides_bjorling.pdf
 		- One writer per zone -> Good performance
 		- Multiple writers per zone -> Lock contention
