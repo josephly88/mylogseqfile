@@ -1,3 +1,3 @@
 - ## Russell's Paradox
-	- Set A = { Sets : Do not contain itself }
-		-
+	- [[Russell's Paradox]]
+	-

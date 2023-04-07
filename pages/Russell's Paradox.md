@@ -1,0 +1,9 @@
+- ## Paradox
+	- Set A = { Sets : Do not contain itself }
+		- Does Set A contain itself?
+			- If Yes -> Set A should be removed from Set A -> No (Contradiction)
+			- If No -> Set A should be included in Set A -> Yes (Contradiction)
+- ## Meaning and Impact
+	- If we allow unrestricted formation of sets, we can end up with sets that lead to logical contradictions
+		- We cannot simply assume that all mathematical concepts can be built up from a small set of basic axioms
+	- Led to Zermelo-Fraenkel Set Theory (ZF)
