@@ -34,3 +34,9 @@
 	- First, we define the empty set ∅ (By the axiom of the empty set)
 	- Then, we define the successor operation
 		- x' = x U {x}
+			- Which is set x adding the set x itself
+	- For example, successor of ∅ is
+		- ∅ U {∅} = {∅}
+		- Then successor of {∅} is
+		- {∅} U {{∅}} = {}
+		-
