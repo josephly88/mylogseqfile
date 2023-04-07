@@ -1,0 +1,11 @@
+- ## Background
+	- Response to [[Russell's Paradox]] and other issues with earlier set theories
+	- Build the axioms that define the basic properties of sets
+- ## The Zermelo-Fraenkel Axiom
+	- ### Axiom of Extensionality
+	- ### Axiom of Regularity
+	- ### Axiom of Pairing
+	- ### Axiom of Union
+	- ### Axiom of Power Set
+	- ### Axiom of Infinity
+	- ### Axiom of Choice
