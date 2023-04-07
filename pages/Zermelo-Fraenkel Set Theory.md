@@ -6,12 +6,24 @@
 		- Two sets are equal if and only if they have the same elements
 	- ### Axiom of Pairing
 		- For any two sets x and y, there exists a set that contains exactly x and y as elements
-			- If Set A and Set B exist
-				- Set C = {Set A, Set B} exists
+			- Example
+				- If Set A and Set B exist
+				- Then, Set C = {Set A, Set B} exists
 	- ### Axiom of Union
-		-
+		- For any set x, there exists a set that contains all the elements of the sets that are members of x
+			- Example
+				- A = {1, 2}, B = {3, 4}
+				- X = {A, B} (By Axiom of Pairing)
+				- Then a new set U would contains all the members of A and B
+				- U = {1, 2, 3, 4} exists
 	- ### Axiom of Power Set
 		- For any set x, there exists a set that contains all the subsets of x
+			- Example
+				- A = {1, 2, 3}
+				- P = {∅, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}}
 	- ### Axiom of Regularity
+		- For any set x, there exists a set that
 	- ### Axiom of Infinity
+		- There exists an infinite set
 	- ### Axiom of Choice
+		-
