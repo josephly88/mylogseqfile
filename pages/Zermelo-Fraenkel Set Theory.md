@@ -3,7 +3,7 @@
 	- Build the axioms that define the basic properties of sets
 - ## The Zermelo-Fraenkel Axiom
 	- ### Axiom of the Empty Set
-		-
+		- There exists a set with no elements and denoted by the symbol ∅
 	- ### Axiom of Extensionality
 		- Two sets are equal if and only if they have the same elements
 	- ### Axiom of Pairing
@@ -30,3 +30,7 @@
 			- In short, a set could not contain itself (To avoid [[Russell's Paradox]] )
 	- ### Axiom of Choice
 		- For any collection of non-empty sets, there exists a function that chooses one element from each set
+- ## Constructing the Natural Number
+	- First, we define the empty set ∅ (By the axiom of the empty set)
+	- Then, we define the successor operation
+		- x' = x U {x}
