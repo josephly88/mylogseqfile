@@ -2,6 +2,8 @@
 	- Response to [[Russell's Paradox]] and other issues with earlier set theories
 	- Build the axioms that define the basic properties of sets
 - ## The Zermelo-Fraenkel Axiom
+	- ### Axiom of the Empty Set
+		-
 	- ### Axiom of Extensionality
 		- Two sets are equal if and only if they have the same elements
 	- ### Axiom of Pairing
@@ -21,9 +23,10 @@
 			- Example
 				- A = {1, 2, 3}
 				- P = {∅, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}}
-	- ### Axiom of Regularity
-		- For any set x, there exists a set that
 	- ### Axiom of Infinity
 		- There exists an infinite set
+	- ### Axiom of Regularity
+		- Every non-empty set A contains an element that is disjoint from A (i.e., it has no common elements with A)
+			- In short, a set could not contain itself (To avoid [[Russell's Paradox]] )
 	- ### Axiom of Choice
-		-
+		- For any collection of non-empty sets, there exists a function that chooses one element from each set
