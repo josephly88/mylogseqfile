@@ -39,7 +39,7 @@
 				- Well design compression techniques to minimize
 					- Computation complexity
 					- Power consumption
-	- Low-power Design Techniques
+	- ### Low-power Design Techniques
 		- e.g.,
 			- Minimize the use of power-hungry components
 				- such as clock buffers
