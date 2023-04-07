@@ -3,9 +3,15 @@
 	- Build the axioms that define the basic properties of sets
 - ## The Zermelo-Fraenkel Axiom
 	- ### Axiom of Extensionality
-	- ### Axiom of Regularity
+		- Two sets are equal if and only if they have the same elements
 	- ### Axiom of Pairing
+		- For any two sets x and y, there exists a set that contains exactly x and y as elements
+			- If Set A and Set B exist
+				- Set C = {Set A, Set B} exists
 	- ### Axiom of Union
+		-
 	- ### Axiom of Power Set
+		- For any set x, there exists a set that contains all the subsets of x
+	- ### Axiom of Regularity
 	- ### Axiom of Infinity
 	- ### Axiom of Choice
