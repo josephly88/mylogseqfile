@@ -30,7 +30,7 @@
 			- In short, a set could not contain itself (To avoid [[Russell's Paradox]] )
 	- ### Axiom of Choice
 		- For any collection of non-empty sets, there exists a function that chooses one element from each set
-- ## Constructing the Natural Number
+- ## Construct the Natural Number
 	- First, we define the empty set ∅ (By the axiom of the empty set)
 	- Then, we define the successor operation
 		- x' = x U {x}
@@ -41,4 +41,5 @@
 		- {∅} U \{\{∅}} = {∅, \{∅}}
 		- Then {∅, \{∅}} U \{\{∅, \{∅}}} = { ∅, \{∅}, \{∅, \{∅}} }
 		- The sequence would be
-			- ∅, {∅}, { ∅, {∅} }
+			- ∅, { ∅ }, { ∅, {∅} }, { ∅, {∅}, {∅,{∅}} }, ...
+			- Which maps to 0, 1, 2, 3, ...
