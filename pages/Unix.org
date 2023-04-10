@@ -23,6 +23,7 @@
 ** ~find~: [[find]]
 ** ~grep~: [[grep]]
 ** ~history~
+*** Re-run the first command: ~!1~
 **
 ** *Questions*
 *** How to echo to a privilege file?
